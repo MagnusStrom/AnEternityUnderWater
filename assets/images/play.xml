@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="play.png">
+	<!-- Created with Adobe Animate version 21.0.4.39603 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Symbol 40000" x="0" y="0" width="1017" height="519"/>
+	<SubTexture name="Symbol 40001" x="1017" y="0" width="1001" height="509" frameX="-8" frameY="-5" frameWidth="1017" frameHeight="519"/>
+	<SubTexture name="Symbol 40002" x="0" y="519" width="983" height="501" frameX="-17" frameY="-9" frameWidth="1017" frameHeight="519"/>
+	<SubTexture name="Symbol 40003" x="983" y="519" width="965" height="491" frameX="-26" frameY="-14" frameWidth="1017" frameHeight="519"/>
+	<SubTexture name="Symbol 40004" x="0" y="1020" width="948" height="484" frameX="-34" frameY="-17" frameWidth="1017" frameHeight="519"/>
+	<SubTexture name="Symbol 40005" x="948" y="1020" width="958" height="489" frameX="-29" frameY="-15" frameWidth="1017" frameHeight="519"/>
+	<SubTexture name="Symbol 40006" x="948" y="1020" width="958" height="489" frameX="-29" frameY="-15" frameWidth="1017" frameHeight="519"/>
+	<SubTexture name="Symbol 40007" x="948" y="1020" width="958" height="489" frameX="-29" frameY="-15" frameWidth="1017" frameHeight="519"/>
+	<SubTexture name="Symbol 40008" x="948" y="1020" width="958" height="489" frameX="-29" frameY="-15" frameWidth="1017" frameHeight="519"/>
+	<SubTexture name="Symbol 40009" x="948" y="1020" width="958" height="489" frameX="-29" frameY="-15" frameWidth="1017" frameHeight="519"/>
+</TextureAtlas>

@@ -893,7 +893,7 @@ ApplicationMain.main = function() {
 ApplicationMain.create = function(config) {
 	var app = new openfl_display_Application();
 	ManifestResources.init(config);
-	app.meta.h["build"] = "5";
+	app.meta.h["build"] = "7";
 	app.meta.h["company"] = "HaxeFlixel";
 	app.meta.h["file"] = "AnEternityUnderWater";
 	app.meta.h["name"] = "AnEternityUnderWater";
@@ -5495,17 +5495,12 @@ MenuState.prototype = $extend(flixel_FlxState.prototype,{
 	,create: function() {
 		var introscreen = new flixel_FlxSprite(0,0).loadGraphic("assets/images/INTROSCREEN.png");
 		this.add(introscreen);
-		introscreen.setGraphicSize(1000);
+		introscreen.setGraphicSize(700);
 		introscreen.screenCenter();
-		var menusprite = new flixel_FlxSprite(0,0).loadGraphic("assets/images/logo.png");
-		this.add(menusprite);
-		menusprite.setGraphicSize(500);
-		menusprite.screenCenter();
-		var _g = menusprite;
-		_g.set_y(_g.y - 125);
+		introscreen.set_antialiasing(true);
 		var playButton = new flixel_ui_FlxButton(0,0,"Play",$bind(this,this.clickPlay));
 		this.add(playButton);
-		playButton.scale.set(0.2,0.2);
+		playButton.scale.set(2,2);
 		playButton.updateHitbox();
 		playButton.screenCenter();
 		var _g = playButton;
@@ -69539,7 +69534,7 @@ var lime_utils_AssetCache = function() {
 	this.audio = new haxe_ds_StringMap();
 	this.font = new haxe_ds_StringMap();
 	this.image = new haxe_ds_StringMap();
-	this.version = 120646;
+	this.version = 439170;
 };
 $hxClasses["lime.utils.AssetCache"] = lime_utils_AssetCache;
 lime_utils_AssetCache.__name__ = "lime.utils.AssetCache";

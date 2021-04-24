@@ -24,18 +24,13 @@ class MenuState extends FlxState
 
 		var introscreen = new FlxSprite(0, 0).loadGraphic("assets/images/INTROSCREEN.png");
 		add(introscreen);
-		introscreen.setGraphicSize(1000);
+		introscreen.setGraphicSize(700);
 		introscreen.screenCenter();
-
-		var menusprite = new FlxSprite(0, 0).loadGraphic("assets/images/logo.png");
-		add(menusprite);
-		menusprite.setGraphicSize(300);
-		menusprite.screenCenter();
-		menusprite.y -= 125;
+		introscreen.antialiasing = true;
 
 		playButton = new FlxButton(0, 0, "Play", clickPlay);
-		//	playButton.frames = FlxAtlasFrames.fromSparrow("assets/images/play.png", "assets/images/play.xml");
-		//	playButton.animation.addByPrefix("idle", "Symbol", 10, true);
+		playButton.frames = FlxAtlasFrames.fromSparrow("assets/images/play.png", "assets/images/play.xml");
+		playButton.animation.addByPrefix("idle", "Symbol", 10, true);
 		add(playButton);
 		playButton.scale.set(2, 2);
 		playButton.updateHitbox();
