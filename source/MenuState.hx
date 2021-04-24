@@ -40,7 +40,7 @@ class MenuState extends FlxState
 
 		// HOPEFULLY THIS WORKS SO I DONT GET SUED LOLOLOL
 		var textFunny:FlxText = new FlxText(100, 250, 0, "WARNING:\n THIS GAME CONTAINS MENTIONS OF:\nINSANITY AND POSSIBLE GORE.", 20);
-		textFunny.color = FlxColor.BLACK;
+		textFunny.color = FlxColor.WHITE;
 		add(textFunny);
 		super.create();
 	}

@@ -893,7 +893,7 @@ ApplicationMain.main = function() {
 ApplicationMain.create = function(config) {
 	var app = new openfl_display_Application();
 	ManifestResources.init(config);
-	app.meta.h["build"] = "8";
+	app.meta.h["build"] = "9";
 	app.meta.h["company"] = "HaxeFlixel";
 	app.meta.h["file"] = "AnEternityUnderWater";
 	app.meta.h["name"] = "AnEternityUnderWater";
@@ -5502,7 +5502,7 @@ MenuState.prototype = $extend(flixel_FlxState.prototype,{
 		playButton.set_frames(flixel_graphics_frames_FlxAtlasFrames.fromSparrow("assets/images/play.png","assets/images/play.xml"));
 		playButton.animation.addByPrefix("idle","Symbol",10,true);
 		this.add(playButton);
-		playButton.scale.set(2,2);
+		playButton.scale.set(0.2,0.2);
 		playButton.updateHitbox();
 		playButton.screenCenter();
 		var _g = playButton;
@@ -69536,7 +69536,7 @@ var lime_utils_AssetCache = function() {
 	this.audio = new haxe_ds_StringMap();
 	this.font = new haxe_ds_StringMap();
 	this.image = new haxe_ds_StringMap();
-	this.version = 250722;
+	this.version = 749426;
 };
 $hxClasses["lime.utils.AssetCache"] = lime_utils_AssetCache;
 lime_utils_AssetCache.__name__ = "lime.utils.AssetCache";
