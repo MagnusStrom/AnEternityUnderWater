@@ -32,7 +32,7 @@ class MenuState extends FlxState
 		playButton.frames = FlxAtlasFrames.fromSparrow("assets/images/play.png", "assets/images/play.xml");
 		playButton.animation.addByPrefix("idle", "Symbol", 10, true);
 		add(playButton);
-		playButton.scale.set(2, 2);
+		playButton.scale.set(0.2, 0.2);
 		playButton.updateHitbox();
 		playButton.screenCenter();
 		playButton.y += 150;
