@@ -29,7 +29,7 @@ class MenuState extends FlxState
 
 		var menusprite = new FlxSprite(0, 0).loadGraphic("assets/images/logo.png");
 		add(menusprite);
-		menusprite.setGraphicSize(500);
+		menusprite.setGraphicSize(300);
 		menusprite.screenCenter();
 		menusprite.y -= 125;
 
@@ -37,7 +37,7 @@ class MenuState extends FlxState
 		//	playButton.frames = FlxAtlasFrames.fromSparrow("assets/images/play.png", "assets/images/play.xml");
 		//	playButton.animation.addByPrefix("idle", "Symbol", 10, true);
 		add(playButton);
-		playButton.scale.set(0.2, 0.2);
+		playButton.scale.set(2, 2);
 		playButton.updateHitbox();
 		playButton.screenCenter();
 		playButton.y += 150;
