@@ -1,7 +1,11 @@
 package;
 
+import FlickerinBgIdk.Flicker;
+import flixel.FlxSprite;
 import flixel.FlxState;
 import flixel.addons.text.FlxTypeText;
+import flixel.text.FlxText;
+import flixel.util.FlxColor;
 
 class PlayState extends FlxState
 {
@@ -13,7 +17,14 @@ class PlayState extends FlxState
 
 	override public function create()
 	{
-		FUNNYTEXT = new FlxTypeText(10, 50, 640,
+		var ship = new Flicker(0, 0); // MIGHT MAKE THIS RANDOM LATER
+		add(ship);
+		ship.setGraphicSize(670);
+		ship.screenCenter();
+		ship.antialiasing = true;
+		var TEXTBG:FlxSprite = new FlxSprite(0, 350).makeGraphic(700, 500, FlxColor.BLACK);
+		add(TEXTBG);
+		FUNNYTEXT = new FlxTypeText(10, 350, 650,
 			"Day 1 of being on this ship. The UNITED STATES government brought me on this mission. They told me to search for something bright on the ocean floor, but not anything else, so I guess I'll know when I'll find it?.",
 			20);
 		add(FUNNYTEXT);
