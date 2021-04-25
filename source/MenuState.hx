@@ -24,24 +24,19 @@ class MenuState extends FlxState
 
 		var introscreen = new FlxSprite(0, 0).loadGraphic("assets/images/INTROSCREEN.png");
 		add(introscreen);
-		introscreen.setGraphicSize(700);
+		introscreen.setGraphicSize(650);
 		introscreen.screenCenter();
 		introscreen.antialiasing = true;
 
 		playButton = new FlxButton(0, 0, "Play", clickPlay);
-		playButton.frames = FlxAtlasFrames.fromSparrow("assets/images/play.png", "assets/images/play.xml");
+		playButton.frames = FlxAtlasFrames.fromSparrow("assets/images/PLAY_THE_THIRD.png", "assets/images/PLAY_THE_THIRD.xml");
 		playButton.animation.addByPrefix("idle", "Symbol", 10, true);
 		add(playButton);
-		playButton.scale.set(0.2, 0.2);
+		playButton.scale.set(0.1, 0.1);
 		playButton.updateHitbox();
 		playButton.screenCenter();
 		playButton.y += 150;
 		playButton.animation.play("idle");
-
-		// HOPEFULLY THIS WORKS SO I DONT GET SUED LOLOLOL
-		var textFunny:FlxText = new FlxText(100, 250, 0, "WARNING:\n THIS GAME CONTAINS MENTIONS OF:\nINSANITY AND POSSIBLE GORE.", 20);
-		textFunny.color = FlxColor.WHITE;
-		add(textFunny);
 		super.create();
 	}
 
