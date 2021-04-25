@@ -22,6 +22,10 @@ class MenuState extends FlxState
 
 		var playButton:FlxButton;
 
+		sound = new FlxSound().loadEmbedded("assets/music/REALSHIT.ogg", false, true);
+		sound.volume = 0.3;
+		sound.play();
+
 		var introscreen = new FlxSprite(0, 0).loadGraphic("assets/images/INTROSCREEN.png");
 		add(introscreen);
 		introscreen.setGraphicSize(650);
@@ -42,10 +46,10 @@ class MenuState extends FlxState
 
 	function clickPlay()
 	{
-		//	sound.destroy();
-		//	var undertale = new FlxSound().loadEmbedded("assets/sounds/undertalemoment.mp3", false, true);
-		//	undertale.volume = 1;
-		//	undertale.play(); // NOT STOLEN FROM UNDERTALE JUST THE INTROS ARE SIMILAR CUZ THE FADE IN
+		sound.destroy();
+		var undertale = new FlxSound().loadEmbedded("assets/sounds/undertalemoment.mp3", false, true);
+		undertale.volume = 1;
+		undertale.play(); // NOT STOLEN FROM UNDERTALE JUST THE INTROS ARE SIMILAR CUZ THE FADE IN
 		FlxG.camera.fade(FlxColor.WHITE, 2, false, function()
 		{
 			FlxG.switchState(new PlayState());

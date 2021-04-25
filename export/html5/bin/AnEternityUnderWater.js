@@ -893,7 +893,7 @@ ApplicationMain.main = function() {
 ApplicationMain.create = function(config) {
 	var app = new openfl_display_Application();
 	ManifestResources.init(config);
-	app.meta.h["build"] = "16";
+	app.meta.h["build"] = "17";
 	app.meta.h["company"] = "HaxeFlixel";
 	app.meta.h["file"] = "AnEternityUnderWater";
 	app.meta.h["name"] = "AnEternityUnderWater";
@@ -6963,7 +6963,7 @@ ManifestResources.init = function(config) {
 	openfl_text_Font.registerFont(_$_$ASSET_$_$OPENFL_$_$flixel_$fonts_$nokiafc22_$ttf);
 	openfl_text_Font.registerFont(_$_$ASSET_$_$OPENFL_$_$flixel_$fonts_$monsterrat_$ttf);
 	var bundle;
-	var data = "{\"name\":null,\"assets\":\"aoy4:pathy36:assets%2Fmusic%2Fmusic-goes-here.txty4:sizezy4:typey4:TEXTy2:idR1y7:preloadtgoR0y26:assets%2Fimages%2Fship.pngR2i218170R3y5:IMAGER5R7R6tgoR0y33:assets%2Fimages%2FINTROSCREEN.pngR2i259839R3R8R5R9R6tgoR0y36:assets%2Fimages%2FPLAY_THE_THIRD.pngR2i333545R3R8R5R10R6tgoR0y36:assets%2Fimages%2FPLAY_THE_THIRD.xmlR2i1431R3R4R5R11R6tgoR0y29:assets%2Fimages%2FFLICKER.pngR2i1264527R3R8R5R12R6tgoR0y29:assets%2Fimages%2FFLICKER.xmlR2i5972R3R4R5R13R6tgoR0y27:assets%2Fimages%2Ftiles.pngR2i1056R3R8R5R14R6tgoR0y26:assets%2Fimages%2Fplay.xmlR2i1519R3R4R5R15R6tgoR0y26:assets%2Fimages%2Fplay.pngR2i219991R3R8R5R16R6tgoR0y36:assets%2Fimages%2Fimages-go-here.txtR2zR3R4R5R17R6tgoR0y24:assets%2Fimages%2Fbg.pngR2i371991R3R8R5R18R6tgoR0y36:assets%2Fsounds%2Fsounds-go-here.txtR2zR3R4R5R19R6tgoR0y34:assets%2Fdata%2Fdata-goes-here.txtR2zR3R4R5R20R6tgoR2i39706R3y5:MUSICR5y28:flixel%2Fsounds%2Fflixel.mp3y9:pathGroupaR22y28:flixel%2Fsounds%2Fflixel.ogghR6tgoR2i2114R3R21R5y26:flixel%2Fsounds%2Fbeep.mp3R23aR25y26:flixel%2Fsounds%2Fbeep.ogghR6tgoR2i5794R3y5:SOUNDR5R26R23aR25R26hgoR2i33629R3R27R5R24R23aR22R24hgoR2i15744R3y4:FONTy9:classNamey35:__ASSET__flixel_fonts_nokiafc22_ttfR5y30:flixel%2Ffonts%2Fnokiafc22.ttfR6tgoR2i29724R3R28R29y36:__ASSET__flixel_fonts_monsterrat_ttfR5y31:flixel%2Ffonts%2Fmonsterrat.ttfR6tgoR0y33:flixel%2Fimages%2Fui%2Fbutton.pngR2i519R3R8R5R34R6tgoR0y36:flixel%2Fimages%2Flogo%2Fdefault.pngR2i3280R3R8R5R35R6tgoR0y44:flixel%2Fflixel-ui%2Fimg%2Fdropdown_mark.pngR2i156R3R8R5R36R6tgoR0y40:flixel%2Fflixel-ui%2Fimg%2Fplus_mark.pngR2i147R3R8R5R37R6tgoR0y36:flixel%2Fflixel-ui%2Fimg%2Fradio.pngR2i191R3R8R5R38R6tgoR0y48:flixel%2Fflixel-ui%2Fimg%2Fbutton_arrow_left.pngR2i459R3R8R5R39R6tgoR0y42:flixel%2Fflixel-ui%2Fimg%2Fbutton_thin.pngR2i247R3R8R5R40R6tgoR0y34:flixel%2Fflixel-ui%2Fimg%2Ftab.pngR2i201R3R8R5R41R6tgoR0y41:flixel%2Fflixel-ui%2Fimg%2Ffinger_big.pngR2i1724R3R8R5R42R6tgoR0y36:flixel%2Fflixel-ui%2Fimg%2Finvis.pngR2i128R3R8R5R43R6tgoR0y43:flixel%2Fflixel-ui%2Fimg%2Fchrome_inset.pngR2i192R3R8R5R44R6tgoR0y44:flixel%2Fflixel-ui%2Fimg%2Ftooltip_arrow.pngR2i18509R3R8R5R45R6tgoR0y49:flixel%2Fflixel-ui%2Fimg%2Fbutton_arrow_right.pngR2i511R3R8R5R46R6tgoR0y40:flixel%2Fflixel-ui%2Fimg%2Fradio_dot.pngR2i153R3R8R5R47R6tgoR0y37:flixel%2Fflixel-ui%2Fimg%2Fchrome.pngR2i253R3R8R5R48R6tgoR0y40:flixel%2Fflixel-ui%2Fimg%2Fcheck_box.pngR2i922R3R8R5R49R6tgoR0y44:flixel%2Fflixel-ui%2Fimg%2Fbutton_toggle.pngR2i534R3R8R5R50R6tgoR0y46:flixel%2Fflixel-ui%2Fimg%2Fbutton_arrow_up.pngR2i493R3R8R5R51R6tgoR0y41:flixel%2Fflixel-ui%2Fimg%2Fminus_mark.pngR2i136R3R8R5R52R6tgoR0y42:flixel%2Fflixel-ui%2Fimg%2Fchrome_flat.pngR2i212R3R8R5R53R6tgoR0y37:flixel%2Fflixel-ui%2Fimg%2Fswatch.pngR2i185R3R8R5R54R6tgoR0y43:flixel%2Fflixel-ui%2Fimg%2Fchrome_light.pngR2i214R3R8R5R55R6tgoR0y38:flixel%2Fflixel-ui%2Fimg%2Fhilight.pngR2i129R3R8R5R56R6tgoR0y41:flixel%2Fflixel-ui%2Fimg%2Fcheck_mark.pngR2i946R3R8R5R57R6tgoR0y39:flixel%2Fflixel-ui%2Fimg%2Ftab_back.pngR2i210R3R8R5R58R6tgoR0y34:flixel%2Fflixel-ui%2Fimg%2Fbox.pngR2i912R3R8R5R59R6tgoR0y43:flixel%2Fflixel-ui%2Fimg%2Ffinger_small.pngR2i294R3R8R5R60R6tgoR0y37:flixel%2Fflixel-ui%2Fimg%2Fbutton.pngR2i433R3R8R5R61R6tgoR0y48:flixel%2Fflixel-ui%2Fimg%2Fbutton_arrow_down.pngR2i446R3R8R5R62R6tgoR0y44:flixel%2Fflixel-ui%2Fxml%2Fdefault_popup.xmlR2i1848R3R4R5R63R6tgoR0y53:flixel%2Fflixel-ui%2Fxml%2Fdefault_loading_screen.xmlR2i1953R3R4R5R64R6tgoR0y39:flixel%2Fflixel-ui%2Fxml%2Fdefaults.xmlR2i1263R3R4R5R65R6tgh\",\"rootPath\":null,\"version\":2,\"libraryArgs\":[],\"libraryType\":null}";
+	var data = "{\"name\":null,\"assets\":\"aoy4:pathy36:assets%2Fmusic%2Fmusic-goes-here.txty4:sizezy4:typey4:TEXTy2:idR1y7:preloadtgoR2i1320624R3y5:MUSICR5y29:assets%2Fmusic%2FREALSHIT.oggy9:pathGroupaR8hR6tgoR0y26:assets%2Fimages%2Fship.pngR2i218170R3y5:IMAGER5R10R6tgoR0y33:assets%2Fimages%2FINTROSCREEN.pngR2i259839R3R11R5R12R6tgoR0y36:assets%2Fimages%2FPLAY_THE_THIRD.pngR2i333545R3R11R5R13R6tgoR0y36:assets%2Fimages%2FPLAY_THE_THIRD.xmlR2i1431R3R4R5R14R6tgoR0y29:assets%2Fimages%2FFLICKER.pngR2i1264527R3R11R5R15R6tgoR0y29:assets%2Fimages%2FFLICKER.xmlR2i5972R3R4R5R16R6tgoR0y27:assets%2Fimages%2Ftiles.pngR2i1056R3R11R5R17R6tgoR0y26:assets%2Fimages%2Fplay.xmlR2i1519R3R4R5R18R6tgoR0y26:assets%2Fimages%2Fplay.pngR2i219991R3R11R5R19R6tgoR0y36:assets%2Fimages%2Fimages-go-here.txtR2zR3R4R5R20R6tgoR0y24:assets%2Fimages%2Fbg.pngR2i371991R3R11R5R21R6tgoR2i34982R3R7R5y37:assets%2Fsounds%2Fundertalemoment.mp3R9aR22hR6tgoR0y36:assets%2Fsounds%2Fsounds-go-here.txtR2zR3R4R5R23R6tgoR2i10286R3y5:SOUNDR5y27:assets%2Fsounds%2Fclick.oggR9aR25hR6tgoR0y34:assets%2Fdata%2Fdata-goes-here.txtR2zR3R4R5R26R6tgoR2i39706R3R7R5y28:flixel%2Fsounds%2Fflixel.mp3R9aR27y28:flixel%2Fsounds%2Fflixel.ogghR6tgoR2i2114R3R7R5y26:flixel%2Fsounds%2Fbeep.mp3R9aR29y26:flixel%2Fsounds%2Fbeep.ogghR6tgoR2i5794R3R24R5R30R9aR29R30hgoR2i33629R3R24R5R28R9aR27R28hgoR2i15744R3y4:FONTy9:classNamey35:__ASSET__flixel_fonts_nokiafc22_ttfR5y30:flixel%2Ffonts%2Fnokiafc22.ttfR6tgoR2i29724R3R31R32y36:__ASSET__flixel_fonts_monsterrat_ttfR5y31:flixel%2Ffonts%2Fmonsterrat.ttfR6tgoR0y33:flixel%2Fimages%2Fui%2Fbutton.pngR2i519R3R11R5R37R6tgoR0y36:flixel%2Fimages%2Flogo%2Fdefault.pngR2i3280R3R11R5R38R6tgoR0y44:flixel%2Fflixel-ui%2Fimg%2Fdropdown_mark.pngR2i156R3R11R5R39R6tgoR0y40:flixel%2Fflixel-ui%2Fimg%2Fplus_mark.pngR2i147R3R11R5R40R6tgoR0y36:flixel%2Fflixel-ui%2Fimg%2Fradio.pngR2i191R3R11R5R41R6tgoR0y48:flixel%2Fflixel-ui%2Fimg%2Fbutton_arrow_left.pngR2i459R3R11R5R42R6tgoR0y42:flixel%2Fflixel-ui%2Fimg%2Fbutton_thin.pngR2i247R3R11R5R43R6tgoR0y34:flixel%2Fflixel-ui%2Fimg%2Ftab.pngR2i201R3R11R5R44R6tgoR0y41:flixel%2Fflixel-ui%2Fimg%2Ffinger_big.pngR2i1724R3R11R5R45R6tgoR0y36:flixel%2Fflixel-ui%2Fimg%2Finvis.pngR2i128R3R11R5R46R6tgoR0y43:flixel%2Fflixel-ui%2Fimg%2Fchrome_inset.pngR2i192R3R11R5R47R6tgoR0y44:flixel%2Fflixel-ui%2Fimg%2Ftooltip_arrow.pngR2i18509R3R11R5R48R6tgoR0y49:flixel%2Fflixel-ui%2Fimg%2Fbutton_arrow_right.pngR2i511R3R11R5R49R6tgoR0y40:flixel%2Fflixel-ui%2Fimg%2Fradio_dot.pngR2i153R3R11R5R50R6tgoR0y37:flixel%2Fflixel-ui%2Fimg%2Fchrome.pngR2i253R3R11R5R51R6tgoR0y40:flixel%2Fflixel-ui%2Fimg%2Fcheck_box.pngR2i922R3R11R5R52R6tgoR0y44:flixel%2Fflixel-ui%2Fimg%2Fbutton_toggle.pngR2i534R3R11R5R53R6tgoR0y46:flixel%2Fflixel-ui%2Fimg%2Fbutton_arrow_up.pngR2i493R3R11R5R54R6tgoR0y41:flixel%2Fflixel-ui%2Fimg%2Fminus_mark.pngR2i136R3R11R5R55R6tgoR0y42:flixel%2Fflixel-ui%2Fimg%2Fchrome_flat.pngR2i212R3R11R5R56R6tgoR0y37:flixel%2Fflixel-ui%2Fimg%2Fswatch.pngR2i185R3R11R5R57R6tgoR0y43:flixel%2Fflixel-ui%2Fimg%2Fchrome_light.pngR2i214R3R11R5R58R6tgoR0y38:flixel%2Fflixel-ui%2Fimg%2Fhilight.pngR2i129R3R11R5R59R6tgoR0y41:flixel%2Fflixel-ui%2Fimg%2Fcheck_mark.pngR2i946R3R11R5R60R6tgoR0y39:flixel%2Fflixel-ui%2Fimg%2Ftab_back.pngR2i210R3R11R5R61R6tgoR0y34:flixel%2Fflixel-ui%2Fimg%2Fbox.pngR2i912R3R11R5R62R6tgoR0y43:flixel%2Fflixel-ui%2Fimg%2Ffinger_small.pngR2i294R3R11R5R63R6tgoR0y37:flixel%2Fflixel-ui%2Fimg%2Fbutton.pngR2i433R3R11R5R64R6tgoR0y48:flixel%2Fflixel-ui%2Fimg%2Fbutton_arrow_down.pngR2i446R3R11R5R65R6tgoR0y44:flixel%2Fflixel-ui%2Fxml%2Fdefault_popup.xmlR2i1848R3R4R5R66R6tgoR0y53:flixel%2Fflixel-ui%2Fxml%2Fdefault_loading_screen.xmlR2i1953R3R4R5R67R6tgoR0y39:flixel%2Fflixel-ui%2Fxml%2Fdefaults.xmlR2i1263R3R4R5R68R6tgh\",\"rootPath\":null,\"version\":2,\"libraryArgs\":[],\"libraryType\":null}";
 	var manifest = lime_utils_AssetManifest.parse(data,ManifestResources.rootPath);
 	var library = lime_utils_AssetLibrary.fromManifest(manifest);
 	lime_utils_Assets.registerLibrary("default",library);
@@ -7949,6 +7949,9 @@ MenuState.prototype = $extend(flixel_FlxState.prototype,{
 	menusprite: null
 	,sound: null
 	,create: function() {
+		this.sound = new flixel_system_FlxSound().loadEmbedded("assets/music/REALSHIT.ogg",false,true);
+		this.sound.set_volume(0.3);
+		this.sound.play();
 		var introscreen = new flixel_FlxSprite(0,0).loadGraphic("assets/images/INTROSCREEN.png");
 		this.add(introscreen);
 		introscreen.setGraphicSize(650);
@@ -7967,6 +7970,10 @@ MenuState.prototype = $extend(flixel_FlxState.prototype,{
 		flixel_FlxState.prototype.create.call(this);
 	}
 	,clickPlay: function() {
+		this.sound.destroy();
+		var undertale = new flixel_system_FlxSound().loadEmbedded("assets/sounds/undertalemoment.mp3",false,true);
+		undertale.set_volume(1);
+		undertale.play();
 		flixel_FlxG.camera.fade(-1,2,false,function() {
 			var nextState = new PlayState();
 			if(flixel_FlxG.game._state.switchTo(nextState)) {
@@ -7980,6 +7987,7 @@ MenuState.prototype = $extend(flixel_FlxState.prototype,{
 	,__class__: MenuState
 });
 var PlayState = function(MaxSize) {
+	this.doneTasks = false;
 	flixel_FlxState.call(this,MaxSize);
 };
 $hxClasses["PlayState"] = PlayState;
@@ -7989,6 +7997,8 @@ PlayState.prototype = $extend(flixel_FlxState.prototype,{
 	FUNNYTEXT: null
 	,MOUSEBOXIGUESS: null
 	,CAFFINE: null
+	,SWITCH: null
+	,doneTasks: null
 	,create: function() {
 		this.CAFFINE = new flixel_FlxSprite(138,227).makeGraphic(100,100,-16777216);
 		this.add(this.CAFFINE);
@@ -8007,11 +8017,22 @@ PlayState.prototype = $extend(flixel_FlxState.prototype,{
 		this.FUNNYTEXT.start(0.03,false,false);
 		this.MOUSEBOXIGUESS = new flixel_FlxSprite(flixel_FlxG.mouse.x,flixel_FlxG.mouse.y).makeGraphic(50,50,-8355712);
 		this.add(this.MOUSEBOXIGUESS);
-		var SWITCH = new flixel_FlxSprite(300,100).makeGraphic(50,50,-16777216);
-		this.add(SWITCH);
+		this.SWITCH = new flixel_FlxSprite(300,200).makeGraphic(50,50,-16777216);
+		this.add(this.SWITCH);
 		flixel_FlxState.prototype.create.call(this);
 	}
 	,loadLevel: function(levelid) {
+		var _gthis = this;
+		flixel_FlxG.camera.fade(-1,2,true,function() {
+			_gthis.CAFFINE.set_x(138);
+			_gthis.CAFFINE.set_y(227);
+			_gthis.SWITCH.set_x(300);
+			_gthis.SWITCH.set_y(200);
+			if(levelid == 2) {
+				_gthis.FUNNYTEXT.resetText("Another amazing day! I wish I had more to do, but I still like just relaxing and watching the ocean go by.");
+				_gthis.FUNNYTEXT.start(0.03,false,false);
+			}
+		});
 	}
 	,update: function(elapsed) {
 		var _gthis = this;
@@ -8030,16 +8051,45 @@ PlayState.prototype = $extend(flixel_FlxState.prototype,{
 			case 1:
 				this.FUNNYTEXT.resetText("Oh, forgot my coffee! Always good to wake up in the morning to the ocean and a good cup of coffee.");
 				this.FUNNYTEXT.start(0.03,false,false);
-				new flixel_util_FlxTimer().start(10,function(tmr) {
-					_gthis.FUNNYTEXT.resetText("Welp, time to do my tasks! It's as simple as flipping switches to keep the ship around, as I've been told.");
-					_gthis.FUNNYTEXT.start(0.03,false,false);
+				new flixel_util_FlxTimer().start(5,function(tmr) {
+					if(!_gthis.doneTasks) {
+						_gthis.FUNNYTEXT.resetText("Time to do my tasks! It's as simple as flipping the black switches to yellow to keep the ship alive, as I've been told.");
+						_gthis.FUNNYTEXT.start(0.03,false,false);
+					}
 				});
 				break;
 			case 2:
-				this.FUNNYTEXT.resetText("Day 2 of coffee! Planning to make this a tradition now. It's very calming, although I wished I had something to read.");
+				this.FUNNYTEXT.resetText("Day 2 of coffee! Planning to make this a tradition now. It's very calming, although I wished I had something to read. Time to do my tasks.");
 				break;
 			}
 			this.FUNNYTEXT.start(0.03,false,false);
+		}
+		var tmp;
+		if(flixel_FlxG.overlap(this.MOUSEBOXIGUESS,this.SWITCH)) {
+			var _this = flixel_FlxG.mouse._leftButton;
+			tmp = _this.current == 1 || _this.current == 2;
+		} else {
+			tmp = false;
+		}
+		if(tmp) {
+			this.doneTasks = true;
+			this.SWITCH.set_x(this.SWITCH.set_y(1000));
+			var sound = new flixel_system_FlxSound().loadEmbedded("assets/sounds/click.ogg",false,true);
+			sound.set_volume(0.3);
+			sound.play();
+			if(PlayState.level == 1) {
+				this.FUNNYTEXT.resetText("And there we go! I guess im done for the day, heheh.");
+				this.FUNNYTEXT.start(0.03,false,false);
+				new flixel_util_FlxTimer().start(5,function(tmr) {
+					_gthis.FUNNYTEXT.resetText("I wonder what to do now... I guess I'll lie down.");
+					_gthis.FUNNYTEXT.start(0.03,false,false);
+					new flixel_util_FlxTimer().start(5,function(tmr) {
+						flixel_FlxG.camera.fade(-16777216,2,false,function() {
+							PlayState.level++;
+						});
+					});
+				});
+			}
 		}
 		if(PlayState.lastlevel != PlayState.level) {
 			this.loadLevel(PlayState.level);
@@ -70178,7 +70228,7 @@ var lime_utils_AssetCache = function() {
 	this.audio = new haxe_ds_StringMap();
 	this.font = new haxe_ds_StringMap();
 	this.image = new haxe_ds_StringMap();
-	this.version = 712058;
+	this.version = 615515;
 };
 $hxClasses["lime.utils.AssetCache"] = lime_utils_AssetCache;
 lime_utils_AssetCache.__name__ = "lime.utils.AssetCache";
