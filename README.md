@@ -1,2 +1,2 @@
 # ld48
-# AnEternityUnderWater
+funny game ludum dare lol funny
