@@ -893,7 +893,7 @@ ApplicationMain.main = function() {
 ApplicationMain.create = function(config) {
 	var app = new openfl_display_Application();
 	ManifestResources.init(config);
-	app.meta.h["build"] = "15";
+	app.meta.h["build"] = "16";
 	app.meta.h["company"] = "HaxeFlixel";
 	app.meta.h["file"] = "AnEternityUnderWater";
 	app.meta.h["name"] = "AnEternityUnderWater";
@@ -8002,16 +8002,19 @@ PlayState.prototype = $extend(flixel_FlxState.prototype,{
 		ship.set_antialiasing(true);
 		var TEXTBG = new flixel_FlxSprite(0,350).makeGraphic(700,500,-16777216);
 		this.add(TEXTBG);
-		this.FUNNYTEXT = new flixel_addons_text_FlxTypeText(10,350,650,"Day 1 of being on this ship. The UNITED STATES government brought me on this mission. They told me to search for something bright on the ocean floor, but not anything else, so I guess I'll know when I'll find it?.",20);
+		this.FUNNYTEXT = new flixel_addons_text_FlxTypeText(10,350,630,"Day 1 of being on this ship. The UNITED STATES government brought me on this mission. They told me to search for something bright on the ocean floor, but not anything else, so I guess I'll know when I'll find it?.",20);
 		this.add(this.FUNNYTEXT);
 		this.FUNNYTEXT.start(0.03,false,false);
 		this.MOUSEBOXIGUESS = new flixel_FlxSprite(flixel_FlxG.mouse.x,flixel_FlxG.mouse.y).makeGraphic(50,50,-8355712);
 		this.add(this.MOUSEBOXIGUESS);
+		var SWITCH = new flixel_FlxSprite(300,100).makeGraphic(50,50,-16777216);
+		this.add(SWITCH);
 		flixel_FlxState.prototype.create.call(this);
 	}
 	,loadLevel: function(levelid) {
 	}
 	,update: function(elapsed) {
+		var _gthis = this;
 		this.MOUSEBOXIGUESS.set_x(flixel_FlxG.mouse.x - 25);
 		this.MOUSEBOXIGUESS.set_y(flixel_FlxG.mouse.y - 25);
 		var tmp;
@@ -8022,7 +8025,20 @@ PlayState.prototype = $extend(flixel_FlxState.prototype,{
 			tmp = false;
 		}
 		if(tmp) {
-			this.FUNNYTEXT.resetText("Oh, forgot my coffee! Always good to wake up in the morning to \nthe ocean and a good cup of coffee.");
+			this.CAFFINE.set_x(this.CAFFINE.set_y(1000));
+			switch(PlayState.level) {
+			case 1:
+				this.FUNNYTEXT.resetText("Oh, forgot my coffee! Always good to wake up in the morning to the ocean and a good cup of coffee.");
+				this.FUNNYTEXT.start(0.03,false,false);
+				new flixel_util_FlxTimer().start(10,function(tmr) {
+					_gthis.FUNNYTEXT.resetText("Welp, time to do my tasks! It's as simple as flipping switches to keep the ship around, as I've been told.");
+					_gthis.FUNNYTEXT.start(0.03,false,false);
+				});
+				break;
+			case 2:
+				this.FUNNYTEXT.resetText("Day 2 of coffee! Planning to make this a tradition now. It's very calming, although I wished I had something to read.");
+				break;
+			}
 			this.FUNNYTEXT.start(0.03,false,false);
 		}
 		if(PlayState.lastlevel != PlayState.level) {
@@ -70162,7 +70178,7 @@ var lime_utils_AssetCache = function() {
 	this.audio = new haxe_ds_StringMap();
 	this.font = new haxe_ds_StringMap();
 	this.image = new haxe_ds_StringMap();
-	this.version = 297267;
+	this.version = 712058;
 };
 $hxClasses["lime.utils.AssetCache"] = lime_utils_AssetCache;
 lime_utils_AssetCache.__name__ = "lime.utils.AssetCache";

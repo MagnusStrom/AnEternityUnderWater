@@ -9,6 +9,7 @@ import flixel.graphics.frames.FlxAtlasFrames;
 import flixel.text.FlxText;
 import flixel.util.FlxCollision;
 import flixel.util.FlxColor;
+import flixel.util.FlxTimer;
 import openfl.ui.Mouse;
 
 class PlayState extends FlxState
@@ -38,7 +39,7 @@ class PlayState extends FlxState
 		ship.antialiasing = true;
 		var TEXTBG:FlxSprite = new FlxSprite(0, 350).makeGraphic(700, 500, FlxColor.BLACK);
 		add(TEXTBG);
-		FUNNYTEXT = new FlxTypeText(10, 350, 650,
+		FUNNYTEXT = new FlxTypeText(10, 350, 630,
 			"Day 1 of being on this ship. The UNITED STATES government brought me on this mission. They told me to search for something bright on the ocean floor, but not anything else, so I guess I'll know when I'll find it?.",
 			20);
 		add(FUNNYTEXT);
@@ -46,6 +47,9 @@ class PlayState extends FlxState
 
 		MOUSEBOXIGUESS = new FlxSprite(FlxG.mouse.x, FlxG.mouse.y).makeGraphic(50, 50, FlxColor.GRAY);
 		add(MOUSEBOXIGUESS);
+
+		var SWITCH:FlxSprite = new FlxSprite(300, 200).makeGraphic(50, 50, FlxColor.BLACK);
+		add(SWITCH);
 
 		super.create();
 	}
@@ -62,7 +66,21 @@ class PlayState extends FlxState
 		// collisions ig idk whatever thatis
 		if (FlxG.overlap(MOUSEBOXIGUESS, CAFFINE) && FlxG.mouse.pressed)
 		{
-			FUNNYTEXT.resetText("Oh, forgot my coffee! Always good to wake up in the morning to \nthe ocean and a good cup of coffee.");
+			CAFFINE.x = CAFFINE.y = 1000; // IM LAZY LOOOL
+			switch (level)
+			{
+				case 1:
+					FUNNYTEXT.resetText("Oh, forgot my coffee! Always good to wake up in the morning to the ocean and a good cup of coffee.");
+					FUNNYTEXT.start(0.03, false, false);
+					// GIVING THE PLAYER A FUCKING HIT LMFAOOOOOOO
+					new FlxTimer().start(10, function(tmr:FlxTimer)
+					{
+						FUNNYTEXT.resetText("Welp, time to do my tasks! It's as simple as flipping the black switches to yellow to keep the ship alive, as I've been told.");
+						FUNNYTEXT.start(0.03, false, false);
+					});
+				case 2:
+					FUNNYTEXT.resetText("Day 2 of coffee! Planning to make this a tradition now. It's very calming, although I wished I had something to read. Time to do my tasks.");
+			}
 			FUNNYTEXT.start(0.03, false, false);
 			// N IF HASNT DONT CHORES GET PISSED. GOD DAMN THIS IS SUCH BAD FRAMEWORK IM SOBBING. I BETTER GET MY SHIT TOGETHER LMFAOOOOOO
 		}
