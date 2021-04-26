@@ -55,6 +55,12 @@ class PlayState extends FlxState
 	var ship:FlxSprite;
 	var highShitLOL:FlxEffectSprite;
 
+	var DESCTEXT:FlxText;
+
+	var funnyframe:FlxSprite;
+	var notsofunnyframe:FlxSprite;
+	var badBoiScene:Bool = false;
+
 	override public function create()
 	{
 		FlxG.fixedTimestep = false;
@@ -96,6 +102,16 @@ class PlayState extends FlxState
 		add(highShitLOL);
 		highShitLOL.visible = false;
 
+		funnyframe = new FlxSprite(0, 0).loadGraphic("assets/images/THEFUCKINGCUP.png");
+		funnyframe.screenCenter();
+		add(funnyframe);
+		funnyframe.visible = false;
+
+		notsofunnyframe = new FlxSprite(0, 0).loadGraphic("assets/images/itspissing.png");
+		notsofunnyframe.screenCenter();
+		add(notsofunnyframe);
+		notsofunnyframe.visible = false;
+
 		var TEXTBG:FlxSprite = new FlxSprite(0, 350).makeGraphic(700, 500, FlxColor.BLACK);
 		add(TEXTBG);
 		FUNNYTEXT = new FlxTypeText(10, 350, 630,
@@ -108,12 +124,11 @@ class PlayState extends FlxState
 		add(MOUSEBOXIGUESS);
 		MOUSEBOXIGUESS.visible = false;
 
+		DESCTEXT = new FlxText(FlxG.mouse.x, FlxG.mouse.y, 1000, "", 12);
+		add(DESCTEXT);
+
 		SWITCHGUI1 = new Switch(-50, 25);
 		add(SWITCHGUI1);
-		SWITCHGUI2 = new Switch(-150, 25);
-		add(SWITCHGUI2);
-		SWITCHGUI3 = new Switch(-250, 25);
-		add(SWITCHGUI3);
 
 		super.create();
 	}
@@ -196,9 +211,46 @@ class PlayState extends FlxState
 
 	override public function update(elapsed:Float)
 	{
-		MOUSEBOXIGUESS.x = FlxG.mouse.x - 25;
-		MOUSEBOXIGUESS.y = FlxG.mouse.y - 25;
+		MOUSEBOXIGUESS.x = DESCTEXT.x = FlxG.mouse.x - 25;
+		MOUSEBOXIGUESS.y = DESCTEXT.y = FlxG.mouse.y - 25;
 
+		// LOOOOL IM LAZY
+		if (FlxG.overlap(MOUSEBOXIGUESS, CAFFINE) && badBoiScene == false)
+		{
+			DESCTEXT.text = "Coffee: Click to drink";
+		}
+		else if (FlxG.overlap(MOUSEBOXIGUESS, SWITCH) && level < 9)
+		{
+			DESCTEXT.text = "Switch: Click to flip";
+		}
+		else if (badBoiScene == true)
+		{
+			DESCTEXT.text = "Coffee: Click to drink";
+		}
+		else
+		{
+			DESCTEXT.text = "";
+		}
+
+		if (badBoiScene == true && FlxG.mouse.pressed)
+		{
+			badBoiScene = false;
+			var CUTTINGREALLOL:FlxSprite = new FlxSprite(0, 0).makeGraphic(1000, 1000, FlxColor.BLACK);
+			add(CUTTINGREALLOL);
+			var sound:FlxSound = new FlxSound().loadEmbedded("assets/sounds/TSUSIPREAL.mp3", false, true);
+			sound.volume = 0.5;
+			sound.play();
+			new FlxTimer().start(5, function(tmr:FlxTimer)
+			{
+				var sound:FlxSound = new FlxSound().loadEmbedded("assets/sounds/hacking.mp3", false, true);
+				sound.volume = 0.5;
+				sound.play();
+				new FlxTimer().start(3, function(tmr:FlxTimer)
+				{
+					FlxG.switchState(new CreditsState());
+				});
+			});
+		}
 		// SWITCH COLLISIONS
 		// (FlxG.overlap(MOUSEBOXIGUESS, SWITCH) // collisions ig idk whatever thatis
 		if (FlxG.overlap(MOUSEBOXIGUESS, OXY) && FlxG.mouse.pressed && doneTasks == false)
@@ -214,12 +266,15 @@ class PlayState extends FlxState
 			}
 		}
 
-		if (FlxG.overlap(MOUSEBOXIGUESS, CAFFINE) && FlxG.mouse.pressed && doneTasks == false)
+		if (FlxG.overlap(MOUSEBOXIGUESS, CAFFINE) && FlxG.mouse.pressed && doneTasks == false && badBoiScene == false)
 		{
 			CAFFINE.x = CAFFINE.y = 1000; // IM LAZY LOOOL
-			var sound:FlxSound = new FlxSound().loadEmbedded("assets/sounds/TSUSIPREAL.mp3", false, true);
-			sound.volume = 0.5;
-			sound.play();
+			if (level < 9)
+			{
+				var sound:FlxSound = new FlxSound().loadEmbedded("assets/sounds/TSUSIPREAL.mp3", false, true);
+				sound.volume = 0.5;
+				sound.play();
+			}
 			switch (level)
 			{
 				case 1:
@@ -289,11 +344,14 @@ class PlayState extends FlxState
 					});
 				default:
 					// SHOW FRAME HERE?
+					// YES
+					SWITCHGUI1.visible = false;
+					funnyframe.visible = true;
 					FUNNYTEXT.resetText("This....");
 					FUNNYTEXT.start(0.03, false, false);
 					new FlxTimer().start(3, function(tmr:FlxTimer)
 					{
-						FUNNYTEXT.resetText("This is too much.");
+						FUNNYTEXT.resetText("This coffee is the same.");
 						FUNNYTEXT.start(0.03, false, false);
 						new FlxTimer().start(3, function(tmr:FlxTimer)
 						{
@@ -309,7 +367,7 @@ class PlayState extends FlxState
 									FUNNYTEXT.start(0.03, false, false);
 									new FlxTimer().start(3, function(tmr:FlxTimer)
 									{
-										FUNNYTEXT.resetText("Maybe, the taste of blood would suffice.");
+										FUNNYTEXT.resetText("Maybe the taste of blood...");
 										FUNNYTEXT.start(0.03, false, false);
 										new FlxTimer().start(5, function(tmr:FlxTimer)
 										{
@@ -341,11 +399,17 @@ class PlayState extends FlxState
 											{
 												trace("scream");
 												// SCREAM
-
+												// pp
 												new FlxTimer().start(5, function(tmr:FlxTimer)
 												{
+													badBoiScene = true;
+													funnyframe.visible = false;
+													notsofunnyframe.visible = true;
 													trace("Back");
-													FlxG.camera.color = FlxColor.TRANSPARENT;
+													FlxG.camera.color = FlxColor.WHITE;
+													FUNNYTEXT.resetText("...");
+													FUNNYTEXT.start(0.03, false, false);
+
 													ship.frames = FlxAtlasFrames.fromSparrow("assets/images/SHIPINSANE.png", "assets/images/SHIPINSANE.xml");
 													CUTTINGREALLOL.visible = false;
 												});
@@ -361,7 +425,7 @@ class PlayState extends FlxState
 			// N IF HASNT DONT CHORES GET PISSED. GOD DAMN THIS IS SUCH BAD FRAMEWORK IM SOBBING. I BETTER GET MY SHIT TOGETHER LMFAOOOOOO
 		}
 
-		if (FlxG.overlap(MOUSEBOXIGUESS, SWITCH) && FlxG.mouse.pressed)
+		if (FlxG.overlap(MOUSEBOXIGUESS, SWITCH) && FlxG.mouse.pressed && level < 9)
 		{
 			CAFFINE.x = 138;
 			CAFFINE.y = 227;
