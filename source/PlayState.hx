@@ -238,6 +238,17 @@ class PlayState extends FlxState
 					});
 				case 8:
 					FUNNYTEXT.resetText("This coffee feels dry. Must be the oxygen.");
+					FUNNYTEXT.start(0.03, false, false);
+					new FlxTimer().start(5, function(tmr:FlxTimer)
+					{
+						FUNNYTEXT.resetText("Huh, for some reason I'm tired early.");
+						FUNNYTEXT.start(0.03, false, false);
+						new FlxTimer().start(5, function(tmr:FlxTimer)
+						{
+							FUNNYTEXT.resetText("I'm gonna go to bed... To wonderful dreams.");
+							FUNNYTEXT.start(0.03, false, false);
+						});
+					});
 			}
 			FUNNYTEXT.start(0.03, false, false);
 			// N IF HASNT DONT CHORES GET PISSED. GOD DAMN THIS IS SUCH BAD FRAMEWORK IM SOBBING. I BETTER GET MY SHIT TOGETHER LMFAOOOOOO
