@@ -147,6 +147,40 @@ class PlayState extends FlxState
 				ship.visible = false;
 				FUNNYTEXT.resetText("Woah, this feels weird. It feels like my head is floating. I like this.");
 				FUNNYTEXT.start(0.03, false, false);
+			case 9:
+				FlxG.camera.color = FlxColor.GRAY;
+				FUNNYTEXT.resetText("I....");
+				FUNNYTEXT.start(0.03, false, false);
+				new FlxTimer().start(3, function(tmr:FlxTimer)
+				{
+					FUNNYTEXT.resetText("I didin't dream of anything.");
+					FUNNYTEXT.start(0.03, false, false);
+					new FlxTimer().start(3, function(tmr:FlxTimer)
+					{
+						FUNNYTEXT.resetText("It was just a gray room.");
+						FUNNYTEXT.start(0.03, false, false);
+						new FlxTimer().start(3, function(tmr:FlxTimer)
+						{
+							FUNNYTEXT.resetText("I couldn't move. I couldn't do anything.");
+							FUNNYTEXT.start(0.03, false, false);
+							new FlxTimer().start(3, function(tmr:FlxTimer)
+							{
+								FUNNYTEXT.resetText("I was forced to sit there.");
+								FUNNYTEXT.start(0.03, false, false);
+								new FlxTimer().start(3, function(tmr:FlxTimer)
+								{
+									FUNNYTEXT.resetText("I need a change. I NEED A CHANGE.");
+									FUNNYTEXT.start(0.03, false, false);
+									new FlxTimer().start(3, function(tmr:FlxTimer)
+									{
+										FUNNYTEXT.resetText("Fuck my life...");
+										FUNNYTEXT.start(0.03, false, false);
+									});
+								});
+							});
+						});
+					});
+				});
 		}
 		FlxG.camera.fade(FlxColor.WHITE, 1, true, function()
 		{
@@ -247,6 +281,79 @@ class PlayState extends FlxState
 						{
 							FUNNYTEXT.resetText("I'm gonna go to bed... To wonderful dreams.");
 							FUNNYTEXT.start(0.03, false, false);
+							FlxG.camera.fade(FlxColor.BLACK, 5, false, function()
+							{
+								level++;
+							});
+						});
+					});
+				default:
+					// SHOW FRAME HERE?
+					FUNNYTEXT.resetText("This....");
+					FUNNYTEXT.start(0.03, false, false);
+					new FlxTimer().start(3, function(tmr:FlxTimer)
+					{
+						FUNNYTEXT.resetText("This is too much.");
+						FUNNYTEXT.start(0.03, false, false);
+						new FlxTimer().start(3, function(tmr:FlxTimer)
+						{
+							FUNNYTEXT.resetText("It's the same thing. Day after day after day.");
+							FUNNYTEXT.start(0.03, false, false);
+							new FlxTimer().start(3, function(tmr:FlxTimer)
+							{
+								FUNNYTEXT.resetText("I have to drink something else.");
+								FUNNYTEXT.start(0.03, false, false);
+								new FlxTimer().start(3, function(tmr:FlxTimer)
+								{
+									FUNNYTEXT.resetText("Something, something that would wake me up... for real.");
+									FUNNYTEXT.start(0.03, false, false);
+									new FlxTimer().start(3, function(tmr:FlxTimer)
+									{
+										FUNNYTEXT.resetText("Maybe, the taste of blood would suffice.");
+										FUNNYTEXT.start(0.03, false, false);
+										new FlxTimer().start(5, function(tmr:FlxTimer)
+										{
+											var CUTTINGREALLOL:FlxSprite = new FlxSprite(0, 0).makeGraphic(1000, 1000, FlxColor.BLACK);
+											add(CUTTINGREALLOL);
+											var sound:FlxSound = new FlxSound().loadEmbedded("assets/sounds/heavybreathing.mp3", false, true);
+											sound.volume = 0.5;
+											sound.play();
+											trace("Breathe");
+											new FlxTimer().start(1, function(tmr:FlxTimer)
+											{
+												var sound:FlxSound = new FlxSound().loadEmbedded("assets/sounds/slit.mp3", false, true);
+												sound.volume = 1;
+												sound.play();
+												new FlxTimer().start(1, function(tmr:FlxTimer)
+												{
+													var sound:FlxSound = new FlxSound().loadEmbedded("assets/sounds/slit.mp3", false, true);
+													sound.volume = 1;
+													sound.play();
+													new FlxTimer().start(1, function(tmr:FlxTimer)
+													{
+														var sound:FlxSound = new FlxSound().loadEmbedded("assets/sounds/slit.mp3", false, true);
+														sound.volume = 0.5;
+														sound.play();
+													});
+												});
+											});
+											new FlxTimer().start(5, function(tmr:FlxTimer)
+											{
+												trace("scream");
+												// SCREAM
+
+												new FlxTimer().start(5, function(tmr:FlxTimer)
+												{
+													trace("Back");
+													FlxG.camera.color = FlxColor.TRANSPARENT;
+													ship.frames = FlxAtlasFrames.fromSparrow("assets/images/SHIPINSANE.png", "assets/images/SHIPINSANE.xml");
+													CUTTINGREALLOL.visible = false;
+												});
+											});
+										});
+									});
+								});
+							});
 						});
 					});
 			}
