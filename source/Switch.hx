@@ -6,6 +6,8 @@ import flixel.graphics.frames.FlxAtlasFrames;
 
 class Switch extends FlxSprite
 {
+	public var on:Bool = false;
+
 	public function new(x, y)
 	{
 		super(x, y);

@@ -51,7 +51,7 @@ class MenuState extends FlxState
 		var undertale = new FlxSound().loadEmbedded("assets/sounds/undertalemoment.mp3", false, true);
 		undertale.volume = 1;
 		undertale.play(); // NOT STOLEN FROM UNDERTALE JUST THE INTROS ARE SIMILAR CUZ THE FADE IN
-		FlxG.camera.fade(FlxColor.WHITE, 1, false, function()
+		FlxG.camera.fade(FlxColor.WHITE, 2, false, function()
 		{
 			FlxG.switchState(new PlayState());
 		});

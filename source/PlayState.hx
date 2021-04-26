@@ -1,16 +1,25 @@
 package;
 
+import WiggleEffect.WiggleEffectType;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.FlxState;
 import flixel.addons.display.FlxBackdrop;
+import flixel.addons.effects.chainable.FlxEffectSprite;
+import flixel.addons.effects.chainable.FlxWaveEffect;
 import flixel.addons.text.FlxTypeText;
 import flixel.graphics.frames.FlxAtlasFrames;
+import flixel.math.FlxPoint;
 import flixel.system.FlxSound;
 import flixel.text.FlxText;
 import flixel.util.FlxCollision;
 import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
+import openfl.events.FullScreenEvent;
+import openfl.filters.ColorMatrixFilter;
+import openfl.filters.GlowFilter;
+import openfl.geom.Matrix;
+import openfl.geom.Point;
 import openfl.ui.Mouse;
 
 class PlayState extends FlxState
@@ -31,7 +40,20 @@ class PlayState extends FlxState
 	// OH NO
 	var doneTasks:Bool = false;
 
-	var SWITCHGUI:Switch;
+	var SWITCHGUI1:Switch;
+	var SWITCHGUI2:Switch;
+	var SWITCHGUI3:Switch;
+
+	var screen:FlxSprite;
+
+	public var depth = 10;
+
+	var high:Bool = false;
+
+	var wiggleShit:WiggleEffect = new WiggleEffect();
+
+	var ship:FlxSprite;
+	var highShitLOL:FlxEffectSprite;
 
 	override public function create()
 	{
@@ -53,14 +75,27 @@ class PlayState extends FlxState
 		add(funnybg);
 		funnybg.velocity.y = -100;
 
-		var ship = new FlxSprite(0, 0);
+		ship = new FlxSprite(0, 0);
+		//	ship.loadGraphic('assets/images/NOFLICKERTROLLFACE.png');
 		ship.frames = FlxAtlasFrames.fromSparrow("assets/images/FLICKER.png", "assets/images/FLICKER.xml");
-		ship.animation.addByPrefix("idle", "Symbol", 10, true);
+		ship.animation.addByPrefix("idle", "Symbol", 8, true);
 		ship.animation.play("idle"); // MIGHT MAKE THIS RANDOM LATER
 		add(ship);
 		ship.setGraphicSize(670);
 		ship.screenCenter();
 		ship.antialiasing = true;
+
+		var wave:FlxWaveEffect = new FlxWaveEffect(FlxWaveMode.ALL, 5, 0.5, 1, 10, FlxWaveDirection.HORIZONTAL);
+
+		highShitLOL = new FlxEffectSprite(ship, [wave]);
+		// highShitLOL.setGraphicSize(1000); // 670
+		// highShitLOL.screenCenter();
+		highShitLOL.scale.set(0.7, 0.7);
+		highShitLOL.x -= 150;
+		highShitLOL.y -= 110;
+		add(highShitLOL);
+		highShitLOL.visible = false;
+
 		var TEXTBG:FlxSprite = new FlxSprite(0, 350).makeGraphic(700, 500, FlxColor.BLACK);
 		add(TEXTBG);
 		FUNNYTEXT = new FlxTypeText(10, 350, 630,
@@ -73,25 +108,49 @@ class PlayState extends FlxState
 		add(MOUSEBOXIGUESS);
 		MOUSEBOXIGUESS.visible = false;
 
-		SWITCHGUI = new Switch(-50, 25);
-		add(SWITCHGUI);
+		SWITCHGUI1 = new Switch(-50, 25);
+		add(SWITCHGUI1);
+		SWITCHGUI2 = new Switch(-150, 25);
+		add(SWITCHGUI2);
+		SWITCHGUI3 = new Switch(-250, 25);
+		add(SWITCHGUI3);
 
 		super.create();
 	}
 
 	function loadLevel(levelid)
 	{
+		SWITCHGUI1.switchState("off");
 		// FADE IN
 		switch (levelid)
 		{
 			case 2:
-				FUNNYTEXT.resetText("Another amazing day! I wish I had more to do, but I still like just relaxing and watching the ocean go by.");
+				FUNNYTEXT.resetText("Another day! I wish I had more to do, but I still like just relaxing and watching the ocean go by.");
+				FUNNYTEXT.start(0.03, false, false);
+			case 3:
+				FUNNYTEXT.resetText("Another day, another coffee to drink, another switch to press. Better get to it.");
+				FUNNYTEXT.start(0.03, false, false);
+			case 4:
+				FUNNYTEXT.resetText("Good morning to me. Just gotta remember to keep on pressing. I'll make it to the bottom eventually.");
+				FUNNYTEXT.start(0.03, false, false);
+			case 5:
+				FUNNYTEXT.resetText("I wish I could change the inside of the ship; the scenery outside is always the same.");
+				FUNNYTEXT.start(0.03, false, false);
+			case 6:
+				FUNNYTEXT.resetText("It's been quite a while since I started. I wonder what would happen if I didn't press the switches..?");
+				FUNNYTEXT.start(0.03, false, false);
+			case 7:
+				FUNNYTEXT.resetText("I'm starting to lose track of time down here. I'm going to let my curiosity get the best of me. Let's see what happens if I don't press the switches.");
+				FUNNYTEXT.start(0.03, false, false);
+			case 8:
+				highShitLOL.visible = true;
+				ship.visible = false;
+				FUNNYTEXT.resetText("Woah, this feels weird. It feels like my head is floating. I like this.");
 				FUNNYTEXT.start(0.03, false, false);
 		}
 		FlxG.camera.fade(FlxColor.WHITE, 1, true, function()
 		{
 			// RESET SHIT
-			SWITCHGUI.switchState("off");
 			doneTasks = false;
 			CAFFINE.x = 138;
 			CAFFINE.y = 227;
@@ -105,6 +164,9 @@ class PlayState extends FlxState
 	{
 		MOUSEBOXIGUESS.x = FlxG.mouse.x - 25;
 		MOUSEBOXIGUESS.y = FlxG.mouse.y - 25;
+
+		// SWITCH COLLISIONS
+		// (FlxG.overlap(MOUSEBOXIGUESS, SWITCH) // collisions ig idk whatever thatis
 		if (FlxG.overlap(MOUSEBOXIGUESS, OXY) && FlxG.mouse.pressed && doneTasks == false)
 		{
 			OXY.x = 1000;
@@ -117,7 +179,7 @@ class PlayState extends FlxState
 				default:
 			}
 		}
-		// collisions ig idk whatever thatis
+
 		if (FlxG.overlap(MOUSEBOXIGUESS, CAFFINE) && FlxG.mouse.pressed && doneTasks == false)
 		{
 			CAFFINE.x = CAFFINE.y = 1000; // IM LAZY LOOOL
@@ -129,14 +191,53 @@ class PlayState extends FlxState
 				case 1:
 					FUNNYTEXT.resetText("Oh, forgot my coffee! Always good to wake up in the morning to the ocean and a good cup of coffee.");
 					FUNNYTEXT.start(0.03, false, false);
-					// GIVING THE PLAYER A FUCKING HIT LMFAOOOOOOO
-					new FlxTimer().start(5, function(tmr:FlxTimer)
+				/*		new FlxTimer().start(5, function(tmr:FlxTimer)
 					{
 						FUNNYTEXT.resetText("Time to do my tasks! It's as simple as flipping the black switches to yellow to keep the ship alive, as I've been told.");
 						FUNNYTEXT.start(0.03, false, false);
-					});
+				});*/ // big lazy
 				case 2:
 					FUNNYTEXT.resetText("Day 2 of coffee! Planning to make this a tradition now. It's very calming, although I wished I had something to read. Time to do my tasks.");
+				case 3:
+					FUNNYTEXT.resetText("I wish my coffee was warmer.");
+				case 4:
+					FUNNYTEXT.resetText("Even this is getting a little repetitive, but the energy boost is well needed. Back to pressing.");
+				case 5:
+					FUNNYTEXT.resetText("I feel a little better. Now, to press those switches.");
+				case 6:
+					FUNNYTEXT.resetText("That coffee always gets me in the working mood.");
+				case 7:
+					FUNNYTEXT.resetText("The effects of this coffee are getting duller.");
+					FUNNYTEXT.start(0.03, false, false);
+					new FlxTimer().start(5, function(tmr:FlxTimer)
+					{
+						FUNNYTEXT.resetText("Now I just, chill, I guess.");
+						FUNNYTEXT.start(0.03, false, false);
+						new FlxTimer().start(9, function(tmr:FlxTimer)
+						{
+							FUNNYTEXT.resetText("Wow, there really is nothing to do in here.");
+							FUNNYTEXT.start(0.03, false, false);
+							new FlxTimer().start(5, function(tmr:FlxTimer)
+							{
+								FUNNYTEXT.resetText("The background is so repetitive...");
+								FUNNYTEXT.start(0.03, false, false);
+								new FlxTimer().start(7, function(tmr:FlxTimer)
+								{
+									FUNNYTEXT.resetText("I suppose i'm done for the night. I don't feel a change right now, but I'll see what happens tomorrow, I guess.");
+									FUNNYTEXT.start(0.03, false, false);
+									new FlxTimer().start(6, function(tmr:FlxTimer)
+									{
+										FlxG.camera.fade(FlxColor.BLACK, 7, false, function()
+										{
+											level++;
+										});
+									});
+								});
+							});
+						});
+					});
+				case 8:
+					FUNNYTEXT.resetText("This coffee feels dry. Must be the oxygen.");
 			}
 			FUNNYTEXT.start(0.03, false, false);
 			// N IF HASNT DONT CHORES GET PISSED. GOD DAMN THIS IS SUCH BAD FRAMEWORK IM SOBBING. I BETTER GET MY SHIT TOGETHER LMFAOOOOOO
@@ -146,12 +247,15 @@ class PlayState extends FlxState
 		{
 			CAFFINE.x = 138;
 			CAFFINE.y = 227;
-			doneTasks = true;
+			if (level < 7)
+			{
+				doneTasks = true;
+				var sound:FlxSound = new FlxSound().loadEmbedded("assets/sounds/click.ogg", false, true);
+				SWITCHGUI1.switchState("on");
+				sound.volume = 0.3;
+				sound.play();
+			}
 			SWITCH.x = SWITCH.y = 1000; // IM LAZY LOOOL
-			var sound:FlxSound = new FlxSound().loadEmbedded("assets/sounds/click.ogg", false, true);
-			SWITCHGUI.switchState("on");
-			sound.volume = 0.3;
-			sound.play();
 			switch (level)
 			{
 				case 1:
@@ -190,6 +294,57 @@ class PlayState extends FlxState
 							});
 						});
 					});
+				case 3:
+					FUNNYTEXT.resetText("Nice satisfying presses. Just wish I had something better to do...");
+					FUNNYTEXT.start(0.03, false, false);
+					new FlxTimer().start(5, function(tmr:FlxTimer)
+					{
+						FUNNYTEXT.resetText("This is starting to get a little boring.. But I should be okay!");
+						FUNNYTEXT.start(0.03, false, false);
+						new FlxTimer().start(5, function(tmr:FlxTimer)
+						{
+							FUNNYTEXT.resetText("We should be at the ocean floor any day now.");
+							FUNNYTEXT.start(0.03, false, false);
+
+							new FlxTimer().start(5, function(tmr:FlxTimer)
+							{
+								FlxG.camera.fade(FlxColor.BLACK, 2, false, function()
+								{
+									level++;
+								});
+							});
+						});
+					});
+				case 4:
+					FUNNYTEXT.resetText("Alright. I should get some rest, maybe i'll have an interesting dream.");
+					FUNNYTEXT.start(0.03, false, false);
+					FlxG.camera.fade(FlxColor.BLACK, 7, false, function()
+					{
+						level++;
+					});
+				case 5:
+					FUNNYTEXT.resetText("Done. Now, to sleep in hopes of waking up somewhere new");
+					FUNNYTEXT.start(0.03, false, false);
+					FlxG.camera.fade(FlxColor.BLACK, 7, false, function()
+					{
+						level++;
+					});
+				case 6:
+					FUNNYTEXT.resetText("I'm done for today. Just have to keep on going.");
+					FUNNYTEXT.start(0.03, false, false);
+					FlxG.camera.fade(FlxColor.BLACK, 7, false, function()
+					{
+						level++;
+					});
+				case 7:
+					FUNNYTEXT.resetText("No switch presses for today.");
+					FUNNYTEXT.start(0.03, false, false);
+				case 8:
+					FUNNYTEXT.resetText("No switch presses. I like this feeling.");
+					FUNNYTEXT.start(0.03, false, false);
+				default:
+					FUNNYTEXT.resetText("No switch presses.");
+					FUNNYTEXT.start(0.03, false, false);
 			}
 		}
 
@@ -206,7 +361,7 @@ class PlayState extends FlxState
 			FUNNYTEXT.start(0.03, false, false);
 			// N IF HASNT DONT CHORES GET PISSED. GOD DAMN THIS IS SUCH BAD FRAMEWORK IM SOBBING. I BETTER GET MY SHIT TOGETHER LMFAOOOOOO
 		}
-		trace(FlxG.mouse.x + ", " + FlxG.mouse.y);
+		// trace(FlxG.mouse.x + ", " + FlxG.mouse.y);
 		// funny
 		if (lastlevel != level)
 		{
@@ -216,6 +371,10 @@ class PlayState extends FlxState
 		else
 		{
 			lastlevel = level;
+		}
+		if (FlxG.keys.anyPressed([L]))
+		{
+			level++;
 		}
 		super.update(elapsed);
 	}

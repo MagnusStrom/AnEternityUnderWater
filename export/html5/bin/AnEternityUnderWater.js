@@ -893,7 +893,7 @@ ApplicationMain.main = function() {
 ApplicationMain.create = function(config) {
 	var app = new openfl_display_Application();
 	ManifestResources.init(config);
-	app.meta.h["build"] = "18";
+	app.meta.h["build"] = "19";
 	app.meta.h["company"] = "HaxeFlixel";
 	app.meta.h["file"] = "AnEternityUnderWater";
 	app.meta.h["name"] = "AnEternityUnderWater";
@@ -4406,7 +4406,7 @@ ManifestResources.init = function(config) {
 	openfl_text_Font.registerFont(_$_$ASSET_$_$OPENFL_$_$flixel_$fonts_$nokiafc22_$ttf);
 	openfl_text_Font.registerFont(_$_$ASSET_$_$OPENFL_$_$flixel_$fonts_$monsterrat_$ttf);
 	var bundle;
-	var data = "{\"name\":null,\"assets\":\"aoy4:pathy36:assets%2Fmusic%2Fmusic-goes-here.txty4:sizezy4:typey4:TEXTy2:idR1y7:preloadtgoR2i1320624R3y5:MUSICR5y29:assets%2Fmusic%2FREALSHIT.oggy9:pathGroupaR8hR6tgoR0y39:assets%2Fimages%2Fswitches%2FLeftON.pngR2i29802R3y5:IMAGER5R10R6tgoR0y40:assets%2Fimages%2Fswitches%2FLeftOFF.pngR2i24273R3R11R5R12R6tgoR0y26:assets%2Fimages%2Fship.pngR2i218170R3R11R5R13R6tgoR0y33:assets%2Fimages%2FINTROSCREEN.pngR2i259839R3R11R5R14R6tgoR0y36:assets%2Fimages%2FPLAY_THE_THIRD.pngR2i333545R3R11R5R15R6tgoR0y32:assets%2Fimages%2FTSUISJESUS.pngR2i181367R3R11R5R16R6tgoR0y36:assets%2Fimages%2FPLAY_THE_THIRD.xmlR2i1431R3R4R5R17R6tgoR0y29:assets%2Fimages%2FFLICKER.pngR2i1264527R3R11R5R18R6tgoR0y29:assets%2Fimages%2FFLICKER.xmlR2i5972R3R4R5R19R6tgoR0y27:assets%2Fimages%2Ftiles.pngR2i1056R3R11R5R20R6tgoR0y26:assets%2Fimages%2Fplay.xmlR2i1519R3R4R5R21R6tgoR0y26:assets%2Fimages%2Fplay.pngR2i219991R3R11R5R22R6tgoR0y36:assets%2Fimages%2Fimages-go-here.txtR2zR3R4R5R23R6tgoR0y24:assets%2Fimages%2Fbg.pngR2i371991R3R11R5R24R6tgoR2i18285R3R7R5y32:assets%2Fsounds%2FTSUSIPREAL.mp3R9aR25hR6tgoR2i34982R3R7R5y37:assets%2Fsounds%2Fundertalemoment.mp3R9aR26hR6tgoR0y36:assets%2Fsounds%2Fsounds-go-here.txtR2zR3R4R5R27R6tgoR2i10286R3y5:SOUNDR5y27:assets%2Fsounds%2Fclick.oggR9aR29hR6tgoR0y34:assets%2Fdata%2Fdata-goes-here.txtR2zR3R4R5R30R6tgoR2i39706R3R7R5y28:flixel%2Fsounds%2Fflixel.mp3R9aR31y28:flixel%2Fsounds%2Fflixel.ogghR6tgoR2i2114R3R7R5y26:flixel%2Fsounds%2Fbeep.mp3R9aR33y26:flixel%2Fsounds%2Fbeep.ogghR6tgoR2i5794R3R28R5R34R9aR33R34hgoR2i33629R3R28R5R32R9aR31R32hgoR2i15744R3y4:FONTy9:classNamey35:__ASSET__flixel_fonts_nokiafc22_ttfR5y30:flixel%2Ffonts%2Fnokiafc22.ttfR6tgoR2i29724R3R35R36y36:__ASSET__flixel_fonts_monsterrat_ttfR5y31:flixel%2Ffonts%2Fmonsterrat.ttfR6tgoR0y33:flixel%2Fimages%2Fui%2Fbutton.pngR2i519R3R11R5R41R6tgoR0y36:flixel%2Fimages%2Flogo%2Fdefault.pngR2i3280R3R11R5R42R6tgoR0y44:flixel%2Fflixel-ui%2Fimg%2Fdropdown_mark.pngR2i156R3R11R5R43R6tgoR0y40:flixel%2Fflixel-ui%2Fimg%2Fplus_mark.pngR2i147R3R11R5R44R6tgoR0y36:flixel%2Fflixel-ui%2Fimg%2Fradio.pngR2i191R3R11R5R45R6tgoR0y48:flixel%2Fflixel-ui%2Fimg%2Fbutton_arrow_left.pngR2i459R3R11R5R46R6tgoR0y42:flixel%2Fflixel-ui%2Fimg%2Fbutton_thin.pngR2i247R3R11R5R47R6tgoR0y34:flixel%2Fflixel-ui%2Fimg%2Ftab.pngR2i201R3R11R5R48R6tgoR0y41:flixel%2Fflixel-ui%2Fimg%2Ffinger_big.pngR2i1724R3R11R5R49R6tgoR0y36:flixel%2Fflixel-ui%2Fimg%2Finvis.pngR2i128R3R11R5R50R6tgoR0y43:flixel%2Fflixel-ui%2Fimg%2Fchrome_inset.pngR2i192R3R11R5R51R6tgoR0y44:flixel%2Fflixel-ui%2Fimg%2Ftooltip_arrow.pngR2i18509R3R11R5R52R6tgoR0y49:flixel%2Fflixel-ui%2Fimg%2Fbutton_arrow_right.pngR2i511R3R11R5R53R6tgoR0y40:flixel%2Fflixel-ui%2Fimg%2Fradio_dot.pngR2i153R3R11R5R54R6tgoR0y37:flixel%2Fflixel-ui%2Fimg%2Fchrome.pngR2i253R3R11R5R55R6tgoR0y40:flixel%2Fflixel-ui%2Fimg%2Fcheck_box.pngR2i922R3R11R5R56R6tgoR0y44:flixel%2Fflixel-ui%2Fimg%2Fbutton_toggle.pngR2i534R3R11R5R57R6tgoR0y46:flixel%2Fflixel-ui%2Fimg%2Fbutton_arrow_up.pngR2i493R3R11R5R58R6tgoR0y41:flixel%2Fflixel-ui%2Fimg%2Fminus_mark.pngR2i136R3R11R5R59R6tgoR0y42:flixel%2Fflixel-ui%2Fimg%2Fchrome_flat.pngR2i212R3R11R5R60R6tgoR0y37:flixel%2Fflixel-ui%2Fimg%2Fswatch.pngR2i185R3R11R5R61R6tgoR0y43:flixel%2Fflixel-ui%2Fimg%2Fchrome_light.pngR2i214R3R11R5R62R6tgoR0y38:flixel%2Fflixel-ui%2Fimg%2Fhilight.pngR2i129R3R11R5R63R6tgoR0y41:flixel%2Fflixel-ui%2Fimg%2Fcheck_mark.pngR2i946R3R11R5R64R6tgoR0y39:flixel%2Fflixel-ui%2Fimg%2Ftab_back.pngR2i210R3R11R5R65R6tgoR0y34:flixel%2Fflixel-ui%2Fimg%2Fbox.pngR2i912R3R11R5R66R6tgoR0y43:flixel%2Fflixel-ui%2Fimg%2Ffinger_small.pngR2i294R3R11R5R67R6tgoR0y37:flixel%2Fflixel-ui%2Fimg%2Fbutton.pngR2i433R3R11R5R68R6tgoR0y48:flixel%2Fflixel-ui%2Fimg%2Fbutton_arrow_down.pngR2i446R3R11R5R69R6tgoR0y44:flixel%2Fflixel-ui%2Fxml%2Fdefault_popup.xmlR2i1848R3R4R5R70R6tgoR0y53:flixel%2Fflixel-ui%2Fxml%2Fdefault_loading_screen.xmlR2i1953R3R4R5R71R6tgoR0y39:flixel%2Fflixel-ui%2Fxml%2Fdefaults.xmlR2i1263R3R4R5R72R6tgh\",\"rootPath\":null,\"version\":2,\"libraryArgs\":[],\"libraryType\":null}";
+	var data = "{\"name\":null,\"assets\":\"aoy4:pathy36:assets%2Fmusic%2Fmusic-goes-here.txty4:sizezy4:typey4:TEXTy2:idR1y7:preloadtgoR2i1320624R3y5:MUSICR5y29:assets%2Fmusic%2FREALSHIT.oggy9:pathGroupaR8hR6tgoR0y39:assets%2Fimages%2Fswitches%2FLeftON.pngR2i29802R3y5:IMAGER5R10R6tgoR0y40:assets%2Fimages%2Fswitches%2FLeftOFF.pngR2i24273R3R11R5R12R6tgoR0y31:assets%2Fimages%2Fdepth%2F8.pngR2i1200R3R11R5R13R6tgoR0y31:assets%2Fimages%2Fdepth%2F9.pngR2i997R3R11R5R14R6tgoR0y31:assets%2Fimages%2Fdepth%2F4.pngR2i786R3R11R5R15R6tgoR0y31:assets%2Fimages%2Fdepth%2F5.pngR2i868R3R11R5R16R6tgoR0y31:assets%2Fimages%2Fdepth%2F7.pngR2i640R3R11R5R17R6tgoR0y31:assets%2Fimages%2Fdepth%2F6.pngR2i1018R3R11R5R18R6tgoR0y31:assets%2Fimages%2Fdepth%2F2.pngR2i756R3R11R5R19R6tgoR0y31:assets%2Fimages%2Fdepth%2F3.pngR2i836R3R11R5R20R6tgoR0y31:assets%2Fimages%2Fdepth%2F1.pngR2i902R3R11R5R21R6tgoR0y26:assets%2Fimages%2Fship.pngR2i218170R3R11R5R22R6tgoR0y33:assets%2Fimages%2FINTROSCREEN.pngR2i259839R3R11R5R23R6tgoR0y36:assets%2Fimages%2FPLAY_THE_THIRD.pngR2i333545R3R11R5R24R6tgoR0y32:assets%2Fimages%2FTSUISJESUS.pngR2i181367R3R11R5R25R6tgoR0y36:assets%2Fimages%2FPLAY_THE_THIRD.xmlR2i1431R3R4R5R26R6tgoR0y29:assets%2Fimages%2FFLICKER.pngR2i1269030R3R11R5R27R6tgoR0y29:assets%2Fimages%2FFLICKER.xmlR2i5972R3R4R5R28R6tgoR0y27:assets%2Fimages%2Ftiles.pngR2i1056R3R11R5R29R6tgoR0y40:assets%2Fimages%2FNOFLICKERTROLLFACE.pngR2i212141R3R11R5R30R6tgoR0y26:assets%2Fimages%2Fplay.xmlR2i1519R3R4R5R31R6tgoR0y26:assets%2Fimages%2Fplay.pngR2i219991R3R11R5R32R6tgoR0y36:assets%2Fimages%2Fimages-go-here.txtR2zR3R4R5R33R6tgoR0y24:assets%2Fimages%2Fbg.pngR2i371991R3R11R5R34R6tgoR2i18285R3R7R5y32:assets%2Fsounds%2FTSUSIPREAL.mp3R9aR35hR6tgoR2i34982R3R7R5y37:assets%2Fsounds%2Fundertalemoment.mp3R9aR36hR6tgoR0y36:assets%2Fsounds%2Fsounds-go-here.txtR2zR3R4R5R37R6tgoR2i10286R3y5:SOUNDR5y27:assets%2Fsounds%2Fclick.oggR9aR39hR6tgoR0y34:assets%2Fdata%2Fdata-goes-here.txtR2zR3R4R5R40R6tgoR2i39706R3R7R5y28:flixel%2Fsounds%2Fflixel.mp3R9aR41y28:flixel%2Fsounds%2Fflixel.ogghR6tgoR2i2114R3R7R5y26:flixel%2Fsounds%2Fbeep.mp3R9aR43y26:flixel%2Fsounds%2Fbeep.ogghR6tgoR2i5794R3R38R5R44R9aR43R44hgoR2i33629R3R38R5R42R9aR41R42hgoR2i15744R3y4:FONTy9:classNamey35:__ASSET__flixel_fonts_nokiafc22_ttfR5y30:flixel%2Ffonts%2Fnokiafc22.ttfR6tgoR2i29724R3R45R46y36:__ASSET__flixel_fonts_monsterrat_ttfR5y31:flixel%2Ffonts%2Fmonsterrat.ttfR6tgoR0y33:flixel%2Fimages%2Fui%2Fbutton.pngR2i519R3R11R5R51R6tgoR0y36:flixel%2Fimages%2Flogo%2Fdefault.pngR2i3280R3R11R5R52R6tgoR0y44:flixel%2Fflixel-ui%2Fimg%2Fdropdown_mark.pngR2i156R3R11R5R53R6tgoR0y40:flixel%2Fflixel-ui%2Fimg%2Fplus_mark.pngR2i147R3R11R5R54R6tgoR0y36:flixel%2Fflixel-ui%2Fimg%2Fradio.pngR2i191R3R11R5R55R6tgoR0y48:flixel%2Fflixel-ui%2Fimg%2Fbutton_arrow_left.pngR2i459R3R11R5R56R6tgoR0y42:flixel%2Fflixel-ui%2Fimg%2Fbutton_thin.pngR2i247R3R11R5R57R6tgoR0y34:flixel%2Fflixel-ui%2Fimg%2Ftab.pngR2i201R3R11R5R58R6tgoR0y41:flixel%2Fflixel-ui%2Fimg%2Ffinger_big.pngR2i1724R3R11R5R59R6tgoR0y36:flixel%2Fflixel-ui%2Fimg%2Finvis.pngR2i128R3R11R5R60R6tgoR0y43:flixel%2Fflixel-ui%2Fimg%2Fchrome_inset.pngR2i192R3R11R5R61R6tgoR0y44:flixel%2Fflixel-ui%2Fimg%2Ftooltip_arrow.pngR2i18509R3R11R5R62R6tgoR0y49:flixel%2Fflixel-ui%2Fimg%2Fbutton_arrow_right.pngR2i511R3R11R5R63R6tgoR0y40:flixel%2Fflixel-ui%2Fimg%2Fradio_dot.pngR2i153R3R11R5R64R6tgoR0y37:flixel%2Fflixel-ui%2Fimg%2Fchrome.pngR2i253R3R11R5R65R6tgoR0y40:flixel%2Fflixel-ui%2Fimg%2Fcheck_box.pngR2i922R3R11R5R66R6tgoR0y44:flixel%2Fflixel-ui%2Fimg%2Fbutton_toggle.pngR2i534R3R11R5R67R6tgoR0y46:flixel%2Fflixel-ui%2Fimg%2Fbutton_arrow_up.pngR2i493R3R11R5R68R6tgoR0y41:flixel%2Fflixel-ui%2Fimg%2Fminus_mark.pngR2i136R3R11R5R69R6tgoR0y42:flixel%2Fflixel-ui%2Fimg%2Fchrome_flat.pngR2i212R3R11R5R70R6tgoR0y37:flixel%2Fflixel-ui%2Fimg%2Fswatch.pngR2i185R3R11R5R71R6tgoR0y43:flixel%2Fflixel-ui%2Fimg%2Fchrome_light.pngR2i214R3R11R5R72R6tgoR0y38:flixel%2Fflixel-ui%2Fimg%2Fhilight.pngR2i129R3R11R5R73R6tgoR0y41:flixel%2Fflixel-ui%2Fimg%2Fcheck_mark.pngR2i946R3R11R5R74R6tgoR0y39:flixel%2Fflixel-ui%2Fimg%2Ftab_back.pngR2i210R3R11R5R75R6tgoR0y34:flixel%2Fflixel-ui%2Fimg%2Fbox.pngR2i912R3R11R5R76R6tgoR0y43:flixel%2Fflixel-ui%2Fimg%2Ffinger_small.pngR2i294R3R11R5R77R6tgoR0y37:flixel%2Fflixel-ui%2Fimg%2Fbutton.pngR2i433R3R11R5R78R6tgoR0y48:flixel%2Fflixel-ui%2Fimg%2Fbutton_arrow_down.pngR2i446R3R11R5R79R6tgoR0y44:flixel%2Fflixel-ui%2Fxml%2Fdefault_popup.xmlR2i1848R3R4R5R80R6tgoR0y53:flixel%2Fflixel-ui%2Fxml%2Fdefault_loading_screen.xmlR2i1953R3R4R5R81R6tgoR0y39:flixel%2Fflixel-ui%2Fxml%2Fdefaults.xmlR2i1263R3R4R5R82R6tgh\",\"rootPath\":null,\"version\":2,\"libraryArgs\":[],\"libraryType\":null}";
 	var manifest = lime_utils_AssetManifest.parse(data,ManifestResources.rootPath);
 	var library = lime_utils_AssetLibrary.fromManifest(manifest);
 	lime_utils_Assets.registerLibrary("default",library);
@@ -5494,6 +5494,7 @@ MenuState.prototype = $extend(flixel_FlxState.prototype,{
 	menusprite: null
 	,sound: null
 	,create: function() {
+		flixel_FlxG.fixedTimestep = false;
 		this.sound = new flixel_system_FlxSound().loadEmbedded("assets/music/REALSHIT.ogg",false,true);
 		this.sound.set_volume(0.3);
 		this.sound.play();
@@ -5532,6 +5533,9 @@ MenuState.prototype = $extend(flixel_FlxState.prototype,{
 	,__class__: MenuState
 });
 var PlayState = function(MaxSize) {
+	this.wiggleShit = new WiggleEffect();
+	this.high = false;
+	this.depth = 10;
 	this.doneTasks = false;
 	flixel_FlxState.call(this,MaxSize);
 };
@@ -5547,7 +5551,15 @@ PlayState.prototype = $extend(flixel_FlxState.prototype,{
 	,OXY: null
 	,funnybg: null
 	,doneTasks: null
-	,SWITCHGUI: null
+	,SWITCHGUI1: null
+	,SWITCHGUI2: null
+	,SWITCHGUI3: null
+	,screen: null
+	,depth: null
+	,high: null
+	,wiggleShit: null
+	,ship: null
+	,highShitLOL: null
 	,create: function() {
 		flixel_FlxG.fixedTimestep = false;
 		this.CAFFINE = new flixel_FlxSprite(138,227).makeGraphic(100,100,-16777216);
@@ -5561,14 +5573,23 @@ PlayState.prototype = $extend(flixel_FlxState.prototype,{
 		this.funnybg = new flixel_addons_display_FlxBackdrop("assets/images/TSUISJESUS.png",0,3,true,true);
 		this.add(this.funnybg);
 		this.funnybg.velocity.set_y(-100);
-		var ship = new flixel_FlxSprite(0,0);
-		ship.set_frames(flixel_graphics_frames_FlxAtlasFrames.fromSparrow("assets/images/FLICKER.png","assets/images/FLICKER.xml"));
-		ship.animation.addByPrefix("idle","Symbol",10,true);
-		ship.animation.play("idle");
-		this.add(ship);
-		ship.setGraphicSize(670);
-		ship.screenCenter();
-		ship.set_antialiasing(true);
+		this.ship = new flixel_FlxSprite(0,0);
+		this.ship.set_frames(flixel_graphics_frames_FlxAtlasFrames.fromSparrow("assets/images/FLICKER.png","assets/images/FLICKER.xml"));
+		this.ship.animation.addByPrefix("idle","Symbol",8,true);
+		this.ship.animation.play("idle");
+		this.add(this.ship);
+		this.ship.setGraphicSize(670);
+		this.ship.screenCenter();
+		this.ship.set_antialiasing(true);
+		var wave = new flixel_addons_effects_chainable_FlxWaveEffect(flixel_addons_effects_chainable_FlxWaveMode.ALL,5,0.5,1,10,flixel_addons_effects_chainable_FlxWaveDirection.HORIZONTAL);
+		this.highShitLOL = new flixel_addons_effects_chainable_FlxEffectSprite(this.ship,[wave]);
+		this.highShitLOL.scale.set(0.7,0.7);
+		var _g = this.highShitLOL;
+		_g.set_x(_g.x - 150);
+		var _g = this.highShitLOL;
+		_g.set_y(_g.y - 110);
+		this.add(this.highShitLOL);
+		this.highShitLOL.set_visible(false);
 		var TEXTBG = new flixel_FlxSprite(0,350).makeGraphic(700,500,-16777216);
 		this.add(TEXTBG);
 		this.FUNNYTEXT = new flixel_addons_text_FlxTypeText(10,350,630,"Day 1 of being on this ship. The UNITED STATES government brought me on this mission. They told me to search for something bright on the ocean floor, but not anything else, so I guess I'll know when I'll find it?.",20);
@@ -5577,18 +5598,50 @@ PlayState.prototype = $extend(flixel_FlxState.prototype,{
 		this.MOUSEBOXIGUESS = new flixel_FlxSprite(flixel_FlxG.mouse.x,flixel_FlxG.mouse.y).makeGraphic(50,50,-8355712);
 		this.add(this.MOUSEBOXIGUESS);
 		this.MOUSEBOXIGUESS.set_visible(false);
-		this.SWITCHGUI = new Switch(-50,25);
-		this.add(this.SWITCHGUI);
+		this.SWITCHGUI1 = new Switch(-50,25);
+		this.add(this.SWITCHGUI1);
+		this.SWITCHGUI2 = new Switch(-150,25);
+		this.add(this.SWITCHGUI2);
+		this.SWITCHGUI3 = new Switch(-250,25);
+		this.add(this.SWITCHGUI3);
 		flixel_FlxState.prototype.create.call(this);
 	}
 	,loadLevel: function(levelid) {
 		var _gthis = this;
-		if(levelid == 2) {
-			this.FUNNYTEXT.resetText("Another amazing day! I wish I had more to do, but I still like just relaxing and watching the ocean go by.");
+		this.SWITCHGUI1.switchState("off");
+		switch(levelid) {
+		case 2:
+			this.FUNNYTEXT.resetText("Another day! I wish I had more to do, but I still like just relaxing and watching the ocean go by.");
 			this.FUNNYTEXT.start(0.03,false,false);
+			break;
+		case 3:
+			this.FUNNYTEXT.resetText("Another day, another coffee to drink, another switch to press. Better get to it.");
+			this.FUNNYTEXT.start(0.03,false,false);
+			break;
+		case 4:
+			this.FUNNYTEXT.resetText("Good morning to me. Just gotta remember to keep on pressing. I'll make it to the bottom eventually.");
+			this.FUNNYTEXT.start(0.03,false,false);
+			break;
+		case 5:
+			this.FUNNYTEXT.resetText("I wish I could change the inside of the ship; the scenery outside is always the same.");
+			this.FUNNYTEXT.start(0.03,false,false);
+			break;
+		case 6:
+			this.FUNNYTEXT.resetText("It's been quite a while since I started. I wonder what would happen if I didn't press the switches..?");
+			this.FUNNYTEXT.start(0.03,false,false);
+			break;
+		case 7:
+			this.FUNNYTEXT.resetText("I'm starting to lose track of time down here. I'm going to let my curiosity get the best of me. Let's see what happens if I don't press the switches.");
+			this.FUNNYTEXT.start(0.03,false,false);
+			break;
+		case 8:
+			this.highShitLOL.set_visible(true);
+			this.ship.set_visible(false);
+			this.FUNNYTEXT.resetText("Woah, this feels weird. It feels like my head is floating. I like this.");
+			this.FUNNYTEXT.start(0.03,false,false);
+			break;
 		}
 		flixel_FlxG.camera.fade(-1,1,true,function() {
-			_gthis.SWITCHGUI.switchState("off");
 			_gthis.doneTasks = false;
 			_gthis.CAFFINE.set_x(138);
 			_gthis.CAFFINE.set_y(227);
@@ -5598,6 +5651,7 @@ PlayState.prototype = $extend(flixel_FlxState.prototype,{
 	}
 	,update: function(elapsed) {
 		var _gthis = this;
+		var tmp = PlayState.level > 7 && this.high == true;
 		this.MOUSEBOXIGUESS.set_x(flixel_FlxG.mouse.x - 25);
 		this.MOUSEBOXIGUESS.set_y(flixel_FlxG.mouse.y - 25);
 		var tmp;
@@ -5631,13 +5685,49 @@ PlayState.prototype = $extend(flixel_FlxState.prototype,{
 			case 1:
 				this.FUNNYTEXT.resetText("Oh, forgot my coffee! Always good to wake up in the morning to the ocean and a good cup of coffee.");
 				this.FUNNYTEXT.start(0.03,false,false);
-				new flixel_util_FlxTimer().start(5,function(tmr) {
-					_gthis.FUNNYTEXT.resetText("Time to do my tasks! It's as simple as flipping the black switches to yellow to keep the ship alive, as I've been told.");
-					_gthis.FUNNYTEXT.start(0.03,false,false);
-				});
 				break;
 			case 2:
 				this.FUNNYTEXT.resetText("Day 2 of coffee! Planning to make this a tradition now. It's very calming, although I wished I had something to read. Time to do my tasks.");
+				break;
+			case 3:
+				this.FUNNYTEXT.resetText("I wish my coffee was warmer.");
+				break;
+			case 4:
+				this.FUNNYTEXT.resetText("Even this is getting a little repetitive, but the energy boost is well needed. Back to pressing.");
+				break;
+			case 5:
+				this.FUNNYTEXT.resetText("I feel a little better. Now, to press those switches.");
+				break;
+			case 6:
+				this.FUNNYTEXT.resetText("That coffee always gets me in the working mood.");
+				break;
+			case 7:
+				this.FUNNYTEXT.resetText("The effects of this coffee are getting duller.");
+				this.FUNNYTEXT.start(0.03,false,false);
+				new flixel_util_FlxTimer().start(5,function(tmr) {
+					_gthis.FUNNYTEXT.resetText("Now I just, chill, I guess.");
+					_gthis.FUNNYTEXT.start(0.03,false,false);
+					new flixel_util_FlxTimer().start(9,function(tmr) {
+						_gthis.FUNNYTEXT.resetText("Wow, there really is nothing to do in here.");
+						_gthis.FUNNYTEXT.start(0.03,false,false);
+						new flixel_util_FlxTimer().start(5,function(tmr) {
+							_gthis.FUNNYTEXT.resetText("The background is so repetitive...");
+							_gthis.FUNNYTEXT.start(0.03,false,false);
+							new flixel_util_FlxTimer().start(7,function(tmr) {
+								_gthis.FUNNYTEXT.resetText("I suppose i'm done for the night. I don't feel a change right now, but I'll see what happens tomorrow, I guess.");
+								_gthis.FUNNYTEXT.start(0.03,false,false);
+								new flixel_util_FlxTimer().start(6,function(tmr) {
+									flixel_FlxG.camera.fade(-16777216,7,false,function() {
+										PlayState.level++;
+									});
+								});
+							});
+						});
+					});
+				});
+				break;
+			case 8:
+				this.FUNNYTEXT.resetText("This coffee feels dry. Must be the oxygen.");
 				break;
 			}
 			this.FUNNYTEXT.start(0.03,false,false);
@@ -5652,12 +5742,14 @@ PlayState.prototype = $extend(flixel_FlxState.prototype,{
 		if(tmp) {
 			this.CAFFINE.set_x(138);
 			this.CAFFINE.set_y(227);
-			this.doneTasks = true;
+			if(PlayState.level < 7) {
+				this.doneTasks = true;
+				var sound = new flixel_system_FlxSound().loadEmbedded("assets/sounds/click.ogg",false,true);
+				this.SWITCHGUI1.switchState("on");
+				sound.set_volume(0.3);
+				sound.play();
+			}
 			this.SWITCH.set_x(this.SWITCH.set_y(1000));
-			var sound = new flixel_system_FlxSound().loadEmbedded("assets/sounds/click.ogg",false,true);
-			this.SWITCHGUI.switchState("on");
-			sound.set_volume(0.3);
-			sound.play();
 			switch(PlayState.level) {
 			case 1:
 				this.FUNNYTEXT.resetText("Switch! Switches keep the submarine alive. I guess im done for the day, heheh.");
@@ -5689,6 +5781,52 @@ PlayState.prototype = $extend(flixel_FlxState.prototype,{
 					});
 				});
 				break;
+			case 3:
+				this.FUNNYTEXT.resetText("Nice satisfying presses. Just wish I had something better to do...");
+				this.FUNNYTEXT.start(0.03,false,false);
+				new flixel_util_FlxTimer().start(5,function(tmr) {
+					_gthis.FUNNYTEXT.resetText("This is starting to get a little boring.. But I should be okay!");
+					_gthis.FUNNYTEXT.start(0.03,false,false);
+					new flixel_util_FlxTimer().start(5,function(tmr) {
+						_gthis.FUNNYTEXT.resetText("We should be at the ocean floor any day now.");
+						_gthis.FUNNYTEXT.start(0.03,false,false);
+						new flixel_util_FlxTimer().start(5,function(tmr) {
+							flixel_FlxG.camera.fade(-16777216,2,false,function() {
+								PlayState.level++;
+							});
+						});
+					});
+				});
+				break;
+			case 4:
+				this.FUNNYTEXT.resetText("Alright. I should get some rest, maybe i'll have an interesting dream.");
+				this.FUNNYTEXT.start(0.03,false,false);
+				flixel_FlxG.camera.fade(-16777216,7,false,function() {
+					PlayState.level++;
+				});
+				break;
+			case 5:
+				this.FUNNYTEXT.resetText("Done. Now, to sleep in hopes of waking up somewhere new");
+				this.FUNNYTEXT.start(0.03,false,false);
+				flixel_FlxG.camera.fade(-16777216,7,false,function() {
+					PlayState.level++;
+				});
+				break;
+			case 6:
+				this.FUNNYTEXT.resetText("I'm done for today. Just have to keep on going.");
+				this.FUNNYTEXT.start(0.03,false,false);
+				flixel_FlxG.camera.fade(-16777216,7,false,function() {
+					PlayState.level++;
+				});
+				break;
+			case 7:
+				this.FUNNYTEXT.resetText("No switch presses for today.");
+				this.FUNNYTEXT.start(0.03,false,false);
+				break;
+			case 8:
+				this.FUNNYTEXT.resetText("No switch presses. I like this feeling.");
+				this.FUNNYTEXT.start(0.03,false,false);
+				break;
 			}
 		}
 		var tmp;
@@ -5706,12 +5844,14 @@ PlayState.prototype = $extend(flixel_FlxState.prototype,{
 			}
 			this.FUNNYTEXT.start(0.03,false,false);
 		}
-		haxe_Log.trace(flixel_FlxG.mouse.x + ", " + flixel_FlxG.mouse.y,{ fileName : "source/PlayState.hx", lineNumber : 209, className : "PlayState", methodName : "update"});
 		if(PlayState.lastlevel != PlayState.level) {
 			this.loadLevel(PlayState.level);
 			PlayState.lastlevel = PlayState.level;
 		} else {
 			PlayState.lastlevel = PlayState.level;
+		}
+		if(flixel_FlxG.keys.checkKeyArrayState([76],1)) {
+			PlayState.level++;
 		}
 		flixel_FlxState.prototype.update.call(this,elapsed);
 	}
@@ -8437,6 +8577,7 @@ flixel_FlxSprite.prototype = $extend(flixel_FlxObject.prototype,{
 	,__properties__: $extend(flixel_FlxObject.prototype.__properties__,{set_clipRect:"set_clipRect",set_color:"set_color",set_blend:"set_blend",set_flipY:"set_flipY",set_flipX:"set_flipX",set_facing:"set_facing",set_alpha:"set_alpha",set_graphic:"set_graphic",set_frames:"set_frames",set_frame:"set_frame",set_pixels:"set_pixels",get_pixels:"get_pixels",set_antialiasing:"set_antialiasing",set_useFramePixels:"set_useFramePixels"})
 });
 var Switch = function(x,y) {
+	this.on = false;
 	flixel_FlxSprite.call(this,x,y);
 	this.loadGraphic("assets/images/switches/LeftOFF.png");
 	this.setGraphicSize(100);
@@ -8445,7 +8586,8 @@ $hxClasses["Switch"] = Switch;
 Switch.__name__ = "Switch";
 Switch.__super__ = flixel_FlxSprite;
 Switch.prototype = $extend(flixel_FlxSprite.prototype,{
-	switchState: function(type) {
+	on: null
+	,switchState: function(type) {
 		if(type == "off") {
 			this.loadGraphic("assets/images/switches/LeftOFF.png");
 		} else {
@@ -8736,6 +8878,789 @@ WarningState.prototype = $extend(flixel_FlxState.prototype,{
 		flixel_FlxState.prototype.update.call(this,elapsed);
 	}
 	,__class__: WarningState
+});
+var WiggleEffectType = $hxEnums["WiggleEffectType"] = { __ename__ : "WiggleEffectType", __constructs__ : ["DREAMY","WAVY","HEAT_WAVE_HORIZONTAL","HEAT_WAVE_VERTICAL","FLAG"]
+	,DREAMY: {_hx_index:0,__enum__:"WiggleEffectType",toString:$estr}
+	,WAVY: {_hx_index:1,__enum__:"WiggleEffectType",toString:$estr}
+	,HEAT_WAVE_HORIZONTAL: {_hx_index:2,__enum__:"WiggleEffectType",toString:$estr}
+	,HEAT_WAVE_VERTICAL: {_hx_index:3,__enum__:"WiggleEffectType",toString:$estr}
+	,FLAG: {_hx_index:4,__enum__:"WiggleEffectType",toString:$estr}
+};
+var WiggleEffect = function() {
+	this.waveAmplitude = 0;
+	this.waveFrequency = 0;
+	this.waveSpeed = 0;
+	this.effectType = WiggleEffectType.DREAMY;
+	this.shader = new WiggleShader();
+	this.shader.uTime.value = [0];
+};
+$hxClasses["WiggleEffect"] = WiggleEffect;
+WiggleEffect.__name__ = "WiggleEffect";
+WiggleEffect.prototype = {
+	shader: null
+	,effectType: null
+	,waveSpeed: null
+	,waveFrequency: null
+	,waveAmplitude: null
+	,update: function(elapsed) {
+		this.shader.uTime.value[0] += elapsed;
+	}
+	,set_effectType: function(v) {
+		this.effectType = v;
+		var tmp = WiggleEffectType.__constructs__.slice();
+		this.shader.effectType.value = [tmp.indexOf(Std.string(v))];
+		return v;
+	}
+	,set_waveSpeed: function(v) {
+		this.waveSpeed = v;
+		this.shader.uSpeed.value = [this.waveSpeed];
+		return v;
+	}
+	,set_waveFrequency: function(v) {
+		this.waveFrequency = v;
+		this.shader.uFrequency.value = [this.waveFrequency];
+		return v;
+	}
+	,set_waveAmplitude: function(v) {
+		this.waveAmplitude = v;
+		this.shader.uWaveAmplitude.value = [this.waveAmplitude];
+		return v;
+	}
+	,__class__: WiggleEffect
+	,__properties__: {set_waveAmplitude:"set_waveAmplitude",set_waveFrequency:"set_waveFrequency",set_waveSpeed:"set_waveSpeed",set_effectType:"set_effectType"}
+};
+var openfl_display_Shader = function(code) {
+	this.byteCode = code;
+	this.precisionHint = 1;
+	this.__glSourceDirty = true;
+	this.__numPasses = 1;
+	this.__data = openfl_display_ShaderData._new(code);
+};
+$hxClasses["openfl.display.Shader"] = openfl_display_Shader;
+openfl_display_Shader.__name__ = "openfl.display.Shader";
+openfl_display_Shader.prototype = {
+	byteCode: null
+	,glProgram: null
+	,precisionHint: null
+	,program: null
+	,__alpha: null
+	,__bitmap: null
+	,__colorMultiplier: null
+	,__colorOffset: null
+	,__context: null
+	,__data: null
+	,__glFragmentSource: null
+	,__glSourceDirty: null
+	,__glVertexSource: null
+	,__hasColorTransform: null
+	,__inputBitmapData: null
+	,__isGenerated: null
+	,__matrix: null
+	,__numPasses: null
+	,__paramBool: null
+	,__paramFloat: null
+	,__paramInt: null
+	,__position: null
+	,__textureCoord: null
+	,__texture: null
+	,__textureSize: null
+	,__clearUseArray: function() {
+		var _g = 0;
+		var _g1 = this.__paramBool;
+		while(_g < _g1.length) {
+			var parameter = _g1[_g];
+			++_g;
+			parameter.__useArray = false;
+		}
+		var _g = 0;
+		var _g1 = this.__paramFloat;
+		while(_g < _g1.length) {
+			var parameter = _g1[_g];
+			++_g;
+			parameter.__useArray = false;
+		}
+		var _g = 0;
+		var _g1 = this.__paramInt;
+		while(_g < _g1.length) {
+			var parameter = _g1[_g];
+			++_g;
+			parameter.__useArray = false;
+		}
+	}
+	,__createGLShader: function(source,type) {
+		var gl = this.__context.gl;
+		var shader = gl.createShader(type);
+		gl.shaderSource(shader,source);
+		gl.compileShader(shader);
+		if(gl.getShaderParameter(shader,gl.COMPILE_STATUS) == 0) {
+			var message = type == gl.VERTEX_SHADER ? "Error compiling vertex shader" : "Error compiling fragment shader";
+			message += "\n" + gl.getShaderInfoLog(shader);
+			message += "\n" + source;
+			lime_utils_Log.error(message,{ fileName : "openfl/display/Shader.hx", lineNumber : 329, className : "openfl.display.Shader", methodName : "__createGLShader"});
+		}
+		return shader;
+	}
+	,__createGLProgram: function(vertexSource,fragmentSource) {
+		var gl = this.__context.gl;
+		var vertexShader = this.__createGLShader(vertexSource,gl.VERTEX_SHADER);
+		var fragmentShader = this.__createGLShader(fragmentSource,gl.FRAGMENT_SHADER);
+		var program = gl.createProgram();
+		var _g = 0;
+		var _g1 = this.__paramFloat;
+		while(_g < _g1.length) {
+			var param = _g1[_g];
+			++_g;
+			if(param.name.indexOf("Position") > -1 && StringTools.startsWith(param.name,"openfl_")) {
+				gl.bindAttribLocation(program,0,param.name);
+				break;
+			}
+		}
+		gl.attachShader(program,vertexShader);
+		gl.attachShader(program,fragmentShader);
+		gl.linkProgram(program);
+		if(gl.getProgramParameter(program,gl.LINK_STATUS) == 0) {
+			var message = "Unable to initialize the shader program";
+			message += "\n" + gl.getProgramInfoLog(program);
+			lime_utils_Log.error(message,{ fileName : "openfl/display/Shader.hx", lineNumber : 362, className : "openfl.display.Shader", methodName : "__createGLProgram"});
+		}
+		return program;
+	}
+	,__disable: function() {
+		if(this.program != null) {
+			this.__disableGL();
+		}
+	}
+	,__disableGL: function() {
+		var gl = this.__context.gl;
+		var textureCount = 0;
+		var _g = 0;
+		var _g1 = this.__inputBitmapData;
+		while(_g < _g1.length) {
+			var input = _g1[_g];
+			++_g;
+			input.__disableGL(this.__context,textureCount);
+			++textureCount;
+		}
+		var _g = 0;
+		var _g1 = this.__paramBool;
+		while(_g < _g1.length) {
+			var parameter = _g1[_g];
+			++_g;
+			parameter.__disableGL(this.__context);
+		}
+		var _g = 0;
+		var _g1 = this.__paramFloat;
+		while(_g < _g1.length) {
+			var parameter = _g1[_g];
+			++_g;
+			parameter.__disableGL(this.__context);
+		}
+		var _g = 0;
+		var _g1 = this.__paramInt;
+		while(_g < _g1.length) {
+			var parameter = _g1[_g];
+			++_g;
+			parameter.__disableGL(this.__context);
+		}
+		this.__context.__bindGLArrayBuffer(null);
+		if(this.__context.__context.type == "opengl") {
+			gl.disable(gl.TEXTURE_2D);
+		}
+	}
+	,__enable: function() {
+		this.__init();
+		if(this.program != null) {
+			this.__enableGL();
+		}
+	}
+	,__enableGL: function() {
+		var textureCount = 0;
+		var gl = this.__context.gl;
+		var _g = 0;
+		var _g1 = this.__inputBitmapData;
+		while(_g < _g1.length) {
+			var input = _g1[_g];
+			++_g;
+			gl.uniform1i(input.index,textureCount);
+			++textureCount;
+		}
+		if(this.__context.__context.type == "opengl" && textureCount > 0) {
+			gl.enable(gl.TEXTURE_2D);
+		}
+	}
+	,__init: function() {
+		if(this.__data == null) {
+			this.__data = openfl_display_ShaderData._new(null);
+		}
+		if(this.__glFragmentSource != null && this.__glVertexSource != null && (this.program == null || this.__glSourceDirty)) {
+			this.__initGL();
+		}
+	}
+	,__initGL: function() {
+		if(this.__glSourceDirty || this.__paramBool == null) {
+			this.__glSourceDirty = false;
+			this.program = null;
+			this.__inputBitmapData = [];
+			this.__paramBool = [];
+			this.__paramFloat = [];
+			this.__paramInt = [];
+			this.__processGLData(this.get_glVertexSource(),"attribute");
+			this.__processGLData(this.get_glVertexSource(),"uniform");
+			this.__processGLData(this.get_glFragmentSource(),"uniform");
+		}
+		if(this.__context != null && this.program == null) {
+			var gl = this.__context.gl;
+			var prefix = "#ifdef GL_ES\n\t\t\t\t" + (this.precisionHint == 1 ? "#ifdef GL_FRAGMENT_PRECISION_HIGH\n\t\t\t\tprecision highp float;\n\t\t\t\t#else\n\t\t\t\tprecision mediump float;\n\t\t\t\t#endif" : "precision lowp float;") + "\n\t\t\t\t#endif\n\t\t\t\t";
+			var vertex = prefix + this.get_glVertexSource();
+			var fragment = prefix + this.get_glFragmentSource();
+			var id = vertex + fragment;
+			if(Object.prototype.hasOwnProperty.call(this.__context.__programs.h,id)) {
+				this.program = this.__context.__programs.h[id];
+			} else {
+				this.program = this.__context.createProgram(1);
+				this.program.__glProgram = this.__createGLProgram(vertex,fragment);
+				this.__context.__programs.h[id] = this.program;
+			}
+			if(this.program != null) {
+				this.glProgram = this.program.__glProgram;
+				var _g = 0;
+				var _g1 = this.__inputBitmapData;
+				while(_g < _g1.length) {
+					var input = _g1[_g];
+					++_g;
+					if(input.__isUniform) {
+						input.index = gl.getUniformLocation(this.glProgram,input.name);
+					} else {
+						input.index = gl.getAttribLocation(this.glProgram,input.name);
+					}
+				}
+				var _g = 0;
+				var _g1 = this.__paramBool;
+				while(_g < _g1.length) {
+					var parameter = _g1[_g];
+					++_g;
+					if(parameter.__isUniform) {
+						parameter.index = gl.getUniformLocation(this.glProgram,parameter.name);
+					} else {
+						parameter.index = gl.getAttribLocation(this.glProgram,parameter.name);
+					}
+				}
+				var _g = 0;
+				var _g1 = this.__paramFloat;
+				while(_g < _g1.length) {
+					var parameter = _g1[_g];
+					++_g;
+					if(parameter.__isUniform) {
+						parameter.index = gl.getUniformLocation(this.glProgram,parameter.name);
+					} else {
+						parameter.index = gl.getAttribLocation(this.glProgram,parameter.name);
+					}
+				}
+				var _g = 0;
+				var _g1 = this.__paramInt;
+				while(_g < _g1.length) {
+					var parameter = _g1[_g];
+					++_g;
+					if(parameter.__isUniform) {
+						parameter.index = gl.getUniformLocation(this.glProgram,parameter.name);
+					} else {
+						parameter.index = gl.getAttribLocation(this.glProgram,parameter.name);
+					}
+				}
+			}
+		}
+	}
+	,__processGLData: function(source,storageType) {
+		var lastMatch = 0;
+		var position;
+		var regex;
+		var name;
+		var type;
+		if(storageType == "uniform") {
+			regex = new EReg("uniform ([A-Za-z0-9]+) ([A-Za-z0-9_]+)","");
+		} else {
+			regex = new EReg("attribute ([A-Za-z0-9]+) ([A-Za-z0-9_]+)","");
+		}
+		while(regex.matchSub(source,lastMatch)) {
+			type = regex.matched(1);
+			name = regex.matched(2);
+			if(StringTools.startsWith(name,"gl_")) {
+				continue;
+			}
+			var isUniform = storageType == "uniform";
+			if(StringTools.startsWith(type,"sampler")) {
+				var input = new openfl_display_ShaderInput();
+				input.name = name;
+				input.__isUniform = isUniform;
+				this.__inputBitmapData.push(input);
+				switch(name) {
+				case "bitmap":
+					this.__bitmap = input;
+					break;
+				case "openfl_Texture":
+					this.__texture = input;
+					break;
+				default:
+				}
+				this.__data[name] = input;
+				if(this.__isGenerated) {
+					this[name] = input;
+				}
+			} else if(!Object.prototype.hasOwnProperty.call(this.__data,name) || Reflect.field(this.__data,name) == null) {
+				var parameterType;
+				switch(type) {
+				case "bool":
+					parameterType = 0;
+					break;
+				case "bvec2":
+					parameterType = 1;
+					break;
+				case "bvec3":
+					parameterType = 2;
+					break;
+				case "bvec4":
+					parameterType = 3;
+					break;
+				case "dvec2":case "vec2":
+					parameterType = 5;
+					break;
+				case "dvec3":case "vec3":
+					parameterType = 6;
+					break;
+				case "double":case "float":
+					parameterType = 4;
+					break;
+				case "ivec3":case "uvec3":
+					parameterType = 10;
+					break;
+				case "ivec4":case "uvec4":
+					parameterType = 11;
+					break;
+				case "mat2":case "mat2x2":
+					parameterType = 12;
+					break;
+				case "mat2x3":
+					parameterType = 13;
+					break;
+				case "mat2x4":
+					parameterType = 14;
+					break;
+				case "mat3x2":
+					parameterType = 15;
+					break;
+				case "mat3":case "mat3x3":
+					parameterType = 16;
+					break;
+				case "mat3x4":
+					parameterType = 17;
+					break;
+				case "mat4":case "mat4x4":
+					parameterType = 20;
+					break;
+				case "mat4x2":
+					parameterType = 18;
+					break;
+				case "mat4x3":
+					parameterType = 19;
+					break;
+				case "int":case "uint":
+					parameterType = 8;
+					break;
+				case "ivec2":case "uvec2":
+					parameterType = 9;
+					break;
+				case "dvec4":case "vec4":
+					parameterType = 7;
+					break;
+				default:
+					parameterType = null;
+				}
+				var length;
+				switch(parameterType) {
+				case 1:case 5:case 9:
+					length = 2;
+					break;
+				case 3:case 7:case 11:case 12:
+					length = 4;
+					break;
+				case 2:case 6:case 10:
+					length = 3;
+					break;
+				case 16:
+					length = 9;
+					break;
+				case 20:
+					length = 16;
+					break;
+				default:
+					length = 1;
+				}
+				var arrayLength;
+				switch(parameterType) {
+				case 12:
+					arrayLength = 2;
+					break;
+				case 16:
+					arrayLength = 3;
+					break;
+				case 20:
+					arrayLength = 4;
+					break;
+				default:
+					arrayLength = 1;
+				}
+				switch(parameterType) {
+				case 0:case 1:case 2:case 3:
+					var parameter = new openfl_display_ShaderParameter();
+					parameter.set_name(name);
+					parameter.type = parameterType;
+					parameter.__arrayLength = arrayLength;
+					parameter.__isBool = true;
+					parameter.__isUniform = isUniform;
+					parameter.__length = length;
+					this.__paramBool.push(parameter);
+					if(name == "openfl_HasColorTransform") {
+						this.__hasColorTransform = parameter;
+					}
+					this.__data[name] = parameter;
+					if(this.__isGenerated) {
+						this[name] = parameter;
+					}
+					break;
+				case 8:case 9:case 10:case 11:
+					var parameter1 = new openfl_display_ShaderParameter();
+					parameter1.set_name(name);
+					parameter1.type = parameterType;
+					parameter1.__arrayLength = arrayLength;
+					parameter1.__isInt = true;
+					parameter1.__isUniform = isUniform;
+					parameter1.__length = length;
+					this.__paramInt.push(parameter1);
+					this.__data[name] = parameter1;
+					if(this.__isGenerated) {
+						this[name] = parameter1;
+					}
+					break;
+				default:
+					var parameter2 = new openfl_display_ShaderParameter();
+					parameter2.set_name(name);
+					parameter2.type = parameterType;
+					parameter2.__arrayLength = arrayLength;
+					if(arrayLength > 0) {
+						var elements = arrayLength * arrayLength;
+						var array = null;
+						var vector = null;
+						var view = null;
+						var buffer = null;
+						var len = null;
+						var this1;
+						if(elements != null) {
+							this1 = new Float32Array(elements);
+						} else if(array != null) {
+							this1 = new Float32Array(array);
+						} else if(vector != null) {
+							this1 = new Float32Array(vector.__array);
+						} else if(view != null) {
+							this1 = new Float32Array(view);
+						} else if(buffer != null) {
+							if(len == null) {
+								this1 = new Float32Array(buffer,0);
+							} else {
+								this1 = new Float32Array(buffer,0,len);
+							}
+						} else {
+							this1 = null;
+						}
+						parameter2.__uniformMatrix = this1;
+					}
+					parameter2.__isFloat = true;
+					parameter2.__isUniform = isUniform;
+					parameter2.__length = length;
+					this.__paramFloat.push(parameter2);
+					if(StringTools.startsWith(name,"openfl_")) {
+						switch(name) {
+						case "openfl_Alpha":
+							this.__alpha = parameter2;
+							break;
+						case "openfl_ColorMultiplier":
+							this.__colorMultiplier = parameter2;
+							break;
+						case "openfl_ColorOffset":
+							this.__colorOffset = parameter2;
+							break;
+						case "openfl_Matrix":
+							this.__matrix = parameter2;
+							break;
+						case "openfl_Position":
+							this.__position = parameter2;
+							break;
+						case "openfl_TextureCoord":
+							this.__textureCoord = parameter2;
+							break;
+						case "openfl_TextureSize":
+							this.__textureSize = parameter2;
+							break;
+						default:
+						}
+					}
+					this.__data[name] = parameter2;
+					if(this.__isGenerated) {
+						this[name] = parameter2;
+					}
+				}
+			}
+			position = regex.matchedPos();
+			lastMatch = position.pos + position.len;
+		}
+	}
+	,__update: function() {
+		if(this.program != null) {
+			this.__updateGL();
+		}
+	}
+	,__updateFromBuffer: function(shaderBuffer,bufferOffset) {
+		if(this.program != null) {
+			this.__updateGLFromBuffer(shaderBuffer,bufferOffset);
+		}
+	}
+	,__updateGL: function() {
+		var textureCount = 0;
+		var _g = 0;
+		var _g1 = this.__inputBitmapData;
+		while(_g < _g1.length) {
+			var input = _g1[_g];
+			++_g;
+			input.__updateGL(this.__context,textureCount);
+			++textureCount;
+		}
+		var _g = 0;
+		var _g1 = this.__paramBool;
+		while(_g < _g1.length) {
+			var parameter = _g1[_g];
+			++_g;
+			parameter.__updateGL(this.__context);
+		}
+		var _g = 0;
+		var _g1 = this.__paramFloat;
+		while(_g < _g1.length) {
+			var parameter = _g1[_g];
+			++_g;
+			parameter.__updateGL(this.__context);
+		}
+		var _g = 0;
+		var _g1 = this.__paramInt;
+		while(_g < _g1.length) {
+			var parameter = _g1[_g];
+			++_g;
+			parameter.__updateGL(this.__context);
+		}
+	}
+	,__updateGLFromBuffer: function(shaderBuffer,bufferOffset) {
+		var textureCount = 0;
+		var input;
+		var inputData;
+		var inputFilter;
+		var inputMipFilter;
+		var inputWrap;
+		var _g = 0;
+		var _g1 = shaderBuffer.inputCount;
+		while(_g < _g1) {
+			var i = _g++;
+			input = shaderBuffer.inputRefs[i];
+			inputData = shaderBuffer.inputs[i];
+			inputFilter = shaderBuffer.inputFilter[i];
+			inputMipFilter = shaderBuffer.inputMipFilter[i];
+			inputWrap = shaderBuffer.inputWrap[i];
+			if(inputData != null) {
+				input.__updateGL(this.__context,textureCount,inputData,inputFilter,inputMipFilter,inputWrap);
+				++textureCount;
+			}
+		}
+		var gl = this.__context.gl;
+		if(shaderBuffer.paramDataLength > 0) {
+			if(shaderBuffer.paramDataBuffer == null) {
+				shaderBuffer.paramDataBuffer = gl.createBuffer();
+			}
+			this.__context.__bindGLArrayBuffer(shaderBuffer.paramDataBuffer);
+			lime_graphics_WebGLRenderContext.bufferData(gl,gl.ARRAY_BUFFER,shaderBuffer.paramData,gl.DYNAMIC_DRAW);
+		} else {
+			this.__context.__bindGLArrayBuffer(null);
+		}
+		var boolIndex = 0;
+		var floatIndex = 0;
+		var intIndex = 0;
+		var boolCount = shaderBuffer.paramBoolCount;
+		var floatCount = shaderBuffer.paramFloatCount;
+		var paramData = shaderBuffer.paramData;
+		var boolRef;
+		var floatRef;
+		var intRef;
+		var hasOverride;
+		var overrideBoolValue = null;
+		var overrideFloatValue = null;
+		var overrideIntValue = null;
+		var _g = 0;
+		var _g1 = shaderBuffer.paramCount;
+		while(_g < _g1) {
+			var i = _g++;
+			hasOverride = false;
+			if(i < boolCount) {
+				boolRef = shaderBuffer.paramRefs_Bool[boolIndex];
+				var _g2 = 0;
+				var _g3 = shaderBuffer.overrideBoolCount;
+				while(_g2 < _g3) {
+					var j = _g2++;
+					if(boolRef.name == shaderBuffer.overrideBoolNames[j]) {
+						overrideBoolValue = shaderBuffer.overrideBoolValues[j];
+						hasOverride = true;
+						break;
+					}
+				}
+				if(hasOverride) {
+					boolRef.__updateGL(this.__context,overrideBoolValue);
+				} else {
+					boolRef.__updateGLFromBuffer(this.__context,paramData,shaderBuffer.paramPositions[i],shaderBuffer.paramLengths[i],bufferOffset);
+				}
+				++boolIndex;
+			} else if(i < boolCount + floatCount) {
+				floatRef = shaderBuffer.paramRefs_Float[floatIndex];
+				var _g4 = 0;
+				var _g5 = shaderBuffer.overrideFloatCount;
+				while(_g4 < _g5) {
+					var j1 = _g4++;
+					if(floatRef.name == shaderBuffer.overrideFloatNames[j1]) {
+						overrideFloatValue = shaderBuffer.overrideFloatValues[j1];
+						hasOverride = true;
+						break;
+					}
+				}
+				if(hasOverride) {
+					floatRef.__updateGL(this.__context,overrideFloatValue);
+				} else {
+					floatRef.__updateGLFromBuffer(this.__context,paramData,shaderBuffer.paramPositions[i],shaderBuffer.paramLengths[i],bufferOffset);
+				}
+				++floatIndex;
+			} else {
+				intRef = shaderBuffer.paramRefs_Int[intIndex];
+				var _g6 = 0;
+				var _g7 = shaderBuffer.overrideIntCount;
+				while(_g6 < _g7) {
+					var j2 = _g6++;
+					if(intRef.name == shaderBuffer.overrideIntNames[j2]) {
+						overrideIntValue = shaderBuffer.overrideIntValues[j2];
+						hasOverride = true;
+						break;
+					}
+				}
+				if(hasOverride) {
+					intRef.__updateGL(this.__context,overrideIntValue);
+				} else {
+					intRef.__updateGLFromBuffer(this.__context,paramData,shaderBuffer.paramPositions[i],shaderBuffer.paramLengths[i],bufferOffset);
+				}
+				++intIndex;
+			}
+		}
+	}
+	,get_data: function() {
+		if(this.__glSourceDirty || this.__data == null) {
+			this.__init();
+		}
+		return this.__data;
+	}
+	,set_data: function(value) {
+		return this.__data = value;
+	}
+	,get_glFragmentSource: function() {
+		return this.__glFragmentSource;
+	}
+	,set_glFragmentSource: function(value) {
+		if(value != this.__glFragmentSource) {
+			this.__glSourceDirty = true;
+		}
+		return this.__glFragmentSource = value;
+	}
+	,get_glVertexSource: function() {
+		return this.__glVertexSource;
+	}
+	,set_glVertexSource: function(value) {
+		if(value != this.__glVertexSource) {
+			this.__glSourceDirty = true;
+		}
+		return this.__glVertexSource = value;
+	}
+	,__class__: openfl_display_Shader
+	,__properties__: {set_glVertexSource:"set_glVertexSource",get_glVertexSource:"get_glVertexSource",set_glFragmentSource:"set_glFragmentSource",get_glFragmentSource:"get_glFragmentSource",set_data:"set_data",get_data:"get_data"}
+};
+var openfl_display_GraphicsShader = function(code) {
+	if(this.__glFragmentSource == null) {
+		this.__glFragmentSource = "varying float openfl_Alphav;\n\t\tvarying vec4 openfl_ColorMultiplierv;\n\t\tvarying vec4 openfl_ColorOffsetv;\n\t\tvarying vec2 openfl_TextureCoordv;\n\n\t\tuniform bool openfl_HasColorTransform;\n\t\tuniform vec2 openfl_TextureSize;\n\t\tuniform sampler2D bitmap;\n\n\t\tvoid main(void) {\n\n\t\t\tvec4 color = texture2D (bitmap, openfl_TextureCoordv);\n\n\t\tif (color.a == 0.0) {\n\n\t\t\tgl_FragColor = vec4 (0.0, 0.0, 0.0, 0.0);\n\n\t\t} else if (openfl_HasColorTransform) {\n\n\t\t\tcolor = vec4 (color.rgb / color.a, color.a);\n\n\t\t\tmat4 colorMultiplier = mat4 (0);\n\t\t\tcolorMultiplier[0][0] = openfl_ColorMultiplierv.x;\n\t\t\tcolorMultiplier[1][1] = openfl_ColorMultiplierv.y;\n\t\t\tcolorMultiplier[2][2] = openfl_ColorMultiplierv.z;\n\t\t\tcolorMultiplier[3][3] = 1.0; // openfl_ColorMultiplierv.w;\n\n\t\t\tcolor = clamp (openfl_ColorOffsetv + (color * colorMultiplier), 0.0, 1.0);\n\n\t\t\tif (color.a > 0.0) {\n\n\t\t\t\tgl_FragColor = vec4 (color.rgb * color.a * openfl_Alphav, color.a * openfl_Alphav);\n\n\t\t\t} else {\n\n\t\t\t\tgl_FragColor = vec4 (0.0, 0.0, 0.0, 0.0);\n\n\t\t\t}\n\n\t\t} else {\n\n\t\t\tgl_FragColor = color * openfl_Alphav;\n\n\t\t}\n\n\t\t}";
+	}
+	if(this.__glVertexSource == null) {
+		this.__glVertexSource = "attribute float openfl_Alpha;\n\t\tattribute vec4 openfl_ColorMultiplier;\n\t\tattribute vec4 openfl_ColorOffset;\n\t\tattribute vec4 openfl_Position;\n\t\tattribute vec2 openfl_TextureCoord;\n\n\t\tvarying float openfl_Alphav;\n\t\tvarying vec4 openfl_ColorMultiplierv;\n\t\tvarying vec4 openfl_ColorOffsetv;\n\t\tvarying vec2 openfl_TextureCoordv;\n\n\t\tuniform mat4 openfl_Matrix;\n\t\tuniform bool openfl_HasColorTransform;\n\t\tuniform vec2 openfl_TextureSize;\n\n\t\tvoid main(void) {\n\n\t\t\topenfl_Alphav = openfl_Alpha;\n\t\topenfl_TextureCoordv = openfl_TextureCoord;\n\n\t\tif (openfl_HasColorTransform) {\n\n\t\t\topenfl_ColorMultiplierv = openfl_ColorMultiplier;\n\t\t\topenfl_ColorOffsetv = openfl_ColorOffset / 255.0;\n\n\t\t}\n\n\t\tgl_Position = openfl_Matrix * openfl_Position;\n\n\t\t}";
+	}
+	openfl_display_Shader.call(this,code);
+	this.__isGenerated = true;
+	this.__initGL();
+};
+$hxClasses["openfl.display.GraphicsShader"] = openfl_display_GraphicsShader;
+openfl_display_GraphicsShader.__name__ = "openfl.display.GraphicsShader";
+openfl_display_GraphicsShader.__super__ = openfl_display_Shader;
+openfl_display_GraphicsShader.prototype = $extend(openfl_display_Shader.prototype,{
+	openfl_Alpha: null
+	,openfl_ColorMultiplier: null
+	,openfl_ColorOffset: null
+	,openfl_Position: null
+	,openfl_TextureCoord: null
+	,openfl_Matrix: null
+	,openfl_HasColorTransform: null
+	,openfl_TextureSize: null
+	,bitmap: null
+	,__class__: openfl_display_GraphicsShader
+});
+var flixel_graphics_tile_FlxGraphicsShader = function() {
+	if(this.__glFragmentSource == null) {
+		this.__glFragmentSource = "\n\t\tvarying float openfl_Alphav;\n\t\tvarying vec4 openfl_ColorMultiplierv;\n\t\tvarying vec4 openfl_ColorOffsetv;\n\t\tvarying vec2 openfl_TextureCoordv;\n\n\t\tuniform bool openfl_HasColorTransform;\n\t\tuniform vec2 openfl_TextureSize;\n\t\tuniform sampler2D bitmap;\n\n\t\tuniform bool hasTransform;\n\t\tuniform bool hasColorTransform;\n\n\t\tvec4 flixel_texture2D(sampler2D bitmap, vec2 coord)\n\t\t{\n\t\t\tvec4 color = texture2D(bitmap, coord);\n\t\t\tif (!hasTransform)\n\t\t\t{\n\t\t\t\treturn color;\n\t\t\t}\n\n\t\t\tif (color.a == 0.0)\n\t\t\t{\n\t\t\t\treturn vec4(0.0, 0.0, 0.0, 0.0);\n\t\t\t}\n\n\t\t\tif (!hasColorTransform)\n\t\t\t{\n\t\t\t\treturn color * openfl_Alphav;\n\t\t\t}\n\n\t\t\tcolor = vec4(color.rgb / color.a, color.a);\n\n\t\t\tmat4 colorMultiplier = mat4(0);\n\t\t\tcolorMultiplier[0][0] = openfl_ColorMultiplierv.x;\n\t\t\tcolorMultiplier[1][1] = openfl_ColorMultiplierv.y;\n\t\t\tcolorMultiplier[2][2] = openfl_ColorMultiplierv.z;\n\t\t\tcolorMultiplier[3][3] = openfl_ColorMultiplierv.w;\n\n\t\t\tcolor = clamp(openfl_ColorOffsetv + (color * colorMultiplier), 0.0, 1.0);\n\n\t\t\tif (color.a > 0.0)\n\t\t\t{\n\t\t\t\treturn vec4(color.rgb * color.a * openfl_Alphav, color.a * openfl_Alphav);\n\t\t\t}\n\t\t\treturn vec4(0.0, 0.0, 0.0, 0.0);\n\t\t}\n\t\n\t\t\n\t\tvoid main(void)\n\t\t{\n\t\t\tgl_FragColor = flixel_texture2D(bitmap, openfl_TextureCoordv);\n\t\t}";
+	}
+	if(this.__glVertexSource == null) {
+		this.__glVertexSource = "\n\t\tattribute float openfl_Alpha;\n\t\tattribute vec4 openfl_ColorMultiplier;\n\t\tattribute vec4 openfl_ColorOffset;\n\t\tattribute vec4 openfl_Position;\n\t\tattribute vec2 openfl_TextureCoord;\n\n\t\tvarying float openfl_Alphav;\n\t\tvarying vec4 openfl_ColorMultiplierv;\n\t\tvarying vec4 openfl_ColorOffsetv;\n\t\tvarying vec2 openfl_TextureCoordv;\n\n\t\tuniform mat4 openfl_Matrix;\n\t\tuniform bool openfl_HasColorTransform;\n\t\tuniform vec2 openfl_TextureSize;\n\n\t\t\n\t\tattribute float alpha;\n\t\tattribute vec4 colorMultiplier;\n\t\tattribute vec4 colorOffset;\n\t\tuniform bool hasColorTransform;\n\t\t\n\t\tvoid main(void)\n\t\t{\n\t\t\topenfl_Alphav = openfl_Alpha;\n\t\topenfl_TextureCoordv = openfl_TextureCoord;\n\n\t\tif (openfl_HasColorTransform) {\n\n\t\t\topenfl_ColorMultiplierv = openfl_ColorMultiplier;\n\t\t\topenfl_ColorOffsetv = openfl_ColorOffset / 255.0;\n\n\t\t}\n\n\t\tgl_Position = openfl_Matrix * openfl_Position;\n\n\t\t\t\n\t\t\topenfl_Alphav = openfl_Alpha * alpha;\n\t\t\t\n\t\t\tif (hasColorTransform)\n\t\t\t{\n\t\t\t\topenfl_ColorOffsetv = colorOffset / 255.0;\n\t\t\t\topenfl_ColorMultiplierv = colorMultiplier;\n\t\t\t}\n\t\t}";
+	}
+	openfl_display_GraphicsShader.call(this);
+	this.__isGenerated = true;
+	this.__initGL();
+};
+$hxClasses["flixel.graphics.tile.FlxGraphicsShader"] = flixel_graphics_tile_FlxGraphicsShader;
+flixel_graphics_tile_FlxGraphicsShader.__name__ = "flixel.graphics.tile.FlxGraphicsShader";
+flixel_graphics_tile_FlxGraphicsShader.__super__ = openfl_display_GraphicsShader;
+flixel_graphics_tile_FlxGraphicsShader.prototype = $extend(openfl_display_GraphicsShader.prototype,{
+	alpha: null
+	,colorMultiplier: null
+	,colorOffset: null
+	,hasColorTransform: null
+	,hasTransform: null
+	,__class__: flixel_graphics_tile_FlxGraphicsShader
+});
+var WiggleShader = function() {
+	if(this.__glFragmentSource == null) {
+		this.__glFragmentSource = "\n\t\tvarying float openfl_Alphav;\n\t\tvarying vec4 openfl_ColorMultiplierv;\n\t\tvarying vec4 openfl_ColorOffsetv;\n\t\tvarying vec2 openfl_TextureCoordv;\n\n\t\tuniform bool openfl_HasColorTransform;\n\t\tuniform vec2 openfl_TextureSize;\n\t\tuniform sampler2D bitmap;\n\n\t\tuniform bool hasTransform;\n\t\tuniform bool hasColorTransform;\n\n\t\tvec4 flixel_texture2D(sampler2D bitmap, vec2 coord)\n\t\t{\n\t\t\tvec4 color = texture2D(bitmap, coord);\n\t\t\tif (!hasTransform)\n\t\t\t{\n\t\t\t\treturn color;\n\t\t\t}\n\n\t\t\tif (color.a == 0.0)\n\t\t\t{\n\t\t\t\treturn vec4(0.0, 0.0, 0.0, 0.0);\n\t\t\t}\n\n\t\t\tif (!hasColorTransform)\n\t\t\t{\n\t\t\t\treturn color * openfl_Alphav;\n\t\t\t}\n\n\t\t\tcolor = vec4(color.rgb / color.a, color.a);\n\n\t\t\tmat4 colorMultiplier = mat4(0);\n\t\t\tcolorMultiplier[0][0] = openfl_ColorMultiplierv.x;\n\t\t\tcolorMultiplier[1][1] = openfl_ColorMultiplierv.y;\n\t\t\tcolorMultiplier[2][2] = openfl_ColorMultiplierv.z;\n\t\t\tcolorMultiplier[3][3] = openfl_ColorMultiplierv.w;\n\n\t\t\tcolor = clamp(openfl_ColorOffsetv + (color * colorMultiplier), 0.0, 1.0);\n\n\t\t\tif (color.a > 0.0)\n\t\t\t{\n\t\t\t\treturn vec4(color.rgb * color.a * openfl_Alphav, color.a * openfl_Alphav);\n\t\t\t}\n\t\t\treturn vec4(0.0, 0.0, 0.0, 0.0);\n\t\t}\n\t\n\n\t\t//uniform float tx, ty; // x,y waves phase\n\t\tuniform float uTime;\n\t\t\n\t\tconst int EFFECT_TYPE_DREAMY = 0;\n\t\tconst int EFFECT_TYPE_WAVY = 1;\n\t\tconst int EFFECT_TYPE_HEAT_WAVE_HORIZONTAL = 2;\n\t\tconst int EFFECT_TYPE_HEAT_WAVE_VERTICAL = 3;\n\t\tconst int EFFECT_TYPE_FLAG = 4;\n\t\t\n\t\tuniform int effectType;\n\t\t\n\t\t/**\n\t\t * How fast the waves move over time\n\t\t */\n\t\tuniform float uSpeed;\n\t\t\n\t\t/**\n\t\t * Number of waves over time\n\t\t */\n\t\tuniform float uFrequency;\n\t\t\n\t\t/**\n\t\t * How much the pixels are going to stretch over the waves\n\t\t */\n\t\tuniform float uWaveAmplitude;\n\n\t\tvec2 sineWave(vec2 pt)\n\t\t{\n\t\t\tfloat x = 0.0;\n\t\t\tfloat y = 0.0;\n\t\t\t\n\t\t\tif (effectType == EFFECT_TYPE_DREAMY) \n\t\t\t{\n\t\t\t\tfloat offsetX = sin(pt.y * uFrequency + uTime * uSpeed) * uWaveAmplitude;\n                pt.x += offsetX; // * (pt.y - 1.0); // <- Uncomment to stop bottom part of the screen from moving\n\t\t\t}\n\t\t\telse if (effectType == EFFECT_TYPE_WAVY) \n\t\t\t{\n\t\t\t\tfloat offsetY = sin(pt.x * uFrequency + uTime * uSpeed) * uWaveAmplitude;\n\t\t\t\tpt.y += offsetY; // * (pt.y - 1.0); // <- Uncomment to stop bottom part of the screen from moving\n\t\t\t}\n\t\t\telse if (effectType == EFFECT_TYPE_HEAT_WAVE_HORIZONTAL)\n\t\t\t{\n\t\t\t\tx = sin(pt.x * uFrequency + uTime * uSpeed) * uWaveAmplitude;\n\t\t\t}\n\t\t\telse if (effectType == EFFECT_TYPE_HEAT_WAVE_VERTICAL)\n\t\t\t{\n\t\t\t\ty = sin(pt.y * uFrequency + uTime * uSpeed) * uWaveAmplitude;\n\t\t\t}\n\t\t\telse if (effectType == EFFECT_TYPE_FLAG)\n\t\t\t{\n\t\t\t\ty = sin(pt.y * uFrequency + 10.0 * pt.x + uTime * uSpeed) * uWaveAmplitude;\n\t\t\t\tx = sin(pt.x * uFrequency + 5.0 * pt.y + uTime * uSpeed) * uWaveAmplitude;\n\t\t\t}\n\t\t\t\n\t\t\treturn vec2(pt.x + x, pt.y + y);\n\t\t}\n\n\t\tvoid main()\n\t\t{\n\t\t\tvec2 uv = sineWave(openfl_TextureCoordv);\n\t\t\tgl_FragColor = texture2D(bitmap, uv);\n\t\t}";
+	}
+	if(this.__glVertexSource == null) {
+		this.__glVertexSource = "\n\t\tattribute float openfl_Alpha;\n\t\tattribute vec4 openfl_ColorMultiplier;\n\t\tattribute vec4 openfl_ColorOffset;\n\t\tattribute vec4 openfl_Position;\n\t\tattribute vec2 openfl_TextureCoord;\n\n\t\tvarying float openfl_Alphav;\n\t\tvarying vec4 openfl_ColorMultiplierv;\n\t\tvarying vec4 openfl_ColorOffsetv;\n\t\tvarying vec2 openfl_TextureCoordv;\n\n\t\tuniform mat4 openfl_Matrix;\n\t\tuniform bool openfl_HasColorTransform;\n\t\tuniform vec2 openfl_TextureSize;\n\n\t\t\n\t\tattribute float alpha;\n\t\tattribute vec4 colorMultiplier;\n\t\tattribute vec4 colorOffset;\n\t\tuniform bool hasColorTransform;\n\t\t\n\t\tvoid main(void)\n\t\t{\n\t\t\topenfl_Alphav = openfl_Alpha;\n\t\topenfl_TextureCoordv = openfl_TextureCoord;\n\n\t\tif (openfl_HasColorTransform) {\n\n\t\t\topenfl_ColorMultiplierv = openfl_ColorMultiplier;\n\t\t\topenfl_ColorOffsetv = openfl_ColorOffset / 255.0;\n\n\t\t}\n\n\t\tgl_Position = openfl_Matrix * openfl_Position;\n\n\t\t\t\n\t\t\topenfl_Alphav = openfl_Alpha * alpha;\n\t\t\t\n\t\t\tif (hasColorTransform)\n\t\t\t{\n\t\t\t\topenfl_ColorOffsetv = colorOffset / 255.0;\n\t\t\t\topenfl_ColorMultiplierv = colorMultiplier;\n\t\t\t}\n\t\t}";
+	}
+	flixel_graphics_tile_FlxGraphicsShader.call(this);
+	this.__isGenerated = true;
+	this.__initGL();
+};
+$hxClasses["WiggleShader"] = WiggleShader;
+WiggleShader.__name__ = "WiggleShader";
+WiggleShader.__super__ = flixel_graphics_tile_FlxGraphicsShader;
+WiggleShader.prototype = $extend(flixel_graphics_tile_FlxGraphicsShader.prototype,{
+	tx: null
+	,uTime: null
+	,effectType: null
+	,uSpeed: null
+	,uFrequency: null
+	,uWaveAmplitude: null
+	,__class__: WiggleShader
 });
 var XmlType = {};
 XmlType.toString = function(this1) {
@@ -14320,6 +15245,253 @@ flixel_addons_display_FlxBackdrop.prototype = $extend(flixel_FlxSprite.prototype
 	}
 	,__class__: flixel_addons_display_FlxBackdrop
 });
+var flixel_addons_effects_chainable_FlxEffectSprite = function(Target,Effects) {
+	this.updateTargetAnimation = true;
+	this.effectsEnabled = true;
+	flixel_FlxSprite.call(this);
+	this.target = Target;
+	this.effects = Effects != null ? Effects : [];
+	var point = flixel_math_FlxPoint._pool.get().set(0,0);
+	point._inPool = false;
+	this._effectOffset = point;
+};
+$hxClasses["flixel.addons.effects.chainable.FlxEffectSprite"] = flixel_addons_effects_chainable_FlxEffectSprite;
+flixel_addons_effects_chainable_FlxEffectSprite.__name__ = "flixel.addons.effects.chainable.FlxEffectSprite";
+flixel_addons_effects_chainable_FlxEffectSprite.__super__ = flixel_FlxSprite;
+flixel_addons_effects_chainable_FlxEffectSprite.prototype = $extend(flixel_FlxSprite.prototype,{
+	effectsEnabled: null
+	,target: null
+	,updateTargetAnimation: null
+	,effects: null
+	,_effectOffset: null
+	,destroy: function() {
+		this.effects = flixel_util_FlxDestroyUtil.destroyArray(this.effects);
+		this._effectOffset = flixel_util_FlxDestroyUtil.put(this._effectOffset);
+		this.target = null;
+		flixel_FlxSprite.prototype.destroy.call(this);
+	}
+	,getScreenPosition: function(point,Camera) {
+		return flixel_FlxSprite.prototype.getScreenPosition.call(this,point,Camera).addPoint(this._effectOffset);
+	}
+	,draw: function() {
+		if(this.target.dirty) {
+			this.target.drawFrame();
+		}
+		if(this.target.framePixels == null) {
+			flixel_FlxSprite.prototype.draw.call(this);
+			return;
+		}
+		if(this.get_pixels() != null && this.get_pixels().width == this.target.framePixels.width && this.get_pixels().height == this.target.framePixels.height) {
+			this.get_pixels().fillRect(this.get_pixels().rect,0);
+			this.get_pixels().draw(this.target.framePixels);
+		} else {
+			flixel_util_FlxDestroyUtil.dispose(this.get_pixels());
+			this.set_pixels(this.target.framePixels.clone());
+		}
+		this._effectOffset.set(0,0);
+		if(this.effectsEnabled) {
+			this.get_pixels().lock();
+			var _g = 0;
+			var _g1 = this.effects;
+			while(_g < _g1.length) {
+				var effect = _g1[_g];
+				++_g;
+				if(effect.active) {
+					this.set_pixels(effect.apply(this.get_pixels()));
+					if(effect.offset != null) {
+						this._effectOffset.addPoint(effect.offset);
+					}
+				}
+			}
+			this.get_pixels().unlock();
+			this._flashRect = this.get_pixels().rect;
+		}
+		flixel_FlxSprite.prototype.draw.call(this);
+	}
+	,update: function(elapsed) {
+		if(this.updateTargetAnimation && this.target.animation._sprite.numFrames > 1) {
+			this.target.updateAnimation(elapsed);
+		}
+		if(this.effectsEnabled) {
+			var _g = 0;
+			var _g1 = this.effects;
+			while(_g < _g1.length) {
+				var effect = _g1[_g];
+				++_g;
+				if(effect.active) {
+					effect.update(elapsed);
+				}
+			}
+		}
+		flixel_FlxSprite.prototype.update.call(this,elapsed);
+	}
+	,__class__: flixel_addons_effects_chainable_FlxEffectSprite
+});
+var flixel_addons_effects_chainable_IFlxEffect = function() { };
+$hxClasses["flixel.addons.effects.chainable.IFlxEffect"] = flixel_addons_effects_chainable_IFlxEffect;
+flixel_addons_effects_chainable_IFlxEffect.__name__ = "flixel.addons.effects.chainable.IFlxEffect";
+flixel_addons_effects_chainable_IFlxEffect.__isInterface__ = true;
+flixel_addons_effects_chainable_IFlxEffect.__interfaces__ = [flixel_util_IFlxDestroyable];
+flixel_addons_effects_chainable_IFlxEffect.prototype = {
+	active: null
+	,offset: null
+	,update: null
+	,apply: null
+	,__class__: flixel_addons_effects_chainable_IFlxEffect
+};
+var flixel_addons_effects_chainable_FlxWaveEffect = function(Mode,Strength,Center,Speed,Wavelength,Direction,InterlaceOffset) {
+	if(InterlaceOffset == null) {
+		InterlaceOffset = 0;
+	}
+	if(Wavelength == null) {
+		Wavelength = 5;
+	}
+	if(Speed == null) {
+		Speed = 3;
+	}
+	if(Center == null) {
+		Center = 0.5;
+	}
+	if(Strength == null) {
+		Strength = 10;
+	}
+	this._flashRect = new openfl_geom_Rectangle();
+	this._flashPoint = new openfl_geom_Point();
+	this._time = 0;
+	var point = flixel_math_FlxPoint._pool.get().set(0,0);
+	point._inPool = false;
+	this.offset = point;
+	this.active = true;
+	this.strength = Strength;
+	this.mode = Mode == null ? flixel_addons_effects_chainable_FlxWaveMode.ALL : Mode;
+	this.speed = Speed;
+	this.wavelength = Wavelength;
+	this.direction = Direction != null ? Direction : flixel_addons_effects_chainable_FlxWaveDirection.HORIZONTAL;
+	this.center = Center;
+	this.set_interlaceOffset(InterlaceOffset);
+};
+$hxClasses["flixel.addons.effects.chainable.FlxWaveEffect"] = flixel_addons_effects_chainable_FlxWaveEffect;
+flixel_addons_effects_chainable_FlxWaveEffect.__name__ = "flixel.addons.effects.chainable.FlxWaveEffect";
+flixel_addons_effects_chainable_FlxWaveEffect.__interfaces__ = [flixel_addons_effects_chainable_IFlxEffect];
+flixel_addons_effects_chainable_FlxWaveEffect.prototype = {
+	active: null
+	,offset: null
+	,mode: null
+	,speed: null
+	,center: null
+	,direction: null
+	,wavelength: null
+	,strength: null
+	,interlaceOffset: null
+	,_time: null
+	,_flashPoint: null
+	,_flashRect: null
+	,_pixels: null
+	,destroy: function() {
+		this._flashPoint = null;
+		this._flashRect = null;
+		this.offset = flixel_util_FlxDestroyUtil.put(this.offset);
+		this._pixels = flixel_util_FlxDestroyUtil.dispose(this._pixels);
+	}
+	,update: function(elapsed) {
+		this._time += elapsed * this.speed;
+	}
+	,apply: function(bitmapData) {
+		var horizontalStrength = this.direction == flixel_addons_effects_chainable_FlxWaveDirection.HORIZONTAL ? this.strength : 0;
+		var verticalStrength = this.direction == flixel_addons_effects_chainable_FlxWaveDirection.VERTICAL ? this.strength : 0;
+		this.offset.set(-horizontalStrength,-verticalStrength);
+		if(this._pixels == null || this._pixels.width < bitmapData.width + horizontalStrength * 2 || this._pixels.height < bitmapData.height + verticalStrength * 2) {
+			flixel_util_FlxDestroyUtil.dispose(this._pixels);
+			this._pixels = new openfl_display_BitmapData(bitmapData.width + horizontalStrength * 2,bitmapData.height + verticalStrength * 2,true,0);
+		} else {
+			this._pixels.fillRect(this._pixels.rect,0);
+		}
+		var length = this.direction == flixel_addons_effects_chainable_FlxWaveDirection.HORIZONTAL ? bitmapData.height : bitmapData.width;
+		var p = 0;
+		while(p < length) {
+			var pixelOffset = 0;
+			var offsetP = length * this.center;
+			var size = 1;
+			switch(this.mode._hx_index) {
+			case 0:
+				offsetP = this.strength;
+				break;
+			case 1:
+				if(p <= offsetP) {
+					offsetP = (1 - p / offsetP) * this.strength;
+				} else {
+					size = length - p;
+					offsetP = 0;
+				}
+				break;
+			case 2:
+				if(p >= offsetP) {
+					offsetP = (1 - (1 - p / length) / (1 - this.center)) * this.strength;
+				} else {
+					size = Math.ceil(offsetP);
+					offsetP = 0;
+				}
+				break;
+			}
+			var waveOffset = 0;
+			if(this.interlaceOffset != 0 && this.interlaceOffset != 1 && ((p | 0) & 1) != 0) {
+				waveOffset = Math.PI * 2 * this.interlaceOffset;
+			}
+			var n = p / this.wavelength + this._time + waveOffset;
+			n *= 0.3183098862;
+			if(n > 1) {
+				n -= Math.ceil(n) >> 1 << 1;
+			} else if(n < -1) {
+				n += Math.ceil(-n) >> 1 << 1;
+			}
+			pixelOffset = offsetP * (n > 0 ? n * (3.1 + n * (0.5 + n * (-7.2 + n * 3.6))) : n * (3.1 - n * (0.5 + n * (7.2 + n * 3.6))));
+			if(this.direction == flixel_addons_effects_chainable_FlxWaveDirection.HORIZONTAL) {
+				this._flashPoint.setTo(this.strength + pixelOffset,p);
+				this._flashRect.setTo(0,p,bitmapData.width,size);
+			} else {
+				this._flashPoint.setTo(p,this.strength + pixelOffset);
+				this._flashRect.setTo(p,0,size,bitmapData.height);
+			}
+			this._pixels.copyPixels(bitmapData,this._flashRect,this._flashPoint);
+			p += size;
+		}
+		flixel_util_FlxDestroyUtil.dispose(bitmapData);
+		return this._pixels.clone();
+	}
+	,calculateOffset: function(p,length) {
+		var waveOffset = 0;
+		if(this.interlaceOffset != 0 && this.interlaceOffset != 1 && ((p | 0) & 1) != 0) {
+			waveOffset = Math.PI * 2 * this.interlaceOffset;
+		}
+		var n = p / this.wavelength + this._time + waveOffset;
+		n *= 0.3183098862;
+		if(n > 1) {
+			n -= Math.ceil(n) >> 1 << 1;
+		} else if(n < -1) {
+			n += Math.ceil(-n) >> 1 << 1;
+		}
+		if(n > 0) {
+			return n * (3.1 + n * (0.5 + n * (-7.2 + n * 3.6)));
+		} else {
+			return n * (3.1 - n * (0.5 + n * (7.2 + n * 3.6)));
+		}
+	}
+	,set_interlaceOffset: function(InterlaceOffset) {
+		var lowerBound = InterlaceOffset < 0 ? 0 : InterlaceOffset;
+		return this.interlaceOffset = lowerBound > 1 ? 1 : lowerBound;
+	}
+	,__class__: flixel_addons_effects_chainable_FlxWaveEffect
+	,__properties__: {set_interlaceOffset:"set_interlaceOffset"}
+};
+var flixel_addons_effects_chainable_FlxWaveMode = $hxEnums["flixel.addons.effects.chainable.FlxWaveMode"] = { __ename__ : "flixel.addons.effects.chainable.FlxWaveMode", __constructs__ : ["ALL","START","END"]
+	,ALL: {_hx_index:0,__enum__:"flixel.addons.effects.chainable.FlxWaveMode",toString:$estr}
+	,START: {_hx_index:1,__enum__:"flixel.addons.effects.chainable.FlxWaveMode",toString:$estr}
+	,END: {_hx_index:2,__enum__:"flixel.addons.effects.chainable.FlxWaveMode",toString:$estr}
+};
+var flixel_addons_effects_chainable_FlxWaveDirection = $hxEnums["flixel.addons.effects.chainable.FlxWaveDirection"] = { __ename__ : "flixel.addons.effects.chainable.FlxWaveDirection", __constructs__ : ["HORIZONTAL","VERTICAL"]
+	,HORIZONTAL: {_hx_index:0,__enum__:"flixel.addons.effects.chainable.FlxWaveDirection",toString:$estr}
+	,VERTICAL: {_hx_index:1,__enum__:"flixel.addons.effects.chainable.FlxWaveDirection",toString:$estr}
+};
 var openfl_media_Sound = function(stream,context) {
 	openfl_events_EventDispatcher.call(this,this);
 	this.bytesLoaded = 0;
@@ -22200,716 +23372,6 @@ flixel_graphics_tile_FlxDrawTrianglesItem.prototype = $extend(flixel_graphics_ti
 		return this.indices.get_length() / 3 | 0;
 	}
 	,__class__: flixel_graphics_tile_FlxDrawTrianglesItem
-});
-var openfl_display_Shader = function(code) {
-	this.byteCode = code;
-	this.precisionHint = 1;
-	this.__glSourceDirty = true;
-	this.__numPasses = 1;
-	this.__data = openfl_display_ShaderData._new(code);
-};
-$hxClasses["openfl.display.Shader"] = openfl_display_Shader;
-openfl_display_Shader.__name__ = "openfl.display.Shader";
-openfl_display_Shader.prototype = {
-	byteCode: null
-	,glProgram: null
-	,precisionHint: null
-	,program: null
-	,__alpha: null
-	,__bitmap: null
-	,__colorMultiplier: null
-	,__colorOffset: null
-	,__context: null
-	,__data: null
-	,__glFragmentSource: null
-	,__glSourceDirty: null
-	,__glVertexSource: null
-	,__hasColorTransform: null
-	,__inputBitmapData: null
-	,__isGenerated: null
-	,__matrix: null
-	,__numPasses: null
-	,__paramBool: null
-	,__paramFloat: null
-	,__paramInt: null
-	,__position: null
-	,__textureCoord: null
-	,__texture: null
-	,__textureSize: null
-	,__clearUseArray: function() {
-		var _g = 0;
-		var _g1 = this.__paramBool;
-		while(_g < _g1.length) {
-			var parameter = _g1[_g];
-			++_g;
-			parameter.__useArray = false;
-		}
-		var _g = 0;
-		var _g1 = this.__paramFloat;
-		while(_g < _g1.length) {
-			var parameter = _g1[_g];
-			++_g;
-			parameter.__useArray = false;
-		}
-		var _g = 0;
-		var _g1 = this.__paramInt;
-		while(_g < _g1.length) {
-			var parameter = _g1[_g];
-			++_g;
-			parameter.__useArray = false;
-		}
-	}
-	,__createGLShader: function(source,type) {
-		var gl = this.__context.gl;
-		var shader = gl.createShader(type);
-		gl.shaderSource(shader,source);
-		gl.compileShader(shader);
-		if(gl.getShaderParameter(shader,gl.COMPILE_STATUS) == 0) {
-			var message = type == gl.VERTEX_SHADER ? "Error compiling vertex shader" : "Error compiling fragment shader";
-			message += "\n" + gl.getShaderInfoLog(shader);
-			message += "\n" + source;
-			lime_utils_Log.error(message,{ fileName : "openfl/display/Shader.hx", lineNumber : 329, className : "openfl.display.Shader", methodName : "__createGLShader"});
-		}
-		return shader;
-	}
-	,__createGLProgram: function(vertexSource,fragmentSource) {
-		var gl = this.__context.gl;
-		var vertexShader = this.__createGLShader(vertexSource,gl.VERTEX_SHADER);
-		var fragmentShader = this.__createGLShader(fragmentSource,gl.FRAGMENT_SHADER);
-		var program = gl.createProgram();
-		var _g = 0;
-		var _g1 = this.__paramFloat;
-		while(_g < _g1.length) {
-			var param = _g1[_g];
-			++_g;
-			if(param.name.indexOf("Position") > -1 && StringTools.startsWith(param.name,"openfl_")) {
-				gl.bindAttribLocation(program,0,param.name);
-				break;
-			}
-		}
-		gl.attachShader(program,vertexShader);
-		gl.attachShader(program,fragmentShader);
-		gl.linkProgram(program);
-		if(gl.getProgramParameter(program,gl.LINK_STATUS) == 0) {
-			var message = "Unable to initialize the shader program";
-			message += "\n" + gl.getProgramInfoLog(program);
-			lime_utils_Log.error(message,{ fileName : "openfl/display/Shader.hx", lineNumber : 362, className : "openfl.display.Shader", methodName : "__createGLProgram"});
-		}
-		return program;
-	}
-	,__disable: function() {
-		if(this.program != null) {
-			this.__disableGL();
-		}
-	}
-	,__disableGL: function() {
-		var gl = this.__context.gl;
-		var textureCount = 0;
-		var _g = 0;
-		var _g1 = this.__inputBitmapData;
-		while(_g < _g1.length) {
-			var input = _g1[_g];
-			++_g;
-			input.__disableGL(this.__context,textureCount);
-			++textureCount;
-		}
-		var _g = 0;
-		var _g1 = this.__paramBool;
-		while(_g < _g1.length) {
-			var parameter = _g1[_g];
-			++_g;
-			parameter.__disableGL(this.__context);
-		}
-		var _g = 0;
-		var _g1 = this.__paramFloat;
-		while(_g < _g1.length) {
-			var parameter = _g1[_g];
-			++_g;
-			parameter.__disableGL(this.__context);
-		}
-		var _g = 0;
-		var _g1 = this.__paramInt;
-		while(_g < _g1.length) {
-			var parameter = _g1[_g];
-			++_g;
-			parameter.__disableGL(this.__context);
-		}
-		this.__context.__bindGLArrayBuffer(null);
-		if(this.__context.__context.type == "opengl") {
-			gl.disable(gl.TEXTURE_2D);
-		}
-	}
-	,__enable: function() {
-		this.__init();
-		if(this.program != null) {
-			this.__enableGL();
-		}
-	}
-	,__enableGL: function() {
-		var textureCount = 0;
-		var gl = this.__context.gl;
-		var _g = 0;
-		var _g1 = this.__inputBitmapData;
-		while(_g < _g1.length) {
-			var input = _g1[_g];
-			++_g;
-			gl.uniform1i(input.index,textureCount);
-			++textureCount;
-		}
-		if(this.__context.__context.type == "opengl" && textureCount > 0) {
-			gl.enable(gl.TEXTURE_2D);
-		}
-	}
-	,__init: function() {
-		if(this.__data == null) {
-			this.__data = openfl_display_ShaderData._new(null);
-		}
-		if(this.__glFragmentSource != null && this.__glVertexSource != null && (this.program == null || this.__glSourceDirty)) {
-			this.__initGL();
-		}
-	}
-	,__initGL: function() {
-		if(this.__glSourceDirty || this.__paramBool == null) {
-			this.__glSourceDirty = false;
-			this.program = null;
-			this.__inputBitmapData = [];
-			this.__paramBool = [];
-			this.__paramFloat = [];
-			this.__paramInt = [];
-			this.__processGLData(this.get_glVertexSource(),"attribute");
-			this.__processGLData(this.get_glVertexSource(),"uniform");
-			this.__processGLData(this.get_glFragmentSource(),"uniform");
-		}
-		if(this.__context != null && this.program == null) {
-			var gl = this.__context.gl;
-			var prefix = "#ifdef GL_ES\n\t\t\t\t" + (this.precisionHint == 1 ? "#ifdef GL_FRAGMENT_PRECISION_HIGH\n\t\t\t\tprecision highp float;\n\t\t\t\t#else\n\t\t\t\tprecision mediump float;\n\t\t\t\t#endif" : "precision lowp float;") + "\n\t\t\t\t#endif\n\t\t\t\t";
-			var vertex = prefix + this.get_glVertexSource();
-			var fragment = prefix + this.get_glFragmentSource();
-			var id = vertex + fragment;
-			if(Object.prototype.hasOwnProperty.call(this.__context.__programs.h,id)) {
-				this.program = this.__context.__programs.h[id];
-			} else {
-				this.program = this.__context.createProgram(1);
-				this.program.__glProgram = this.__createGLProgram(vertex,fragment);
-				this.__context.__programs.h[id] = this.program;
-			}
-			if(this.program != null) {
-				this.glProgram = this.program.__glProgram;
-				var _g = 0;
-				var _g1 = this.__inputBitmapData;
-				while(_g < _g1.length) {
-					var input = _g1[_g];
-					++_g;
-					if(input.__isUniform) {
-						input.index = gl.getUniformLocation(this.glProgram,input.name);
-					} else {
-						input.index = gl.getAttribLocation(this.glProgram,input.name);
-					}
-				}
-				var _g = 0;
-				var _g1 = this.__paramBool;
-				while(_g < _g1.length) {
-					var parameter = _g1[_g];
-					++_g;
-					if(parameter.__isUniform) {
-						parameter.index = gl.getUniformLocation(this.glProgram,parameter.name);
-					} else {
-						parameter.index = gl.getAttribLocation(this.glProgram,parameter.name);
-					}
-				}
-				var _g = 0;
-				var _g1 = this.__paramFloat;
-				while(_g < _g1.length) {
-					var parameter = _g1[_g];
-					++_g;
-					if(parameter.__isUniform) {
-						parameter.index = gl.getUniformLocation(this.glProgram,parameter.name);
-					} else {
-						parameter.index = gl.getAttribLocation(this.glProgram,parameter.name);
-					}
-				}
-				var _g = 0;
-				var _g1 = this.__paramInt;
-				while(_g < _g1.length) {
-					var parameter = _g1[_g];
-					++_g;
-					if(parameter.__isUniform) {
-						parameter.index = gl.getUniformLocation(this.glProgram,parameter.name);
-					} else {
-						parameter.index = gl.getAttribLocation(this.glProgram,parameter.name);
-					}
-				}
-			}
-		}
-	}
-	,__processGLData: function(source,storageType) {
-		var lastMatch = 0;
-		var position;
-		var regex;
-		var name;
-		var type;
-		if(storageType == "uniform") {
-			regex = new EReg("uniform ([A-Za-z0-9]+) ([A-Za-z0-9_]+)","");
-		} else {
-			regex = new EReg("attribute ([A-Za-z0-9]+) ([A-Za-z0-9_]+)","");
-		}
-		while(regex.matchSub(source,lastMatch)) {
-			type = regex.matched(1);
-			name = regex.matched(2);
-			if(StringTools.startsWith(name,"gl_")) {
-				continue;
-			}
-			var isUniform = storageType == "uniform";
-			if(StringTools.startsWith(type,"sampler")) {
-				var input = new openfl_display_ShaderInput();
-				input.name = name;
-				input.__isUniform = isUniform;
-				this.__inputBitmapData.push(input);
-				switch(name) {
-				case "bitmap":
-					this.__bitmap = input;
-					break;
-				case "openfl_Texture":
-					this.__texture = input;
-					break;
-				default:
-				}
-				this.__data[name] = input;
-				if(this.__isGenerated) {
-					this[name] = input;
-				}
-			} else if(!Object.prototype.hasOwnProperty.call(this.__data,name) || Reflect.field(this.__data,name) == null) {
-				var parameterType;
-				switch(type) {
-				case "bool":
-					parameterType = 0;
-					break;
-				case "bvec2":
-					parameterType = 1;
-					break;
-				case "bvec3":
-					parameterType = 2;
-					break;
-				case "bvec4":
-					parameterType = 3;
-					break;
-				case "dvec2":case "vec2":
-					parameterType = 5;
-					break;
-				case "dvec3":case "vec3":
-					parameterType = 6;
-					break;
-				case "double":case "float":
-					parameterType = 4;
-					break;
-				case "ivec3":case "uvec3":
-					parameterType = 10;
-					break;
-				case "ivec4":case "uvec4":
-					parameterType = 11;
-					break;
-				case "mat2":case "mat2x2":
-					parameterType = 12;
-					break;
-				case "mat2x3":
-					parameterType = 13;
-					break;
-				case "mat2x4":
-					parameterType = 14;
-					break;
-				case "mat3x2":
-					parameterType = 15;
-					break;
-				case "mat3":case "mat3x3":
-					parameterType = 16;
-					break;
-				case "mat3x4":
-					parameterType = 17;
-					break;
-				case "mat4":case "mat4x4":
-					parameterType = 20;
-					break;
-				case "mat4x2":
-					parameterType = 18;
-					break;
-				case "mat4x3":
-					parameterType = 19;
-					break;
-				case "int":case "uint":
-					parameterType = 8;
-					break;
-				case "ivec2":case "uvec2":
-					parameterType = 9;
-					break;
-				case "dvec4":case "vec4":
-					parameterType = 7;
-					break;
-				default:
-					parameterType = null;
-				}
-				var length;
-				switch(parameterType) {
-				case 1:case 5:case 9:
-					length = 2;
-					break;
-				case 3:case 7:case 11:case 12:
-					length = 4;
-					break;
-				case 2:case 6:case 10:
-					length = 3;
-					break;
-				case 16:
-					length = 9;
-					break;
-				case 20:
-					length = 16;
-					break;
-				default:
-					length = 1;
-				}
-				var arrayLength;
-				switch(parameterType) {
-				case 12:
-					arrayLength = 2;
-					break;
-				case 16:
-					arrayLength = 3;
-					break;
-				case 20:
-					arrayLength = 4;
-					break;
-				default:
-					arrayLength = 1;
-				}
-				switch(parameterType) {
-				case 0:case 1:case 2:case 3:
-					var parameter = new openfl_display_ShaderParameter();
-					parameter.set_name(name);
-					parameter.type = parameterType;
-					parameter.__arrayLength = arrayLength;
-					parameter.__isBool = true;
-					parameter.__isUniform = isUniform;
-					parameter.__length = length;
-					this.__paramBool.push(parameter);
-					if(name == "openfl_HasColorTransform") {
-						this.__hasColorTransform = parameter;
-					}
-					this.__data[name] = parameter;
-					if(this.__isGenerated) {
-						this[name] = parameter;
-					}
-					break;
-				case 8:case 9:case 10:case 11:
-					var parameter1 = new openfl_display_ShaderParameter();
-					parameter1.set_name(name);
-					parameter1.type = parameterType;
-					parameter1.__arrayLength = arrayLength;
-					parameter1.__isInt = true;
-					parameter1.__isUniform = isUniform;
-					parameter1.__length = length;
-					this.__paramInt.push(parameter1);
-					this.__data[name] = parameter1;
-					if(this.__isGenerated) {
-						this[name] = parameter1;
-					}
-					break;
-				default:
-					var parameter2 = new openfl_display_ShaderParameter();
-					parameter2.set_name(name);
-					parameter2.type = parameterType;
-					parameter2.__arrayLength = arrayLength;
-					if(arrayLength > 0) {
-						var elements = arrayLength * arrayLength;
-						var array = null;
-						var vector = null;
-						var view = null;
-						var buffer = null;
-						var len = null;
-						var this1;
-						if(elements != null) {
-							this1 = new Float32Array(elements);
-						} else if(array != null) {
-							this1 = new Float32Array(array);
-						} else if(vector != null) {
-							this1 = new Float32Array(vector.__array);
-						} else if(view != null) {
-							this1 = new Float32Array(view);
-						} else if(buffer != null) {
-							if(len == null) {
-								this1 = new Float32Array(buffer,0);
-							} else {
-								this1 = new Float32Array(buffer,0,len);
-							}
-						} else {
-							this1 = null;
-						}
-						parameter2.__uniformMatrix = this1;
-					}
-					parameter2.__isFloat = true;
-					parameter2.__isUniform = isUniform;
-					parameter2.__length = length;
-					this.__paramFloat.push(parameter2);
-					if(StringTools.startsWith(name,"openfl_")) {
-						switch(name) {
-						case "openfl_Alpha":
-							this.__alpha = parameter2;
-							break;
-						case "openfl_ColorMultiplier":
-							this.__colorMultiplier = parameter2;
-							break;
-						case "openfl_ColorOffset":
-							this.__colorOffset = parameter2;
-							break;
-						case "openfl_Matrix":
-							this.__matrix = parameter2;
-							break;
-						case "openfl_Position":
-							this.__position = parameter2;
-							break;
-						case "openfl_TextureCoord":
-							this.__textureCoord = parameter2;
-							break;
-						case "openfl_TextureSize":
-							this.__textureSize = parameter2;
-							break;
-						default:
-						}
-					}
-					this.__data[name] = parameter2;
-					if(this.__isGenerated) {
-						this[name] = parameter2;
-					}
-				}
-			}
-			position = regex.matchedPos();
-			lastMatch = position.pos + position.len;
-		}
-	}
-	,__update: function() {
-		if(this.program != null) {
-			this.__updateGL();
-		}
-	}
-	,__updateFromBuffer: function(shaderBuffer,bufferOffset) {
-		if(this.program != null) {
-			this.__updateGLFromBuffer(shaderBuffer,bufferOffset);
-		}
-	}
-	,__updateGL: function() {
-		var textureCount = 0;
-		var _g = 0;
-		var _g1 = this.__inputBitmapData;
-		while(_g < _g1.length) {
-			var input = _g1[_g];
-			++_g;
-			input.__updateGL(this.__context,textureCount);
-			++textureCount;
-		}
-		var _g = 0;
-		var _g1 = this.__paramBool;
-		while(_g < _g1.length) {
-			var parameter = _g1[_g];
-			++_g;
-			parameter.__updateGL(this.__context);
-		}
-		var _g = 0;
-		var _g1 = this.__paramFloat;
-		while(_g < _g1.length) {
-			var parameter = _g1[_g];
-			++_g;
-			parameter.__updateGL(this.__context);
-		}
-		var _g = 0;
-		var _g1 = this.__paramInt;
-		while(_g < _g1.length) {
-			var parameter = _g1[_g];
-			++_g;
-			parameter.__updateGL(this.__context);
-		}
-	}
-	,__updateGLFromBuffer: function(shaderBuffer,bufferOffset) {
-		var textureCount = 0;
-		var input;
-		var inputData;
-		var inputFilter;
-		var inputMipFilter;
-		var inputWrap;
-		var _g = 0;
-		var _g1 = shaderBuffer.inputCount;
-		while(_g < _g1) {
-			var i = _g++;
-			input = shaderBuffer.inputRefs[i];
-			inputData = shaderBuffer.inputs[i];
-			inputFilter = shaderBuffer.inputFilter[i];
-			inputMipFilter = shaderBuffer.inputMipFilter[i];
-			inputWrap = shaderBuffer.inputWrap[i];
-			if(inputData != null) {
-				input.__updateGL(this.__context,textureCount,inputData,inputFilter,inputMipFilter,inputWrap);
-				++textureCount;
-			}
-		}
-		var gl = this.__context.gl;
-		if(shaderBuffer.paramDataLength > 0) {
-			if(shaderBuffer.paramDataBuffer == null) {
-				shaderBuffer.paramDataBuffer = gl.createBuffer();
-			}
-			this.__context.__bindGLArrayBuffer(shaderBuffer.paramDataBuffer);
-			lime_graphics_WebGLRenderContext.bufferData(gl,gl.ARRAY_BUFFER,shaderBuffer.paramData,gl.DYNAMIC_DRAW);
-		} else {
-			this.__context.__bindGLArrayBuffer(null);
-		}
-		var boolIndex = 0;
-		var floatIndex = 0;
-		var intIndex = 0;
-		var boolCount = shaderBuffer.paramBoolCount;
-		var floatCount = shaderBuffer.paramFloatCount;
-		var paramData = shaderBuffer.paramData;
-		var boolRef;
-		var floatRef;
-		var intRef;
-		var hasOverride;
-		var overrideBoolValue = null;
-		var overrideFloatValue = null;
-		var overrideIntValue = null;
-		var _g = 0;
-		var _g1 = shaderBuffer.paramCount;
-		while(_g < _g1) {
-			var i = _g++;
-			hasOverride = false;
-			if(i < boolCount) {
-				boolRef = shaderBuffer.paramRefs_Bool[boolIndex];
-				var _g2 = 0;
-				var _g3 = shaderBuffer.overrideBoolCount;
-				while(_g2 < _g3) {
-					var j = _g2++;
-					if(boolRef.name == shaderBuffer.overrideBoolNames[j]) {
-						overrideBoolValue = shaderBuffer.overrideBoolValues[j];
-						hasOverride = true;
-						break;
-					}
-				}
-				if(hasOverride) {
-					boolRef.__updateGL(this.__context,overrideBoolValue);
-				} else {
-					boolRef.__updateGLFromBuffer(this.__context,paramData,shaderBuffer.paramPositions[i],shaderBuffer.paramLengths[i],bufferOffset);
-				}
-				++boolIndex;
-			} else if(i < boolCount + floatCount) {
-				floatRef = shaderBuffer.paramRefs_Float[floatIndex];
-				var _g4 = 0;
-				var _g5 = shaderBuffer.overrideFloatCount;
-				while(_g4 < _g5) {
-					var j1 = _g4++;
-					if(floatRef.name == shaderBuffer.overrideFloatNames[j1]) {
-						overrideFloatValue = shaderBuffer.overrideFloatValues[j1];
-						hasOverride = true;
-						break;
-					}
-				}
-				if(hasOverride) {
-					floatRef.__updateGL(this.__context,overrideFloatValue);
-				} else {
-					floatRef.__updateGLFromBuffer(this.__context,paramData,shaderBuffer.paramPositions[i],shaderBuffer.paramLengths[i],bufferOffset);
-				}
-				++floatIndex;
-			} else {
-				intRef = shaderBuffer.paramRefs_Int[intIndex];
-				var _g6 = 0;
-				var _g7 = shaderBuffer.overrideIntCount;
-				while(_g6 < _g7) {
-					var j2 = _g6++;
-					if(intRef.name == shaderBuffer.overrideIntNames[j2]) {
-						overrideIntValue = shaderBuffer.overrideIntValues[j2];
-						hasOverride = true;
-						break;
-					}
-				}
-				if(hasOverride) {
-					intRef.__updateGL(this.__context,overrideIntValue);
-				} else {
-					intRef.__updateGLFromBuffer(this.__context,paramData,shaderBuffer.paramPositions[i],shaderBuffer.paramLengths[i],bufferOffset);
-				}
-				++intIndex;
-			}
-		}
-	}
-	,get_data: function() {
-		if(this.__glSourceDirty || this.__data == null) {
-			this.__init();
-		}
-		return this.__data;
-	}
-	,set_data: function(value) {
-		return this.__data = value;
-	}
-	,get_glFragmentSource: function() {
-		return this.__glFragmentSource;
-	}
-	,set_glFragmentSource: function(value) {
-		if(value != this.__glFragmentSource) {
-			this.__glSourceDirty = true;
-		}
-		return this.__glFragmentSource = value;
-	}
-	,get_glVertexSource: function() {
-		return this.__glVertexSource;
-	}
-	,set_glVertexSource: function(value) {
-		if(value != this.__glVertexSource) {
-			this.__glSourceDirty = true;
-		}
-		return this.__glVertexSource = value;
-	}
-	,__class__: openfl_display_Shader
-	,__properties__: {set_glVertexSource:"set_glVertexSource",get_glVertexSource:"get_glVertexSource",set_glFragmentSource:"set_glFragmentSource",get_glFragmentSource:"get_glFragmentSource",set_data:"set_data",get_data:"get_data"}
-};
-var openfl_display_GraphicsShader = function(code) {
-	if(this.__glFragmentSource == null) {
-		this.__glFragmentSource = "varying float openfl_Alphav;\n\t\tvarying vec4 openfl_ColorMultiplierv;\n\t\tvarying vec4 openfl_ColorOffsetv;\n\t\tvarying vec2 openfl_TextureCoordv;\n\n\t\tuniform bool openfl_HasColorTransform;\n\t\tuniform vec2 openfl_TextureSize;\n\t\tuniform sampler2D bitmap;\n\n\t\tvoid main(void) {\n\n\t\t\tvec4 color = texture2D (bitmap, openfl_TextureCoordv);\n\n\t\tif (color.a == 0.0) {\n\n\t\t\tgl_FragColor = vec4 (0.0, 0.0, 0.0, 0.0);\n\n\t\t} else if (openfl_HasColorTransform) {\n\n\t\t\tcolor = vec4 (color.rgb / color.a, color.a);\n\n\t\t\tmat4 colorMultiplier = mat4 (0);\n\t\t\tcolorMultiplier[0][0] = openfl_ColorMultiplierv.x;\n\t\t\tcolorMultiplier[1][1] = openfl_ColorMultiplierv.y;\n\t\t\tcolorMultiplier[2][2] = openfl_ColorMultiplierv.z;\n\t\t\tcolorMultiplier[3][3] = 1.0; // openfl_ColorMultiplierv.w;\n\n\t\t\tcolor = clamp (openfl_ColorOffsetv + (color * colorMultiplier), 0.0, 1.0);\n\n\t\t\tif (color.a > 0.0) {\n\n\t\t\t\tgl_FragColor = vec4 (color.rgb * color.a * openfl_Alphav, color.a * openfl_Alphav);\n\n\t\t\t} else {\n\n\t\t\t\tgl_FragColor = vec4 (0.0, 0.0, 0.0, 0.0);\n\n\t\t\t}\n\n\t\t} else {\n\n\t\t\tgl_FragColor = color * openfl_Alphav;\n\n\t\t}\n\n\t\t}";
-	}
-	if(this.__glVertexSource == null) {
-		this.__glVertexSource = "attribute float openfl_Alpha;\n\t\tattribute vec4 openfl_ColorMultiplier;\n\t\tattribute vec4 openfl_ColorOffset;\n\t\tattribute vec4 openfl_Position;\n\t\tattribute vec2 openfl_TextureCoord;\n\n\t\tvarying float openfl_Alphav;\n\t\tvarying vec4 openfl_ColorMultiplierv;\n\t\tvarying vec4 openfl_ColorOffsetv;\n\t\tvarying vec2 openfl_TextureCoordv;\n\n\t\tuniform mat4 openfl_Matrix;\n\t\tuniform bool openfl_HasColorTransform;\n\t\tuniform vec2 openfl_TextureSize;\n\n\t\tvoid main(void) {\n\n\t\t\topenfl_Alphav = openfl_Alpha;\n\t\topenfl_TextureCoordv = openfl_TextureCoord;\n\n\t\tif (openfl_HasColorTransform) {\n\n\t\t\topenfl_ColorMultiplierv = openfl_ColorMultiplier;\n\t\t\topenfl_ColorOffsetv = openfl_ColorOffset / 255.0;\n\n\t\t}\n\n\t\tgl_Position = openfl_Matrix * openfl_Position;\n\n\t\t}";
-	}
-	openfl_display_Shader.call(this,code);
-	this.__isGenerated = true;
-	this.__initGL();
-};
-$hxClasses["openfl.display.GraphicsShader"] = openfl_display_GraphicsShader;
-openfl_display_GraphicsShader.__name__ = "openfl.display.GraphicsShader";
-openfl_display_GraphicsShader.__super__ = openfl_display_Shader;
-openfl_display_GraphicsShader.prototype = $extend(openfl_display_Shader.prototype,{
-	openfl_Alpha: null
-	,openfl_ColorMultiplier: null
-	,openfl_ColorOffset: null
-	,openfl_Position: null
-	,openfl_TextureCoord: null
-	,openfl_Matrix: null
-	,openfl_HasColorTransform: null
-	,openfl_TextureSize: null
-	,bitmap: null
-	,__class__: openfl_display_GraphicsShader
-});
-var flixel_graphics_tile_FlxGraphicsShader = function() {
-	if(this.__glFragmentSource == null) {
-		this.__glFragmentSource = "\n\t\tvarying float openfl_Alphav;\n\t\tvarying vec4 openfl_ColorMultiplierv;\n\t\tvarying vec4 openfl_ColorOffsetv;\n\t\tvarying vec2 openfl_TextureCoordv;\n\n\t\tuniform bool openfl_HasColorTransform;\n\t\tuniform vec2 openfl_TextureSize;\n\t\tuniform sampler2D bitmap;\n\n\t\tuniform bool hasTransform;\n\t\tuniform bool hasColorTransform;\n\n\t\tvec4 flixel_texture2D(sampler2D bitmap, vec2 coord)\n\t\t{\n\t\t\tvec4 color = texture2D(bitmap, coord);\n\t\t\tif (!hasTransform)\n\t\t\t{\n\t\t\t\treturn color;\n\t\t\t}\n\n\t\t\tif (color.a == 0.0)\n\t\t\t{\n\t\t\t\treturn vec4(0.0, 0.0, 0.0, 0.0);\n\t\t\t}\n\n\t\t\tif (!hasColorTransform)\n\t\t\t{\n\t\t\t\treturn color * openfl_Alphav;\n\t\t\t}\n\n\t\t\tcolor = vec4(color.rgb / color.a, color.a);\n\n\t\t\tmat4 colorMultiplier = mat4(0);\n\t\t\tcolorMultiplier[0][0] = openfl_ColorMultiplierv.x;\n\t\t\tcolorMultiplier[1][1] = openfl_ColorMultiplierv.y;\n\t\t\tcolorMultiplier[2][2] = openfl_ColorMultiplierv.z;\n\t\t\tcolorMultiplier[3][3] = openfl_ColorMultiplierv.w;\n\n\t\t\tcolor = clamp(openfl_ColorOffsetv + (color * colorMultiplier), 0.0, 1.0);\n\n\t\t\tif (color.a > 0.0)\n\t\t\t{\n\t\t\t\treturn vec4(color.rgb * color.a * openfl_Alphav, color.a * openfl_Alphav);\n\t\t\t}\n\t\t\treturn vec4(0.0, 0.0, 0.0, 0.0);\n\t\t}\n\t\n\t\t\n\t\tvoid main(void)\n\t\t{\n\t\t\tgl_FragColor = flixel_texture2D(bitmap, openfl_TextureCoordv);\n\t\t}";
-	}
-	if(this.__glVertexSource == null) {
-		this.__glVertexSource = "\n\t\tattribute float openfl_Alpha;\n\t\tattribute vec4 openfl_ColorMultiplier;\n\t\tattribute vec4 openfl_ColorOffset;\n\t\tattribute vec4 openfl_Position;\n\t\tattribute vec2 openfl_TextureCoord;\n\n\t\tvarying float openfl_Alphav;\n\t\tvarying vec4 openfl_ColorMultiplierv;\n\t\tvarying vec4 openfl_ColorOffsetv;\n\t\tvarying vec2 openfl_TextureCoordv;\n\n\t\tuniform mat4 openfl_Matrix;\n\t\tuniform bool openfl_HasColorTransform;\n\t\tuniform vec2 openfl_TextureSize;\n\n\t\t\n\t\tattribute float alpha;\n\t\tattribute vec4 colorMultiplier;\n\t\tattribute vec4 colorOffset;\n\t\tuniform bool hasColorTransform;\n\t\t\n\t\tvoid main(void)\n\t\t{\n\t\t\topenfl_Alphav = openfl_Alpha;\n\t\topenfl_TextureCoordv = openfl_TextureCoord;\n\n\t\tif (openfl_HasColorTransform) {\n\n\t\t\topenfl_ColorMultiplierv = openfl_ColorMultiplier;\n\t\t\topenfl_ColorOffsetv = openfl_ColorOffset / 255.0;\n\n\t\t}\n\n\t\tgl_Position = openfl_Matrix * openfl_Position;\n\n\t\t\t\n\t\t\topenfl_Alphav = openfl_Alpha * alpha;\n\t\t\t\n\t\t\tif (hasColorTransform)\n\t\t\t{\n\t\t\t\topenfl_ColorOffsetv = colorOffset / 255.0;\n\t\t\t\topenfl_ColorMultiplierv = colorMultiplier;\n\t\t\t}\n\t\t}";
-	}
-	openfl_display_GraphicsShader.call(this);
-	this.__isGenerated = true;
-	this.__initGL();
-};
-$hxClasses["flixel.graphics.tile.FlxGraphicsShader"] = flixel_graphics_tile_FlxGraphicsShader;
-flixel_graphics_tile_FlxGraphicsShader.__name__ = "flixel.graphics.tile.FlxGraphicsShader";
-flixel_graphics_tile_FlxGraphicsShader.__super__ = openfl_display_GraphicsShader;
-flixel_graphics_tile_FlxGraphicsShader.prototype = $extend(openfl_display_GraphicsShader.prototype,{
-	alpha: null
-	,colorMultiplier: null
-	,colorOffset: null
-	,hasColorTransform: null
-	,hasTransform: null
-	,__class__: flixel_graphics_tile_FlxGraphicsShader
 });
 var flixel_group_FlxTypedGroupIterator = function(GroupMembers,filter) {
 	this._groupMembers = GroupMembers;
@@ -70552,7 +71014,7 @@ var lime_utils_AssetCache = function() {
 	this.audio = new haxe_ds_StringMap();
 	this.font = new haxe_ds_StringMap();
 	this.image = new haxe_ds_StringMap();
-	this.version = 282316;
+	this.version = 197410;
 };
 $hxClasses["lime.utils.AssetCache"] = lime_utils_AssetCache;
 lime_utils_AssetCache.__name__ = "lime.utils.AssetCache";
@@ -106814,6 +107276,545 @@ openfl_filters_BitmapFilter.prototype = {
 	}
 	,__class__: openfl_filters_BitmapFilter
 };
+var openfl_filters_BitmapFilterShader = function(code) {
+	if(this.__glFragmentSource == null) {
+		this.__glFragmentSource = "varying vec2 openfl_TextureCoordv;\n\n\t\tuniform sampler2D openfl_Texture;\n\t\tuniform vec2 openfl_TextureSize;\n\n\t\tvoid main(void) {\n\n\t\t\tgl_FragColor = texture2D (openfl_Texture, openfl_TextureCoordv);\n\n\t\t}";
+	}
+	if(this.__glVertexSource == null) {
+		this.__glVertexSource = "attribute vec4 openfl_Position;\n\t\tattribute vec2 openfl_TextureCoord;\n\n\t\tvarying vec2 openfl_TextureCoordv;\n\n\t\tuniform mat4 openfl_Matrix;\n\t\tuniform vec2 openfl_TextureSize;\n\n\t\tvoid main(void) {\n\n\t\t\topenfl_TextureCoordv = openfl_TextureCoord;\n\n\t\tgl_Position = openfl_Matrix * openfl_Position;\n\n\t\t}";
+	}
+	openfl_display_Shader.call(this,code);
+	this.__isGenerated = true;
+	this.__initGL();
+};
+$hxClasses["openfl.filters.BitmapFilterShader"] = openfl_filters_BitmapFilterShader;
+openfl_filters_BitmapFilterShader.__name__ = "openfl.filters.BitmapFilterShader";
+openfl_filters_BitmapFilterShader.__super__ = openfl_display_Shader;
+openfl_filters_BitmapFilterShader.prototype = $extend(openfl_display_Shader.prototype,{
+	openfl_Position: null
+	,openfl_TextureCoord: null
+	,openfl_Matrix: null
+	,openfl_TextureSize: null
+	,openfl_Texture: null
+	,__class__: openfl_filters_BitmapFilterShader
+});
+var openfl_filters__$ColorMatrixFilter_ColorMatrixShader = function() {
+	if(this.__glFragmentSource == null) {
+		this.__glFragmentSource = "varying vec2 openfl_TextureCoordv;\n\t\tuniform sampler2D openfl_Texture;\n\n\t\tuniform mat4 uMultipliers;\n\t\tuniform vec4 uOffsets;\n\n\t\tvoid main(void) {\n\n\t\t\tvec4 color = texture2D (openfl_Texture, openfl_TextureCoordv);\n\n\t\t\tif (color.a == 0.0) {\n\n\t\t\t\tgl_FragColor = vec4 (0.0, 0.0, 0.0, 0.0);\n\n\t\t\t} else {\n\n\t\t\t\tcolor = vec4 (color.rgb / color.a, color.a);\n\t\t\t\tcolor = uOffsets + color * uMultipliers;\n\n\t\t\t\tgl_FragColor = vec4 (color.rgb * color.a, color.a);\n\n\t\t\t}\n\n\t\t}";
+	}
+	if(this.__glVertexSource == null) {
+		this.__glVertexSource = "attribute vec4 openfl_Position;\n\t\tattribute vec2 openfl_TextureCoord;\n\n\t\tvarying vec2 openfl_TextureCoordv;\n\n\t\tuniform mat4 openfl_Matrix;\n\t\tuniform vec2 openfl_TextureSize;\n\n\n\t\tvoid main(void) {\n\n\t\t\topenfl_TextureCoordv = openfl_TextureCoord;\n\n\t\tgl_Position = openfl_Matrix * openfl_Position;\n\n\n\t\t}";
+	}
+	openfl_filters_BitmapFilterShader.call(this);
+	this.uMultipliers.value = [1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1];
+	this.uOffsets.value = [0,0,0,0];
+	this.__isGenerated = true;
+	this.__initGL();
+};
+$hxClasses["openfl.filters._ColorMatrixFilter.ColorMatrixShader"] = openfl_filters__$ColorMatrixFilter_ColorMatrixShader;
+openfl_filters__$ColorMatrixFilter_ColorMatrixShader.__name__ = "openfl.filters._ColorMatrixFilter.ColorMatrixShader";
+openfl_filters__$ColorMatrixFilter_ColorMatrixShader.__super__ = openfl_filters_BitmapFilterShader;
+openfl_filters__$ColorMatrixFilter_ColorMatrixShader.prototype = $extend(openfl_filters_BitmapFilterShader.prototype,{
+	init: function(matrix) {
+		var multipliers = this.uMultipliers.value;
+		var offsets = this.uOffsets.value;
+		multipliers[0] = matrix[0];
+		multipliers[1] = matrix[1];
+		multipliers[2] = matrix[2];
+		multipliers[3] = matrix[3];
+		multipliers[4] = matrix[5];
+		multipliers[5] = matrix[6];
+		multipliers[6] = matrix[7];
+		multipliers[7] = matrix[8];
+		multipliers[8] = matrix[10];
+		multipliers[9] = matrix[11];
+		multipliers[10] = matrix[12];
+		multipliers[11] = matrix[13];
+		multipliers[12] = matrix[15];
+		multipliers[13] = matrix[16];
+		multipliers[14] = matrix[17];
+		multipliers[15] = matrix[18];
+		offsets[0] = matrix[4] / 255.0;
+		offsets[1] = matrix[9] / 255.0;
+		offsets[2] = matrix[14] / 255.0;
+		offsets[3] = matrix[19] / 255.0;
+	}
+	,uMultipliers: null
+	,uOffsets: null
+	,__class__: openfl_filters__$ColorMatrixFilter_ColorMatrixShader
+});
+var openfl_filters_ColorMatrixFilter = function(matrix) {
+	openfl_filters_BitmapFilter.call(this);
+	this.set_matrix(matrix);
+	this.__numShaderPasses = 1;
+	this.__needSecondBitmapData = false;
+};
+$hxClasses["openfl.filters.ColorMatrixFilter"] = openfl_filters_ColorMatrixFilter;
+openfl_filters_ColorMatrixFilter.__name__ = "openfl.filters.ColorMatrixFilter";
+openfl_filters_ColorMatrixFilter.__super__ = openfl_filters_BitmapFilter;
+openfl_filters_ColorMatrixFilter.prototype = $extend(openfl_filters_BitmapFilter.prototype,{
+	__matrix: null
+	,clone: function() {
+		return new openfl_filters_ColorMatrixFilter(this.__matrix);
+	}
+	,__applyFilter: function(destBitmapData,sourceBitmapData,sourceRect,destPoint) {
+		var sourceImage = sourceBitmapData.image;
+		var image = destBitmapData.image;
+		lime__$internal_graphics_ImageCanvasUtil.convertToData(sourceImage);
+		lime__$internal_graphics_ImageCanvasUtil.convertToData(image);
+		var sourceData = sourceImage.get_data();
+		var destData = image.get_data();
+		var offsetX = destPoint.x - sourceRect.x | 0;
+		var offsetY = destPoint.y - sourceRect.y | 0;
+		var sourceStride = sourceBitmapData.width * 4;
+		var destStride = destBitmapData.width * 4;
+		var sourceFormat = sourceImage.buffer.format;
+		var destFormat = image.buffer.format;
+		var sourcePremultiplied = sourceImage.buffer.premultiplied;
+		var destPremultiplied = image.buffer.premultiplied;
+		var sourcePixel;
+		var destPixel = 0;
+		var sourceOffset;
+		var destOffset;
+		var _g = sourceRect.y | 0;
+		var _g1 = sourceRect.height | 0;
+		while(_g < _g1) {
+			var row = _g++;
+			var _g2 = sourceRect.x | 0;
+			var _g3 = sourceRect.width | 0;
+			while(_g2 < _g3) {
+				var column = _g2++;
+				sourceOffset = row * sourceStride + column * 4;
+				destOffset = (row + offsetX) * destStride + (column + offsetY) * 4;
+				var format = sourceFormat;
+				var premultiplied = sourcePremultiplied;
+				if(premultiplied == null) {
+					premultiplied = false;
+				}
+				if(format == null) {
+					format = 0;
+				}
+				switch(format) {
+				case 0:
+					sourcePixel = (sourceData[sourceOffset] & 255) << 24 | (sourceData[sourceOffset + 1] & 255) << 16 | (sourceData[sourceOffset + 2] & 255) << 8 | sourceData[sourceOffset + 3] & 255;
+					break;
+				case 1:
+					sourcePixel = (sourceData[sourceOffset + 1] & 255) << 24 | (sourceData[sourceOffset + 2] & 255) << 16 | (sourceData[sourceOffset + 3] & 255) << 8 | sourceData[sourceOffset] & 255;
+					break;
+				case 2:
+					sourcePixel = (sourceData[sourceOffset + 2] & 255) << 24 | (sourceData[sourceOffset + 1] & 255) << 16 | (sourceData[sourceOffset] & 255) << 8 | sourceData[sourceOffset + 3] & 255;
+					break;
+				}
+				if(premultiplied) {
+					if((sourcePixel & 255) != 0 && (sourcePixel & 255) != 255) {
+						lime_math_RGBA.unmult = 255.0 / (sourcePixel & 255);
+						sourcePixel = (lime_math_RGBA.__clamp[Math.round((sourcePixel >>> 24 & 255) * lime_math_RGBA.unmult)] & 255) << 24 | (lime_math_RGBA.__clamp[Math.round((sourcePixel >>> 16 & 255) * lime_math_RGBA.unmult)] & 255) << 16 | (lime_math_RGBA.__clamp[Math.round((sourcePixel >>> 8 & 255) * lime_math_RGBA.unmult)] & 255) << 8 | sourcePixel & 255 & 255;
+					}
+				}
+				if((sourcePixel & 255) == 0) {
+					destPixel = 0;
+				} else {
+					var value = Math.max(0,Math.min(this.__matrix[0] * (sourcePixel >>> 24 & 255) + this.__matrix[1] * (sourcePixel >>> 16 & 255) + this.__matrix[2] * (sourcePixel >>> 8 & 255) + this.__matrix[3] * (sourcePixel & 255) + this.__matrix[4],255)) | 0;
+					destPixel = (value & 255) << 24 | (destPixel >>> 16 & 255 & 255) << 16 | (destPixel >>> 8 & 255 & 255) << 8 | destPixel & 255 & 255;
+					var value1 = Math.max(0,Math.min(this.__matrix[5] * (sourcePixel >>> 24 & 255) + this.__matrix[6] * (sourcePixel >>> 16 & 255) + this.__matrix[7] * (sourcePixel >>> 8 & 255) + this.__matrix[8] * (sourcePixel & 255) + this.__matrix[9],255)) | 0;
+					destPixel = (destPixel >>> 24 & 255 & 255) << 24 | (value1 & 255) << 16 | (destPixel >>> 8 & 255 & 255) << 8 | destPixel & 255 & 255;
+					var value2 = Math.max(0,Math.min(this.__matrix[10] * (sourcePixel >>> 24 & 255) + this.__matrix[11] * (sourcePixel >>> 16 & 255) + this.__matrix[12] * (sourcePixel >>> 8 & 255) + this.__matrix[13] * (sourcePixel & 255) + this.__matrix[14],255)) | 0;
+					destPixel = (destPixel >>> 24 & 255 & 255) << 24 | (destPixel >>> 16 & 255 & 255) << 16 | (value2 & 255) << 8 | destPixel & 255 & 255;
+					var value3 = Math.max(0,Math.min(this.__matrix[15] * (sourcePixel >>> 24 & 255) + this.__matrix[16] * (sourcePixel >>> 16 & 255) + this.__matrix[17] * (sourcePixel >>> 8 & 255) + this.__matrix[18] * (sourcePixel & 255) + this.__matrix[19],255)) | 0;
+					destPixel = (destPixel >>> 24 & 255 & 255) << 24 | (destPixel >>> 16 & 255 & 255) << 16 | (destPixel >>> 8 & 255 & 255) << 8 | value3 & 255;
+				}
+				var format1 = destFormat;
+				var premultiplied1 = destPremultiplied;
+				if(premultiplied1 == null) {
+					premultiplied1 = false;
+				}
+				if(format1 == null) {
+					format1 = 0;
+				}
+				if(premultiplied1) {
+					if((destPixel & 255) == 0) {
+						if(destPixel != 0) {
+							destPixel = 0;
+						}
+					} else if((destPixel & 255) != 255) {
+						lime_math_RGBA.a16 = lime_math_RGBA.__alpha16[destPixel & 255];
+						destPixel = ((destPixel >>> 24 & 255) * lime_math_RGBA.a16 >> 16 & 255) << 24 | ((destPixel >>> 16 & 255) * lime_math_RGBA.a16 >> 16 & 255) << 16 | ((destPixel >>> 8 & 255) * lime_math_RGBA.a16 >> 16 & 255) << 8 | destPixel & 255 & 255;
+					}
+				}
+				switch(format1) {
+				case 0:
+					destData[destOffset] = destPixel >>> 24 & 255;
+					destData[destOffset + 1] = destPixel >>> 16 & 255;
+					destData[destOffset + 2] = destPixel >>> 8 & 255;
+					destData[destOffset + 3] = destPixel & 255;
+					break;
+				case 1:
+					destData[destOffset] = destPixel & 255;
+					destData[destOffset + 1] = destPixel >>> 24 & 255;
+					destData[destOffset + 2] = destPixel >>> 16 & 255;
+					destData[destOffset + 3] = destPixel >>> 8 & 255;
+					break;
+				case 2:
+					destData[destOffset] = destPixel >>> 8 & 255;
+					destData[destOffset + 1] = destPixel >>> 16 & 255;
+					destData[destOffset + 2] = destPixel >>> 24 & 255;
+					destData[destOffset + 3] = destPixel & 255;
+					break;
+				}
+			}
+		}
+		destBitmapData.image.dirty = true;
+		return destBitmapData;
+	}
+	,__initShader: function(renderer,pass,sourceBitmapData) {
+		openfl_filters_ColorMatrixFilter.__colorMatrixShader.init(this.get_matrix());
+		return openfl_filters_ColorMatrixFilter.__colorMatrixShader;
+	}
+	,get_matrix: function() {
+		return this.__matrix;
+	}
+	,set_matrix: function(value) {
+		if(value == null) {
+			value = [1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0];
+		}
+		return this.__matrix = value;
+	}
+	,__class__: openfl_filters_ColorMatrixFilter
+	,__properties__: {set_matrix:"set_matrix",get_matrix:"get_matrix"}
+});
+var openfl_filters__$GlowFilter_BlurAlphaShader = function() {
+	if(this.__glFragmentSource == null) {
+		this.__glFragmentSource = "\n\t\tuniform sampler2D openfl_Texture;\n\t\tuniform vec4 uColor;\n\t\tuniform float uStrength;\n\t\tvarying vec2 vTexCoord;\n\t\tvarying vec2 vBlurCoords[6];\n\n\t\tvoid main(void)\n\t\t{\n            vec4 texel = texture2D(openfl_Texture, vTexCoord);\n\n            vec3 contributions = vec3(0.00443, 0.05399, 0.24197);\n            vec3 top = vec3(\n                texture2D(openfl_Texture, vBlurCoords[0]).a,\n                texture2D(openfl_Texture, vBlurCoords[1]).a,\n                texture2D(openfl_Texture, vBlurCoords[2]).a\n            );\n            vec3 bottom = vec3(\n                texture2D(openfl_Texture, vBlurCoords[3]).a,\n                texture2D(openfl_Texture, vBlurCoords[4]).a,\n                texture2D(openfl_Texture, vBlurCoords[5]).a\n            );\n\n            float a = texel.a * 0.39894;\n\t\t\ta += dot(top, contributions.xyz);\n            a += dot(bottom, contributions.zyx);\n\n\t\t\tgl_FragColor = uColor * clamp(a * uStrength, 0.0, 1.0);\n\t\t}\n\t";
+	}
+	if(this.__glVertexSource == null) {
+		this.__glVertexSource = "\n\t\tattribute vec4 openfl_Position;\n\t\tattribute vec2 openfl_TextureCoord;\n\n\t\tuniform mat4 openfl_Matrix;\n\t\tuniform vec2 openfl_TextureSize;\n\n\t\tuniform vec2 uRadius;\n\t\tvarying vec2 vTexCoord;\n\t\tvarying vec2 vBlurCoords[6];\n\n\t\tvoid main(void) {\n\n\t\t\tgl_Position = openfl_Matrix * openfl_Position;\n\t\t\tvTexCoord = openfl_TextureCoord;\n\n\t\t\tvec3 offset = vec3(0.5, 0.75, 1.0);\n\t\t\tvec2 r = uRadius / openfl_TextureSize;\n\t\t\tvBlurCoords[0] = openfl_TextureCoord - r * offset.z;\n\t\t\tvBlurCoords[1] = openfl_TextureCoord - r * offset.y;\n\t\t\tvBlurCoords[2] = openfl_TextureCoord - r * offset.x;\n\t\t\tvBlurCoords[3] = openfl_TextureCoord + r * offset.x;\n\t\t\tvBlurCoords[4] = openfl_TextureCoord + r * offset.y;\n\t\t\tvBlurCoords[5] = openfl_TextureCoord + r * offset.z;\n\t\t}\n\t";
+	}
+	openfl_filters_BitmapFilterShader.call(this);
+	this.uRadius.value = [0,0];
+	this.uColor.value = [0,0,0,0];
+	this.uStrength.value = [1];
+	this.__isGenerated = true;
+	this.__initGL();
+};
+$hxClasses["openfl.filters._GlowFilter.BlurAlphaShader"] = openfl_filters__$GlowFilter_BlurAlphaShader;
+openfl_filters__$GlowFilter_BlurAlphaShader.__name__ = "openfl.filters._GlowFilter.BlurAlphaShader";
+openfl_filters__$GlowFilter_BlurAlphaShader.__super__ = openfl_filters_BitmapFilterShader;
+openfl_filters__$GlowFilter_BlurAlphaShader.prototype = $extend(openfl_filters_BitmapFilterShader.prototype,{
+	uRadius: null
+	,uColor: null
+	,uStrength: null
+	,__class__: openfl_filters__$GlowFilter_BlurAlphaShader
+});
+var openfl_filters__$GlowFilter_CombineKnockoutShader = function() {
+	if(this.__glFragmentSource == null) {
+		this.__glFragmentSource = "\n\t\tuniform sampler2D openfl_Texture;\n\t\tuniform sampler2D sourceBitmap;\n\t\tvarying vec4 textureCoords;\n\n\t\tvoid main(void) {\n\t\t\tvec4 src = texture2D(sourceBitmap, textureCoords.xy);\n\t\t\tvec4 glow = texture2D(openfl_Texture, textureCoords.zw);\n\n\t\t\tgl_FragColor = glow * (1.0 - src.a);\n\t\t}\n\t";
+	}
+	if(this.__glVertexSource == null) {
+		this.__glVertexSource = "attribute vec4 openfl_Position;\n\t\tattribute vec2 openfl_TextureCoord;\n\t\tuniform mat4 openfl_Matrix;\n\t\tuniform vec2 openfl_TextureSize;\n\t\tuniform vec2 offset;\n\t\tvarying vec4 textureCoords;\n\n\t\tvoid main(void) {\n\t\t\tgl_Position = openfl_Matrix * openfl_Position;\n\t\t\ttextureCoords = vec4(openfl_TextureCoord, openfl_TextureCoord - offset / openfl_TextureSize);\n\t\t}\n\t";
+	}
+	openfl_filters_BitmapFilterShader.call(this);
+	this.offset.value = [0,0];
+	this.__isGenerated = true;
+	this.__initGL();
+};
+$hxClasses["openfl.filters._GlowFilter.CombineKnockoutShader"] = openfl_filters__$GlowFilter_CombineKnockoutShader;
+openfl_filters__$GlowFilter_CombineKnockoutShader.__name__ = "openfl.filters._GlowFilter.CombineKnockoutShader";
+openfl_filters__$GlowFilter_CombineKnockoutShader.__super__ = openfl_filters_BitmapFilterShader;
+openfl_filters__$GlowFilter_CombineKnockoutShader.prototype = $extend(openfl_filters_BitmapFilterShader.prototype,{
+	offset: null
+	,sourceBitmap: null
+	,__class__: openfl_filters__$GlowFilter_CombineKnockoutShader
+});
+var openfl_filters__$GlowFilter_CombineShader = function() {
+	if(this.__glFragmentSource == null) {
+		this.__glFragmentSource = "\n\t\tuniform sampler2D openfl_Texture;\n\t\tuniform sampler2D sourceBitmap;\n\t\tvarying vec4 textureCoords;\n\n\t\tvoid main(void) {\n\t\t\tvec4 src = texture2D(sourceBitmap, textureCoords.xy);\n\t\t\tvec4 glow = texture2D(openfl_Texture, textureCoords.zw);\n\n\t\t\tgl_FragColor = src + glow * (1.0 - src.a);\n\t\t}\n\t";
+	}
+	if(this.__glVertexSource == null) {
+		this.__glVertexSource = "attribute vec4 openfl_Position;\n\t\tattribute vec2 openfl_TextureCoord;\n\t\tuniform mat4 openfl_Matrix;\n\t\tuniform vec2 openfl_TextureSize;\n\t\tuniform vec2 offset;\n\t\tvarying vec4 textureCoords;\n\n\t\tvoid main(void) {\n\t\t\tgl_Position = openfl_Matrix * openfl_Position;\n\t\t\ttextureCoords = vec4(openfl_TextureCoord, openfl_TextureCoord - offset / openfl_TextureSize);\n\t\t}\n\t";
+	}
+	openfl_filters_BitmapFilterShader.call(this);
+	this.offset.value = [0,0];
+	this.__isGenerated = true;
+	this.__initGL();
+};
+$hxClasses["openfl.filters._GlowFilter.CombineShader"] = openfl_filters__$GlowFilter_CombineShader;
+openfl_filters__$GlowFilter_CombineShader.__name__ = "openfl.filters._GlowFilter.CombineShader";
+openfl_filters__$GlowFilter_CombineShader.__super__ = openfl_filters_BitmapFilterShader;
+openfl_filters__$GlowFilter_CombineShader.prototype = $extend(openfl_filters_BitmapFilterShader.prototype,{
+	offset: null
+	,sourceBitmap: null
+	,__class__: openfl_filters__$GlowFilter_CombineShader
+});
+var openfl_filters__$GlowFilter_InnerCombineKnockoutShader = function() {
+	if(this.__glFragmentSource == null) {
+		this.__glFragmentSource = "\n\t\tuniform sampler2D openfl_Texture;\n\t\tuniform sampler2D sourceBitmap;\n\t\tvarying vec4 textureCoords;\n\n\t\tvoid main(void) {\n\t\t\tvec4 src = texture2D(sourceBitmap, textureCoords.xy);\n\t\t\tvec4 glow = texture2D(openfl_Texture, textureCoords.zw);\n\n\t\t\tgl_FragColor = glow * src.a;\n\t\t}\n\t";
+	}
+	if(this.__glVertexSource == null) {
+		this.__glVertexSource = "attribute vec4 openfl_Position;\n\t\tattribute vec2 openfl_TextureCoord;\n\t\tuniform mat4 openfl_Matrix;\n\t\tuniform vec2 openfl_TextureSize;\n\t\tuniform vec2 offset;\n\t\tvarying vec4 textureCoords;\n\n\t\tvoid main(void) {\n\t\t\tgl_Position = openfl_Matrix * openfl_Position;\n\t\t\ttextureCoords = vec4(openfl_TextureCoord, openfl_TextureCoord - offset / openfl_TextureSize);\n\t\t}\n\t";
+	}
+	openfl_filters_BitmapFilterShader.call(this);
+	this.offset.value = [0,0];
+	this.__isGenerated = true;
+	this.__initGL();
+};
+$hxClasses["openfl.filters._GlowFilter.InnerCombineKnockoutShader"] = openfl_filters__$GlowFilter_InnerCombineKnockoutShader;
+openfl_filters__$GlowFilter_InnerCombineKnockoutShader.__name__ = "openfl.filters._GlowFilter.InnerCombineKnockoutShader";
+openfl_filters__$GlowFilter_InnerCombineKnockoutShader.__super__ = openfl_filters_BitmapFilterShader;
+openfl_filters__$GlowFilter_InnerCombineKnockoutShader.prototype = $extend(openfl_filters_BitmapFilterShader.prototype,{
+	offset: null
+	,sourceBitmap: null
+	,__class__: openfl_filters__$GlowFilter_InnerCombineKnockoutShader
+});
+var openfl_filters__$GlowFilter_InnerCombineShader = function() {
+	if(this.__glFragmentSource == null) {
+		this.__glFragmentSource = "\n\t\tuniform sampler2D openfl_Texture;\n\t\tuniform sampler2D sourceBitmap;\n\t\tvarying vec4 textureCoords;\n\n\t\tvoid main(void) {\n\t\t\tvec4 src = texture2D(sourceBitmap, textureCoords.xy);\n\t\t\tvec4 glow = texture2D(openfl_Texture, textureCoords.zw);\n\n\t\t\tgl_FragColor = vec4((src.rgb * (1.0 - glow.a)) + (glow.rgb * src.a), src.a);\n\t\t}\n\t";
+	}
+	if(this.__glVertexSource == null) {
+		this.__glVertexSource = "attribute vec4 openfl_Position;\n\t\tattribute vec2 openfl_TextureCoord;\n\t\tuniform mat4 openfl_Matrix;\n\t\tuniform vec2 openfl_TextureSize;\n\t\tuniform vec2 offset;\n\t\tvarying vec4 textureCoords;\n\n\t\tvoid main(void) {\n\t\t\tgl_Position = openfl_Matrix * openfl_Position;\n\t\t\ttextureCoords = vec4(openfl_TextureCoord, openfl_TextureCoord - offset / openfl_TextureSize);\n\t\t}\n\t";
+	}
+	openfl_filters_BitmapFilterShader.call(this);
+	this.offset.value = [0,0];
+	this.__isGenerated = true;
+	this.__initGL();
+};
+$hxClasses["openfl.filters._GlowFilter.InnerCombineShader"] = openfl_filters__$GlowFilter_InnerCombineShader;
+openfl_filters__$GlowFilter_InnerCombineShader.__name__ = "openfl.filters._GlowFilter.InnerCombineShader";
+openfl_filters__$GlowFilter_InnerCombineShader.__super__ = openfl_filters_BitmapFilterShader;
+openfl_filters__$GlowFilter_InnerCombineShader.prototype = $extend(openfl_filters_BitmapFilterShader.prototype,{
+	offset: null
+	,sourceBitmap: null
+	,__class__: openfl_filters__$GlowFilter_InnerCombineShader
+});
+var openfl_filters__$GlowFilter_InvertAlphaShader = function() {
+	if(this.__glFragmentSource == null) {
+		this.__glFragmentSource = "\n\t\tuniform sampler2D openfl_Texture;\n\t\tvarying vec2 vTexCoord;\n\n\t\tvoid main(void) {\n\t\t\tvec4 texel = texture2D(openfl_Texture, vTexCoord);\n\t\t\tgl_FragColor = vec4(texel.rgb, 1.0 - texel.a);\n\t\t}\n\t";
+	}
+	if(this.__glVertexSource == null) {
+		this.__glVertexSource = "\n\t\tattribute vec4 openfl_Position;\n\t\tattribute vec2 openfl_TextureCoord;\n\t\tuniform mat4 openfl_Matrix;\n\t\tvarying vec2 vTexCoord;\n\n\t\tvoid main(void) {\n\t\t\tgl_Position = openfl_Matrix * openfl_Position;\n\t\t\tvTexCoord = openfl_TextureCoord;\n\t\t}\n\t";
+	}
+	openfl_filters_BitmapFilterShader.call(this);
+	this.__isGenerated = true;
+	this.__initGL();
+};
+$hxClasses["openfl.filters._GlowFilter.InvertAlphaShader"] = openfl_filters__$GlowFilter_InvertAlphaShader;
+openfl_filters__$GlowFilter_InvertAlphaShader.__name__ = "openfl.filters._GlowFilter.InvertAlphaShader";
+openfl_filters__$GlowFilter_InvertAlphaShader.__super__ = openfl_filters_BitmapFilterShader;
+openfl_filters__$GlowFilter_InvertAlphaShader.prototype = $extend(openfl_filters_BitmapFilterShader.prototype,{
+	__class__: openfl_filters__$GlowFilter_InvertAlphaShader
+});
+var openfl_filters_GlowFilter = function(color,alpha,blurX,blurY,strength,quality,inner,knockout) {
+	if(knockout == null) {
+		knockout = false;
+	}
+	if(inner == null) {
+		inner = false;
+	}
+	if(quality == null) {
+		quality = 1;
+	}
+	if(strength == null) {
+		strength = 2;
+	}
+	if(blurY == null) {
+		blurY = 6;
+	}
+	if(blurX == null) {
+		blurX = 6;
+	}
+	if(alpha == null) {
+		alpha = 1;
+	}
+	if(color == null) {
+		color = 16711680;
+	}
+	openfl_filters_BitmapFilter.call(this);
+	this.__color = color;
+	this.__alpha = alpha;
+	this.__blurX = blurX;
+	this.__blurY = blurY;
+	this.__strength = strength;
+	this.__inner = inner;
+	this.__knockout = knockout;
+	this.__quality = quality;
+	this.__updateSize();
+	this.__needSecondBitmapData = true;
+	this.__preserveObject = true;
+	this.__renderDirty = true;
+};
+$hxClasses["openfl.filters.GlowFilter"] = openfl_filters_GlowFilter;
+openfl_filters_GlowFilter.__name__ = "openfl.filters.GlowFilter";
+openfl_filters_GlowFilter.__super__ = openfl_filters_BitmapFilter;
+openfl_filters_GlowFilter.prototype = $extend(openfl_filters_BitmapFilter.prototype,{
+	__alpha: null
+	,__blurX: null
+	,__blurY: null
+	,__color: null
+	,__horizontalPasses: null
+	,__inner: null
+	,__knockout: null
+	,__quality: null
+	,__strength: null
+	,__verticalPasses: null
+	,clone: function() {
+		return new openfl_filters_GlowFilter(this.__color,this.__alpha,this.__blurX,this.__blurY,this.__strength,this.__quality,this.__inner,this.__knockout);
+	}
+	,__applyFilter: function(bitmapData,sourceBitmapData,sourceRect,destPoint) {
+		var r = this.__color >> 16 & 255;
+		var g = this.__color >> 8 & 255;
+		var b = this.__color & 255;
+		var finalImage = lime__$internal_graphics_ImageDataUtil.gaussianBlur(bitmapData.image,sourceBitmapData.image,sourceRect.__toLimeRectangle(),destPoint.__toLimeVector2(),this.__blurX,this.__blurY,this.__quality,this.__strength);
+		finalImage.colorTransform(finalImage.get_rect(),new openfl_geom_ColorTransform(0,0,0,this.__alpha,r,g,b,0).__toLimeColorMatrix());
+		if(finalImage == bitmapData.image) {
+			return bitmapData;
+		}
+		return sourceBitmapData;
+	}
+	,__initShader: function(renderer,pass,sourceBitmapData) {
+		if(this.__inner && pass == 0) {
+			return openfl_filters_GlowFilter.__invertAlphaShader;
+		}
+		var blurPass = pass - (this.__inner ? 1 : 0);
+		var numBlurPasses = this.__horizontalPasses + this.__verticalPasses;
+		if(blurPass < numBlurPasses) {
+			var shader = openfl_filters_GlowFilter.__blurAlphaShader;
+			if(blurPass < this.__horizontalPasses) {
+				var scale = Math.pow(0.5,blurPass >> 1) * 0.5;
+				shader.uRadius.value[0] = this.get_blurX() * scale;
+				shader.uRadius.value[1] = 0;
+			} else {
+				var scale = Math.pow(0.5,blurPass - this.__horizontalPasses >> 1) * 0.5;
+				shader.uRadius.value[0] = 0;
+				shader.uRadius.value[1] = this.get_blurY() * scale;
+			}
+			shader.uColor.value[0] = (this.get_color() >> 16 & 255) / 255;
+			shader.uColor.value[1] = (this.get_color() >> 8 & 255) / 255;
+			shader.uColor.value[2] = (this.get_color() & 255) / 255;
+			shader.uColor.value[3] = this.get_alpha();
+			shader.uStrength.value[0] = blurPass == numBlurPasses - 1 ? this.__strength : 1.0;
+			return shader;
+		}
+		if(this.__inner) {
+			if(this.__knockout) {
+				var shader = openfl_filters_GlowFilter.__innerCombineKnockoutShader;
+				shader.sourceBitmap.input = sourceBitmapData;
+				shader.offset.value[0] = 0.0;
+				shader.offset.value[1] = 0.0;
+				return shader;
+			}
+			var shader = openfl_filters_GlowFilter.__innerCombineShader;
+			shader.sourceBitmap.input = sourceBitmapData;
+			shader.offset.value[0] = 0.0;
+			shader.offset.value[1] = 0.0;
+			return shader;
+		} else {
+			if(this.__knockout) {
+				var shader = openfl_filters_GlowFilter.__combineKnockoutShader;
+				shader.sourceBitmap.input = sourceBitmapData;
+				shader.offset.value[0] = 0.0;
+				shader.offset.value[1] = 0.0;
+				return shader;
+			}
+			var shader = openfl_filters_GlowFilter.__combineShader;
+			shader.sourceBitmap.input = sourceBitmapData;
+			shader.offset.value[0] = 0.0;
+			shader.offset.value[1] = 0.0;
+			return shader;
+		}
+	}
+	,__updateSize: function() {
+		this.__leftExtension = this.__blurX > 0 ? Math.ceil(this.__blurX * 1.5) : 0;
+		this.__rightExtension = this.__leftExtension;
+		this.__topExtension = this.__blurY > 0 ? Math.ceil(this.__blurY * 1.5) : 0;
+		this.__bottomExtension = this.__topExtension;
+		this.__calculateNumShaderPasses();
+	}
+	,__calculateNumShaderPasses: function() {
+		this.__horizontalPasses = this.__blurX <= 0 ? 0 : Math.round(this.__blurX * (this.__quality / 4)) + 1;
+		this.__verticalPasses = this.__blurY <= 0 ? 0 : Math.round(this.__blurY * (this.__quality / 4)) + 1;
+		this.__numShaderPasses = this.__horizontalPasses + this.__verticalPasses + (this.__inner ? 2 : 1);
+	}
+	,get_alpha: function() {
+		return this.__alpha;
+	}
+	,set_alpha: function(value) {
+		if(value != this.__alpha) {
+			this.__renderDirty = true;
+		}
+		return this.__alpha = value;
+	}
+	,get_blurX: function() {
+		return this.__blurX;
+	}
+	,set_blurX: function(value) {
+		if(value != this.__blurX) {
+			this.__blurX = value;
+			this.__renderDirty = true;
+			this.__updateSize();
+		}
+		return value;
+	}
+	,get_blurY: function() {
+		return this.__blurY;
+	}
+	,set_blurY: function(value) {
+		if(value != this.__blurY) {
+			this.__blurY = value;
+			this.__renderDirty = true;
+			this.__updateSize();
+		}
+		return value;
+	}
+	,get_color: function() {
+		return this.__color;
+	}
+	,set_color: function(value) {
+		if(value != this.__color) {
+			this.__renderDirty = true;
+		}
+		return this.__color = value;
+	}
+	,get_inner: function() {
+		return this.__inner;
+	}
+	,set_inner: function(value) {
+		if(value != this.__inner) {
+			this.__renderDirty = true;
+			this.__calculateNumShaderPasses();
+		}
+		return this.__inner = value;
+	}
+	,get_knockout: function() {
+		return this.__knockout;
+	}
+	,set_knockout: function(value) {
+		if(value != this.__knockout) {
+			this.__renderDirty = true;
+			this.__calculateNumShaderPasses();
+		}
+		return this.__knockout = value;
+	}
+	,get_quality: function() {
+		return this.__quality;
+	}
+	,set_quality: function(value) {
+		if(value != this.__quality) {
+			this.__renderDirty = true;
+			this.__calculateNumShaderPasses();
+		}
+		return this.__quality = value;
+	}
+	,get_strength: function() {
+		return this.__strength;
+	}
+	,set_strength: function(value) {
+		if(value != this.__strength) {
+			this.__renderDirty = true;
+		}
+		return this.__strength = value;
+	}
+	,__class__: openfl_filters_GlowFilter
+	,__properties__: {set_strength:"set_strength",get_strength:"get_strength",set_quality:"set_quality",get_quality:"get_quality",set_knockout:"set_knockout",get_knockout:"get_knockout",set_inner:"set_inner",get_inner:"get_inner",set_color:"set_color",get_color:"get_color",set_blurY:"set_blurY",get_blurY:"get_blurY",set_blurX:"set_blurX",get_blurX:"get_blurX",set_alpha:"set_alpha",get_alpha:"get_alpha"}
+});
 var openfl_geom_Matrix3D = function(v) {
 	if(v != null && v.get_length() == 16) {
 		this.rawData = v.concat(null);
@@ -112986,6 +113987,7 @@ flixel_FlxObject._secondSeparateFlxRect = (function($this) {
 	$r = rect;
 	return $r;
 }(this));
+openfl_display_Shader.__meta__ = { fields : { glProgram : { SuppressWarnings : ["checkstyle:Dynamic"]}}};
 Xml.Element = 0;
 Xml.PCData = 1;
 Xml.CData = 2;
@@ -113154,7 +114156,6 @@ flixel_graphics_tile_FlxDrawTrianglesItem.rect = (function($this) {
 	$r = rect;
 	return $r;
 }(this));
-openfl_display_Shader.__meta__ = { fields : { glProgram : { SuppressWarnings : ["checkstyle:Dynamic"]}}};
 flixel_input_FlxPointer._cachedPoint = new flixel_math_FlxPoint();
 flixel_input_gamepad_FlxGamepadInputID.fromStringMap = (function($this) {
 	var $r;
@@ -115843,6 +116844,14 @@ openfl_events_TouchEvent.TOUCH_ROLL_OUT = "touchRollOut";
 openfl_events_TouchEvent.TOUCH_ROLL_OVER = "touchRollOver";
 openfl_events_TouchEvent.TOUCH_TAP = "touchTap";
 openfl_events_UncaughtErrorEvent.UNCAUGHT_ERROR = "uncaughtError";
+openfl_filters__$ColorMatrixFilter_ColorMatrixShader.__meta__ = { obj : { SuppressWarnings : ["checkstyle:FieldDocComment"]}};
+openfl_filters_ColorMatrixFilter.__colorMatrixShader = new openfl_filters__$ColorMatrixFilter_ColorMatrixShader();
+openfl_filters_GlowFilter.__invertAlphaShader = new openfl_filters__$GlowFilter_InvertAlphaShader();
+openfl_filters_GlowFilter.__blurAlphaShader = new openfl_filters__$GlowFilter_BlurAlphaShader();
+openfl_filters_GlowFilter.__combineShader = new openfl_filters__$GlowFilter_CombineShader();
+openfl_filters_GlowFilter.__innerCombineShader = new openfl_filters__$GlowFilter_InnerCombineShader();
+openfl_filters_GlowFilter.__combineKnockoutShader = new openfl_filters__$GlowFilter_CombineKnockoutShader();
+openfl_filters_GlowFilter.__innerCombineKnockoutShader = new openfl_filters__$GlowFilter_InnerCombineKnockoutShader();
 openfl_geom_Matrix3D.__meta__ = { statics : { create2D : { SuppressWarnings : ["checkstyle:FieldDocComment"]}, createABCD : { SuppressWarnings : ["checkstyle:FieldDocComment"]}, createOrtho : { SuppressWarnings : ["checkstyle:FieldDocComment"]}}};
 openfl_geom_Orientation3D.AXIS_ANGLE = 0;
 openfl_geom_Orientation3D.EULER_ANGLES = 1;
