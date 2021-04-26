@@ -893,7 +893,7 @@ ApplicationMain.main = function() {
 ApplicationMain.create = function(config) {
 	var app = new openfl_display_Application();
 	ManifestResources.init(config);
-	app.meta.h["build"] = "22";
+	app.meta.h["build"] = "23";
 	app.meta.h["company"] = "HaxeFlixel";
 	app.meta.h["file"] = "AnEternityUnderWater";
 	app.meta.h["name"] = "AnEternityUnderWater";
@@ -4976,7 +4976,7 @@ CreditsState.prototype = $extend(flixel_FlxState.prototype,{
 		this.add(this.creditsText);
 		this.creditsText.screenCenter();
 		var _g = this.creditsText;
-		_g.set_y(_g.y + 900);
+		_g.set_y(_g.y + 500);
 		this.replayText = new flixel_text_FlxText(0,0,500);
 		this.replayText.set_size(30);
 		this.replayText.set_text("Thank you for playing!\n\nThis game was made in 2 days for\nA game jam.\n\nWith the theme: Deeper and deeper.\n\nTo replay, just reload the page lol.");
@@ -5199,7 +5199,7 @@ ManifestResources.init = function(config) {
 	openfl_text_Font.registerFont(_$_$ASSET_$_$OPENFL_$_$flixel_$fonts_$nokiafc22_$ttf);
 	openfl_text_Font.registerFont(_$_$ASSET_$_$OPENFL_$_$flixel_$fonts_$monsterrat_$ttf);
 	var bundle;
-	var data = "{\"name\":null,\"assets\":\"aoy4:pathy36:assets%2Fmusic%2Fmusic-goes-here.txty4:sizezy4:typey4:TEXTy2:idR1y7:preloadtgoR2i1320624R3y5:MUSICR5y29:assets%2Fmusic%2FREALSHIT.oggy9:pathGroupaR8hR6tgoR0y39:assets%2Fimages%2Fswitches%2FLeftON.pngR2i29802R3y5:IMAGER5R10R6tgoR0y40:assets%2Fimages%2Fswitches%2FLeftOFF.pngR2i24273R3R11R5R12R6tgoR0y31:assets%2Fimages%2Fdepth%2F8.pngR2i1200R3R11R5R13R6tgoR0y31:assets%2Fimages%2Fdepth%2F9.pngR2i997R3R11R5R14R6tgoR0y31:assets%2Fimages%2Fdepth%2F4.pngR2i786R3R11R5R15R6tgoR0y31:assets%2Fimages%2Fdepth%2F5.pngR2i868R3R11R5R16R6tgoR0y31:assets%2Fimages%2Fdepth%2F7.pngR2i640R3R11R5R17R6tgoR0y31:assets%2Fimages%2Fdepth%2F6.pngR2i1018R3R11R5R18R6tgoR0y31:assets%2Fimages%2Fdepth%2F2.pngR2i756R3R11R5R19R6tgoR0y31:assets%2Fimages%2Fdepth%2F3.pngR2i836R3R11R5R20R6tgoR0y31:assets%2Fimages%2Fdepth%2F1.pngR2i902R3R11R5R21R6tgoR0y26:assets%2Fimages%2Fship.pngR2i218170R3R11R5R22R6tgoR0y33:assets%2Fimages%2FINTROSCREEN.pngR2i259839R3R11R5R23R6tgoR0y32:assets%2Fimages%2FSHIPINSANE.pngR2i1856583R3R11R5R24R6tgoR0y32:assets%2Fimages%2FSHIPINSANE.xmlR2i5975R3R4R5R25R6tgoR0y35:assets%2Fimages%2FTHEFUCKINGCUP.pngR2i46993R3R11R5R26R6tgoR0y32:assets%2Fimages%2Fitspissing.pngR2i463664R3R11R5R27R6tgoR0y36:assets%2Fimages%2FPLAY_THE_THIRD.pngR2i333545R3R11R5R28R6tgoR0y32:assets%2Fimages%2FTSUISJESUS.pngR2i181367R3R11R5R29R6tgoR0y36:assets%2Fimages%2FPLAY_THE_THIRD.xmlR2i1431R3R4R5R30R6tgoR0y29:assets%2Fimages%2FFLICKER.pngR2i1269030R3R11R5R31R6tgoR0y29:assets%2Fimages%2FFLICKER.xmlR2i5972R3R4R5R32R6tgoR0y27:assets%2Fimages%2Ftiles.pngR2i1056R3R11R5R33R6tgoR0y40:assets%2Fimages%2FNOFLICKERTROLLFACE.pngR2i212141R3R11R5R34R6tgoR0y26:assets%2Fimages%2Fplay.xmlR2i1519R3R4R5R35R6tgoR0y26:assets%2Fimages%2Fplay.pngR2i219991R3R11R5R36R6tgoR0y36:assets%2Fimages%2Fimages-go-here.txtR2zR3R4R5R37R6tgoR0y24:assets%2Fimages%2Fbg.pngR2i371991R3R11R5R38R6tgoR2i18285R3R7R5y32:assets%2Fsounds%2FTSUSIPREAL.mp3R9aR39hR6tgoR2i30144R3R7R5y29:assets%2Fsounds%2Fhacking.mp3R9aR40hR6tgoR2i45888R3R7R5y36:assets%2Fsounds%2Fheavybreathing.mp3R9aR41hR6tgoR2i34982R3R7R5y37:assets%2Fsounds%2Fundertalemoment.mp3R9aR42hR6tgoR0y36:assets%2Fsounds%2Fsounds-go-here.txtR2zR3R4R5R43R6tgoR2i5037R3R7R5y26:assets%2Fsounds%2Fslit.mp3R9aR44hR6tgoR2i10286R3y5:SOUNDR5y27:assets%2Fsounds%2Fclick.oggR9aR46hR6tgoR0y34:assets%2Fdata%2Fdata-goes-here.txtR2zR3R4R5R47R6tgoR2i39706R3R7R5y28:flixel%2Fsounds%2Fflixel.mp3R9aR48y28:flixel%2Fsounds%2Fflixel.ogghR6tgoR2i2114R3R7R5y26:flixel%2Fsounds%2Fbeep.mp3R9aR50y26:flixel%2Fsounds%2Fbeep.ogghR6tgoR2i5794R3R45R5R51R9aR50R51hgoR2i33629R3R45R5R49R9aR48R49hgoR2i15744R3y4:FONTy9:classNamey35:__ASSET__flixel_fonts_nokiafc22_ttfR5y30:flixel%2Ffonts%2Fnokiafc22.ttfR6tgoR2i29724R3R52R53y36:__ASSET__flixel_fonts_monsterrat_ttfR5y31:flixel%2Ffonts%2Fmonsterrat.ttfR6tgoR0y33:flixel%2Fimages%2Fui%2Fbutton.pngR2i519R3R11R5R58R6tgoR0y36:flixel%2Fimages%2Flogo%2Fdefault.pngR2i3280R3R11R5R59R6tgoR0y44:flixel%2Fflixel-ui%2Fimg%2Fdropdown_mark.pngR2i156R3R11R5R60R6tgoR0y40:flixel%2Fflixel-ui%2Fimg%2Fplus_mark.pngR2i147R3R11R5R61R6tgoR0y36:flixel%2Fflixel-ui%2Fimg%2Fradio.pngR2i191R3R11R5R62R6tgoR0y48:flixel%2Fflixel-ui%2Fimg%2Fbutton_arrow_left.pngR2i459R3R11R5R63R6tgoR0y42:flixel%2Fflixel-ui%2Fimg%2Fbutton_thin.pngR2i247R3R11R5R64R6tgoR0y34:flixel%2Fflixel-ui%2Fimg%2Ftab.pngR2i201R3R11R5R65R6tgoR0y41:flixel%2Fflixel-ui%2Fimg%2Ffinger_big.pngR2i1724R3R11R5R66R6tgoR0y36:flixel%2Fflixel-ui%2Fimg%2Finvis.pngR2i128R3R11R5R67R6tgoR0y43:flixel%2Fflixel-ui%2Fimg%2Fchrome_inset.pngR2i192R3R11R5R68R6tgoR0y44:flixel%2Fflixel-ui%2Fimg%2Ftooltip_arrow.pngR2i18509R3R11R5R69R6tgoR0y49:flixel%2Fflixel-ui%2Fimg%2Fbutton_arrow_right.pngR2i511R3R11R5R70R6tgoR0y40:flixel%2Fflixel-ui%2Fimg%2Fradio_dot.pngR2i153R3R11R5R71R6tgoR0y37:flixel%2Fflixel-ui%2Fimg%2Fchrome.pngR2i253R3R11R5R72R6tgoR0y40:flixel%2Fflixel-ui%2Fimg%2Fcheck_box.pngR2i922R3R11R5R73R6tgoR0y44:flixel%2Fflixel-ui%2Fimg%2Fbutton_toggle.pngR2i534R3R11R5R74R6tgoR0y46:flixel%2Fflixel-ui%2Fimg%2Fbutton_arrow_up.pngR2i493R3R11R5R75R6tgoR0y41:flixel%2Fflixel-ui%2Fimg%2Fminus_mark.pngR2i136R3R11R5R76R6tgoR0y42:flixel%2Fflixel-ui%2Fimg%2Fchrome_flat.pngR2i212R3R11R5R77R6tgoR0y37:flixel%2Fflixel-ui%2Fimg%2Fswatch.pngR2i185R3R11R5R78R6tgoR0y43:flixel%2Fflixel-ui%2Fimg%2Fchrome_light.pngR2i214R3R11R5R79R6tgoR0y38:flixel%2Fflixel-ui%2Fimg%2Fhilight.pngR2i129R3R11R5R80R6tgoR0y41:flixel%2Fflixel-ui%2Fimg%2Fcheck_mark.pngR2i946R3R11R5R81R6tgoR0y39:flixel%2Fflixel-ui%2Fimg%2Ftab_back.pngR2i210R3R11R5R82R6tgoR0y34:flixel%2Fflixel-ui%2Fimg%2Fbox.pngR2i912R3R11R5R83R6tgoR0y43:flixel%2Fflixel-ui%2Fimg%2Ffinger_small.pngR2i294R3R11R5R84R6tgoR0y37:flixel%2Fflixel-ui%2Fimg%2Fbutton.pngR2i433R3R11R5R85R6tgoR0y48:flixel%2Fflixel-ui%2Fimg%2Fbutton_arrow_down.pngR2i446R3R11R5R86R6tgoR0y44:flixel%2Fflixel-ui%2Fxml%2Fdefault_popup.xmlR2i1848R3R4R5R87R6tgoR0y53:flixel%2Fflixel-ui%2Fxml%2Fdefault_loading_screen.xmlR2i1953R3R4R5R88R6tgoR0y39:flixel%2Fflixel-ui%2Fxml%2Fdefaults.xmlR2i1263R3R4R5R89R6tgh\",\"rootPath\":null,\"version\":2,\"libraryArgs\":[],\"libraryType\":null}";
+	var data = "{\"name\":null,\"assets\":\"aoy4:pathy36:assets%2Fmusic%2Fmusic-goes-here.txty4:sizezy4:typey4:TEXTy2:idR1y7:preloadtgoR2i1320624R3y5:MUSICR5y29:assets%2Fmusic%2FREALSHIT.oggy9:pathGroupaR8hR6tgoR0y39:assets%2Fimages%2Fswitches%2FLeftON.pngR2i29802R3y5:IMAGER5R10R6tgoR0y40:assets%2Fimages%2Fswitches%2FLeftOFF.pngR2i24273R3R11R5R12R6tgoR0y31:assets%2Fimages%2Fdepth%2F8.pngR2i1200R3R11R5R13R6tgoR0y31:assets%2Fimages%2Fdepth%2F9.pngR2i997R3R11R5R14R6tgoR0y31:assets%2Fimages%2Fdepth%2F4.pngR2i786R3R11R5R15R6tgoR0y31:assets%2Fimages%2Fdepth%2F5.pngR2i868R3R11R5R16R6tgoR0y31:assets%2Fimages%2Fdepth%2F7.pngR2i640R3R11R5R17R6tgoR0y31:assets%2Fimages%2Fdepth%2F6.pngR2i1018R3R11R5R18R6tgoR0y31:assets%2Fimages%2Fdepth%2F2.pngR2i756R3R11R5R19R6tgoR0y31:assets%2Fimages%2Fdepth%2F3.pngR2i836R3R11R5R20R6tgoR0y31:assets%2Fimages%2Fdepth%2F1.pngR2i902R3R11R5R21R6tgoR0y26:assets%2Fimages%2Fship.pngR2i218170R3R11R5R22R6tgoR0y33:assets%2Fimages%2FINTROSCREEN.pngR2i259839R3R11R5R23R6tgoR0y32:assets%2Fimages%2FSHIPINSANE.pngR2i1856583R3R11R5R24R6tgoR0y32:assets%2Fimages%2FSHIPINSANE.xmlR2i5975R3R4R5R25R6tgoR0y35:assets%2Fimages%2FTHEFUCKINGCUP.pngR2i46993R3R11R5R26R6tgoR0y32:assets%2Fimages%2Fitspissing.pngR2i463664R3R11R5R27R6tgoR0y36:assets%2Fimages%2FPLAY_THE_THIRD.pngR2i333545R3R11R5R28R6tgoR0y32:assets%2Fimages%2FTSUISJESUS.pngR2i181367R3R11R5R29R6tgoR0y36:assets%2Fimages%2FPLAY_THE_THIRD.xmlR2i1431R3R4R5R30R6tgoR0y29:assets%2Fimages%2FFLICKER.pngR2i1269030R3R11R5R31R6tgoR0y29:assets%2Fimages%2FFLICKER.xmlR2i5972R3R4R5R32R6tgoR0y27:assets%2Fimages%2Ftiles.pngR2i1056R3R11R5R33R6tgoR0y40:assets%2Fimages%2FNOFLICKERTROLLFACE.pngR2i212141R3R11R5R34R6tgoR0y26:assets%2Fimages%2Fplay.xmlR2i1519R3R4R5R35R6tgoR0y26:assets%2Fimages%2Fplay.pngR2i219991R3R11R5R36R6tgoR0y36:assets%2Fimages%2Fimages-go-here.txtR2zR3R4R5R37R6tgoR0y24:assets%2Fimages%2Fbg.pngR2i371991R3R11R5R38R6tgoR2i18285R3R7R5y32:assets%2Fsounds%2FTSUSIPREAL.mp3R9aR39hR6tgoR2i25581R3R7R5y29:assets%2Fsounds%2Fhacking.mp3R9aR40hR6tgoR2i45888R3R7R5y36:assets%2Fsounds%2Fheavybreathing.mp3R9aR41hR6tgoR2i34982R3R7R5y37:assets%2Fsounds%2Fundertalemoment.mp3R9aR42hR6tgoR0y36:assets%2Fsounds%2Fsounds-go-here.txtR2zR3R4R5R43R6tgoR2i5037R3R7R5y26:assets%2Fsounds%2Fslit.mp3R9aR44hR6tgoR2i10286R3y5:SOUNDR5y27:assets%2Fsounds%2Fclick.oggR9aR46hR6tgoR0y34:assets%2Fdata%2Fdata-goes-here.txtR2zR3R4R5R47R6tgoR2i39706R3R7R5y28:flixel%2Fsounds%2Fflixel.mp3R9aR48y28:flixel%2Fsounds%2Fflixel.ogghR6tgoR2i2114R3R7R5y26:flixel%2Fsounds%2Fbeep.mp3R9aR50y26:flixel%2Fsounds%2Fbeep.ogghR6tgoR2i5794R3R45R5R51R9aR50R51hgoR2i33629R3R45R5R49R9aR48R49hgoR2i15744R3y4:FONTy9:classNamey35:__ASSET__flixel_fonts_nokiafc22_ttfR5y30:flixel%2Ffonts%2Fnokiafc22.ttfR6tgoR2i29724R3R52R53y36:__ASSET__flixel_fonts_monsterrat_ttfR5y31:flixel%2Ffonts%2Fmonsterrat.ttfR6tgoR0y33:flixel%2Fimages%2Fui%2Fbutton.pngR2i519R3R11R5R58R6tgoR0y36:flixel%2Fimages%2Flogo%2Fdefault.pngR2i3280R3R11R5R59R6tgoR0y44:flixel%2Fflixel-ui%2Fimg%2Fdropdown_mark.pngR2i156R3R11R5R60R6tgoR0y40:flixel%2Fflixel-ui%2Fimg%2Fplus_mark.pngR2i147R3R11R5R61R6tgoR0y36:flixel%2Fflixel-ui%2Fimg%2Fradio.pngR2i191R3R11R5R62R6tgoR0y48:flixel%2Fflixel-ui%2Fimg%2Fbutton_arrow_left.pngR2i459R3R11R5R63R6tgoR0y42:flixel%2Fflixel-ui%2Fimg%2Fbutton_thin.pngR2i247R3R11R5R64R6tgoR0y34:flixel%2Fflixel-ui%2Fimg%2Ftab.pngR2i201R3R11R5R65R6tgoR0y41:flixel%2Fflixel-ui%2Fimg%2Ffinger_big.pngR2i1724R3R11R5R66R6tgoR0y36:flixel%2Fflixel-ui%2Fimg%2Finvis.pngR2i128R3R11R5R67R6tgoR0y43:flixel%2Fflixel-ui%2Fimg%2Fchrome_inset.pngR2i192R3R11R5R68R6tgoR0y44:flixel%2Fflixel-ui%2Fimg%2Ftooltip_arrow.pngR2i18509R3R11R5R69R6tgoR0y49:flixel%2Fflixel-ui%2Fimg%2Fbutton_arrow_right.pngR2i511R3R11R5R70R6tgoR0y40:flixel%2Fflixel-ui%2Fimg%2Fradio_dot.pngR2i153R3R11R5R71R6tgoR0y37:flixel%2Fflixel-ui%2Fimg%2Fchrome.pngR2i253R3R11R5R72R6tgoR0y40:flixel%2Fflixel-ui%2Fimg%2Fcheck_box.pngR2i922R3R11R5R73R6tgoR0y44:flixel%2Fflixel-ui%2Fimg%2Fbutton_toggle.pngR2i534R3R11R5R74R6tgoR0y46:flixel%2Fflixel-ui%2Fimg%2Fbutton_arrow_up.pngR2i493R3R11R5R75R6tgoR0y41:flixel%2Fflixel-ui%2Fimg%2Fminus_mark.pngR2i136R3R11R5R76R6tgoR0y42:flixel%2Fflixel-ui%2Fimg%2Fchrome_flat.pngR2i212R3R11R5R77R6tgoR0y37:flixel%2Fflixel-ui%2Fimg%2Fswatch.pngR2i185R3R11R5R78R6tgoR0y43:flixel%2Fflixel-ui%2Fimg%2Fchrome_light.pngR2i214R3R11R5R79R6tgoR0y38:flixel%2Fflixel-ui%2Fimg%2Fhilight.pngR2i129R3R11R5R80R6tgoR0y41:flixel%2Fflixel-ui%2Fimg%2Fcheck_mark.pngR2i946R3R11R5R81R6tgoR0y39:flixel%2Fflixel-ui%2Fimg%2Ftab_back.pngR2i210R3R11R5R82R6tgoR0y34:flixel%2Fflixel-ui%2Fimg%2Fbox.pngR2i912R3R11R5R83R6tgoR0y43:flixel%2Fflixel-ui%2Fimg%2Ffinger_small.pngR2i294R3R11R5R84R6tgoR0y37:flixel%2Fflixel-ui%2Fimg%2Fbutton.pngR2i433R3R11R5R85R6tgoR0y48:flixel%2Fflixel-ui%2Fimg%2Fbutton_arrow_down.pngR2i446R3R11R5R86R6tgoR0y44:flixel%2Fflixel-ui%2Fxml%2Fdefault_popup.xmlR2i1848R3R4R5R87R6tgoR0y53:flixel%2Fflixel-ui%2Fxml%2Fdefault_loading_screen.xmlR2i1953R3R4R5R88R6tgoR0y39:flixel%2Fflixel-ui%2Fxml%2Fdefaults.xmlR2i1263R3R4R5R89R6tgh\",\"rootPath\":null,\"version\":2,\"libraryArgs\":[],\"libraryType\":null}";
 	var manifest = lime_utils_AssetManifest.parse(data,ManifestResources.rootPath);
 	var library = lime_utils_AssetLibrary.fromManifest(manifest);
 	lime_utils_Assets.registerLibrary("default",library);
@@ -5573,7 +5573,7 @@ MenuState.prototype = $extend(flixel_FlxState.prototype,{
 	,clickPlay: function() {
 		this.sound.destroy();
 		var undertale = new flixel_system_FlxSound().loadEmbedded("assets/sounds/undertalemoment.mp3",false,true);
-		undertale.set_volume(1);
+		undertale.set_volume(0.5);
 		undertale.play();
 		flixel_FlxG.camera.fade(-1,2,false,function() {
 			var nextState = new PlayState();
@@ -5588,8 +5588,10 @@ MenuState.prototype = $extend(flixel_FlxState.prototype,{
 	,__class__: MenuState
 });
 var PlayState = function(MaxSize) {
+	this.inCutscene = false;
 	this.badBoiScene = false;
 	this.wiggleShit = new WiggleEffect();
+	this.drankCoffee = false;
 	this.high = false;
 	this.depth = 10;
 	this.doneTasks = false;
@@ -5602,7 +5604,6 @@ PlayState.prototype = $extend(flixel_FlxState.prototype,{
 	FUNNYTEXT: null
 	,MOUSEBOXIGUESS: null
 	,CAFFINE: null
-	,SWITCH: null
 	,DAYS: null
 	,OXY: null
 	,funnybg: null
@@ -5613,6 +5614,7 @@ PlayState.prototype = $extend(flixel_FlxState.prototype,{
 	,screen: null
 	,depth: null
 	,high: null
+	,drankCoffee: null
 	,wiggleShit: null
 	,ship: null
 	,highShitLOL: null
@@ -5620,16 +5622,14 @@ PlayState.prototype = $extend(flixel_FlxState.prototype,{
 	,funnyframe: null
 	,notsofunnyframe: null
 	,badBoiScene: null
+	,inCutscene: null
 	,create: function() {
+		flixel_FlxG.debugger.set_drawDebug(true);
 		flixel_FlxG.fixedTimestep = false;
-		this.CAFFINE = new flixel_FlxSprite(138,227).makeGraphic(100,100,-16777216);
-		this.add(this.CAFFINE);
 		this.DAYS = new flixel_FlxSprite(453,40).makeGraphic(150,150,-16777216);
 		this.add(this.DAYS);
 		this.OXY = new flixel_FlxSprite(149,32).makeGraphic(150,150,-16777216);
 		this.add(this.OXY);
-		this.SWITCH = new flixel_FlxSprite(300,200).makeGraphic(50,50,-16777216);
-		this.add(this.SWITCH);
 		this.funnybg = new flixel_addons_display_FlxBackdrop("assets/images/TSUISJESUS.png",0,3,true,true);
 		this.add(this.funnybg);
 		this.funnybg.velocity.set_y(-100);
@@ -5663,48 +5663,86 @@ PlayState.prototype = $extend(flixel_FlxState.prototype,{
 		this.FUNNYTEXT = new flixel_addons_text_FlxTypeText(10,350,630,"Day 1 of being on this ship. The UNITED STATES government brought me on this mission. They told me to search for something bright on the ocean floor, but not anything else, so I guess I'll know when I'll find it?.",20);
 		this.add(this.FUNNYTEXT);
 		this.FUNNYTEXT.start(0.03,false,false);
-		this.MOUSEBOXIGUESS = new flixel_FlxSprite(flixel_FlxG.mouse.x,flixel_FlxG.mouse.y).makeGraphic(50,50,-8355712);
+		this.MOUSEBOXIGUESS = new flixel_FlxSprite(flixel_FlxG.mouse.x,flixel_FlxG.mouse.y).makeGraphic(10,10,-8355712);
 		this.add(this.MOUSEBOXIGUESS);
 		this.MOUSEBOXIGUESS.set_visible(false);
+		this.SWITCHGUI1 = new Switch(400,210);
+		this.add(this.SWITCHGUI1);
+		this.SWITCHGUI1.set_width(5);
+		this.SWITCHGUI1.set_height(5);
+		this.SWITCHGUI1.offset.set(0,0);
+		this.SWITCHGUI1.updateHitbox();
+		this.SWITCHGUI2 = new Switch(200,200);
+		this.add(this.SWITCHGUI2);
+		this.SWITCHGUI2.set_flipX(true);
+		this.SWITCHGUI2.set_width(5);
+		this.SWITCHGUI2.set_height(5);
+		this.SWITCHGUI2.offset.set(0,0);
+		this.SWITCHGUI2.updateHitbox();
+		this.SWITCHGUI3 = new Switch(300,200);
+		this.add(this.SWITCHGUI3);
+		this.SWITCHGUI3.set_width(5);
+		this.SWITCHGUI3.set_height(5);
+		this.SWITCHGUI3.offset.set(0,0);
+		this.SWITCHGUI3.updateHitbox();
 		this.DESCTEXT = new flixel_text_FlxText(flixel_FlxG.mouse.x,flixel_FlxG.mouse.y,1000,"",12);
 		this.add(this.DESCTEXT);
-		this.SWITCHGUI1 = new Switch(-50,25);
-		this.add(this.SWITCHGUI1);
+		this.CAFFINE = new flixel_FlxSprite(100,197).makeGraphic(75,75,-16777216);
+		this.add(this.CAFFINE);
+		this.CAFFINE.set_visible(false);
 		flixel_FlxState.prototype.create.call(this);
 	}
 	,loadLevel: function(levelid) {
 		var _gthis = this;
-		this.SWITCHGUI1.switchState("off");
+		this.drankCoffee = false;
+		this.inCutscene = true;
+		this.SWITCHGUI1.switchState(false);
+		this.SWITCHGUI2.switchState(false);
+		this.SWITCHGUI3.switchState(false);
 		switch(levelid) {
 		case 2:
 			this.FUNNYTEXT.resetText("Another day! I wish I had more to do, but I still like just relaxing and watching the ocean go by.");
-			this.FUNNYTEXT.start(0.03,false,false);
+			this.FUNNYTEXT.start(0.03,false,false,null,function() {
+				_gthis.inCutscene = false;
+			});
 			break;
 		case 3:
 			this.FUNNYTEXT.resetText("Another day, another coffee to drink, another switch to press. Better get to it.");
-			this.FUNNYTEXT.start(0.03,false,false);
+			this.FUNNYTEXT.start(0.03,false,false,null,function() {
+				_gthis.inCutscene = false;
+			});
 			break;
 		case 4:
 			this.FUNNYTEXT.resetText("Good morning to me. Just gotta remember to keep on pressing. I'll make it to the bottom eventually.");
-			this.FUNNYTEXT.start(0.03,false,false);
+			this.FUNNYTEXT.start(0.03,false,false,null,function() {
+				_gthis.inCutscene = false;
+			});
 			break;
 		case 5:
 			this.FUNNYTEXT.resetText("I wish I could change the inside of the ship; the scenery outside is always the same.");
-			this.FUNNYTEXT.start(0.03,false,false);
+			this.FUNNYTEXT.start(0.03,false,false,null,function() {
+				_gthis.inCutscene = false;
+			});
 			break;
 		case 6:
 			this.FUNNYTEXT.resetText("It's been quite a while since I started. I wonder what would happen if I didn't press the switches..?");
-			this.FUNNYTEXT.start(0.03,false,false);
+			this.FUNNYTEXT.start(0.03,false,false,null,function() {
+				_gthis.inCutscene = false;
+			});
 			break;
 		case 7:
 			this.FUNNYTEXT.resetText("I'm starting to lose track of time down here. I'm going to let my curiosity get the best of me. Let's see what happens if I don't press the switches.");
-			this.FUNNYTEXT.start(0.03,false,false);
+			this.FUNNYTEXT.start(0.03,false,false,null,function() {
+				_gthis.inCutscene = false;
+			});
 			break;
 		case 8:
 			this.highShitLOL.set_visible(true);
 			this.ship.set_visible(false);
 			this.FUNNYTEXT.resetText("Woah, this feels weird. It feels like my head is floating. I like this.");
-			this.FUNNYTEXT.start(0.03,false,false);
+			this.FUNNYTEXT.start(0.03,false,false,null,function() {
+				_gthis.inCutscene = false;
+			});
 			break;
 		case 9:
 			flixel_FlxG.camera.set_color(-8355712);
@@ -5727,7 +5765,9 @@ PlayState.prototype = $extend(flixel_FlxState.prototype,{
 								_gthis.FUNNYTEXT.start(0.03,false,false);
 								new flixel_util_FlxTimer().start(3,function(tmr) {
 									_gthis.FUNNYTEXT.resetText("Fuck my life...");
-									_gthis.FUNNYTEXT.start(0.03,false,false);
+									_gthis.FUNNYTEXT.start(0.03,false,false,null,function() {
+										_gthis.inCutscene = false;
+									});
 								});
 							});
 						});
@@ -5738,223 +5778,14 @@ PlayState.prototype = $extend(flixel_FlxState.prototype,{
 		}
 		flixel_FlxG.camera.fade(-1,1,true,function() {
 			_gthis.doneTasks = false;
-			_gthis.CAFFINE.set_x(138);
-			_gthis.CAFFINE.set_y(227);
-			_gthis.SWITCH.set_x(300);
-			_gthis.SWITCH.set_y(200);
+			_gthis.CAFFINE.set_x(100);
+			_gthis.CAFFINE.set_y(197);
 		});
 	}
-	,update: function(elapsed) {
+	,checkSwitches: function() {
 		var _gthis = this;
-		this.MOUSEBOXIGUESS.set_x(this.DESCTEXT.set_x(flixel_FlxG.mouse.x - 25));
-		this.MOUSEBOXIGUESS.set_y(this.DESCTEXT.set_y(flixel_FlxG.mouse.y - 25));
-		if(flixel_FlxG.overlap(this.MOUSEBOXIGUESS,this.CAFFINE) && this.badBoiScene == false) {
-			this.DESCTEXT.set_text("Coffee: Click to drink");
-		} else if(flixel_FlxG.overlap(this.MOUSEBOXIGUESS,this.SWITCH) && PlayState.level < 9) {
-			this.DESCTEXT.set_text("Switch: Click to flip");
-		} else if(this.badBoiScene == true) {
-			this.DESCTEXT.set_text("Coffee: Click to drink");
-		} else {
-			this.DESCTEXT.set_text("");
-		}
-		var tmp;
-		if(this.badBoiScene == true) {
-			var _this = flixel_FlxG.mouse._leftButton;
-			tmp = _this.current == 1 || _this.current == 2;
-		} else {
-			tmp = false;
-		}
-		if(tmp) {
-			this.badBoiScene = false;
-			var CUTTINGREALLOL = new flixel_FlxSprite(0,0).makeGraphic(1000,1000,-16777216);
-			this.add(CUTTINGREALLOL);
-			var sound = new flixel_system_FlxSound().loadEmbedded("assets/sounds/TSUSIPREAL.mp3",false,true);
-			sound.set_volume(0.5);
-			sound.play();
-			new flixel_util_FlxTimer().start(5,function(tmr) {
-				var sound = new flixel_system_FlxSound().loadEmbedded("assets/sounds/hacking.mp3",false,true);
-				sound.set_volume(0.5);
-				sound.play();
-				new flixel_util_FlxTimer().start(3,function(tmr) {
-					var nextState = new CreditsState();
-					if(flixel_FlxG.game._state.switchTo(nextState)) {
-						flixel_FlxG.game._requestedState = nextState;
-					}
-				});
-			});
-		}
-		var tmp;
-		if(flixel_FlxG.overlap(this.MOUSEBOXIGUESS,this.OXY)) {
-			var _this = flixel_FlxG.mouse._leftButton;
-			tmp = _this.current == 1 || _this.current == 2;
-		} else {
-			tmp = false;
-		}
-		if(tmp && this.doneTasks == false) {
-			this.OXY.set_x(1000);
-			this.OXY.set_y(1000);
-			if(PlayState.level == 1) {
-				this.FUNNYTEXT.resetText("This shows the amount of oxygen in the ship. Should never go down, aslong as I keep flipping the switches!");
-				this.FUNNYTEXT.start(0.03,false,false);
-			}
-		}
-		var tmp;
-		if(flixel_FlxG.overlap(this.MOUSEBOXIGUESS,this.CAFFINE)) {
-			var _this = flixel_FlxG.mouse._leftButton;
-			tmp = _this.current == 1 || _this.current == 2;
-		} else {
-			tmp = false;
-		}
-		if(tmp && this.doneTasks == false && this.badBoiScene == false) {
-			this.CAFFINE.set_x(this.CAFFINE.set_y(1000));
-			if(PlayState.level < 9) {
-				var sound = new flixel_system_FlxSound().loadEmbedded("assets/sounds/TSUSIPREAL.mp3",false,true);
-				sound.set_volume(0.5);
-				sound.play();
-			}
-			switch(PlayState.level) {
-			case 1:
-				this.FUNNYTEXT.resetText("Oh, forgot my coffee! Always good to wake up in the morning to the ocean and a good cup of coffee.");
-				this.FUNNYTEXT.start(0.03,false,false);
-				break;
-			case 2:
-				this.FUNNYTEXT.resetText("Day 2 of coffee! Planning to make this a tradition now. It's very calming, although I wished I had something to read. Time to do my tasks.");
-				break;
-			case 3:
-				this.FUNNYTEXT.resetText("I wish my coffee was warmer.");
-				break;
-			case 4:
-				this.FUNNYTEXT.resetText("Even this is getting a little repetitive, but the energy boost is well needed. Back to pressing.");
-				break;
-			case 5:
-				this.FUNNYTEXT.resetText("I feel a little better. Now, to press those switches.");
-				break;
-			case 6:
-				this.FUNNYTEXT.resetText("That coffee always gets me in the working mood.");
-				break;
-			case 7:
-				this.FUNNYTEXT.resetText("The effects of this coffee are getting duller.");
-				this.FUNNYTEXT.start(0.03,false,false);
-				new flixel_util_FlxTimer().start(5,function(tmr) {
-					_gthis.FUNNYTEXT.resetText("Now I just, chill, I guess.");
-					_gthis.FUNNYTEXT.start(0.03,false,false);
-					new flixel_util_FlxTimer().start(9,function(tmr) {
-						_gthis.FUNNYTEXT.resetText("Wow, there really is nothing to do in here.");
-						_gthis.FUNNYTEXT.start(0.03,false,false);
-						new flixel_util_FlxTimer().start(5,function(tmr) {
-							_gthis.FUNNYTEXT.resetText("The background is so repetitive...");
-							_gthis.FUNNYTEXT.start(0.03,false,false);
-							new flixel_util_FlxTimer().start(7,function(tmr) {
-								_gthis.FUNNYTEXT.resetText("I suppose i'm done for the night. I don't feel a change right now, but I'll see what happens tomorrow, I guess.");
-								_gthis.FUNNYTEXT.start(0.03,false,false);
-								new flixel_util_FlxTimer().start(6,function(tmr) {
-									flixel_FlxG.camera.fade(-16777216,7,false,function() {
-										PlayState.level++;
-									});
-								});
-							});
-						});
-					});
-				});
-				break;
-			case 8:
-				this.FUNNYTEXT.resetText("This coffee feels dry. Must be the oxygen.");
-				this.FUNNYTEXT.start(0.03,false,false);
-				new flixel_util_FlxTimer().start(5,function(tmr) {
-					_gthis.FUNNYTEXT.resetText("Huh, for some reason I'm tired early.");
-					_gthis.FUNNYTEXT.start(0.03,false,false);
-					new flixel_util_FlxTimer().start(5,function(tmr) {
-						_gthis.FUNNYTEXT.resetText("I'm gonna go to bed... To wonderful dreams.");
-						_gthis.FUNNYTEXT.start(0.03,false,false);
-						flixel_FlxG.camera.fade(-16777216,5,false,function() {
-							PlayState.level++;
-						});
-					});
-				});
-				break;
-			default:
-				this.SWITCHGUI1.set_visible(false);
-				this.funnyframe.set_visible(true);
-				this.FUNNYTEXT.resetText("This....");
-				this.FUNNYTEXT.start(0.03,false,false);
-				new flixel_util_FlxTimer().start(3,function(tmr) {
-					_gthis.FUNNYTEXT.resetText("This coffee is the same.");
-					_gthis.FUNNYTEXT.start(0.03,false,false);
-					new flixel_util_FlxTimer().start(3,function(tmr) {
-						_gthis.FUNNYTEXT.resetText("It's the same thing. Day after day after day.");
-						_gthis.FUNNYTEXT.start(0.03,false,false);
-						new flixel_util_FlxTimer().start(3,function(tmr) {
-							_gthis.FUNNYTEXT.resetText("I have to drink something else.");
-							_gthis.FUNNYTEXT.start(0.03,false,false);
-							new flixel_util_FlxTimer().start(3,function(tmr) {
-								_gthis.FUNNYTEXT.resetText("Something, something that would wake me up... for real.");
-								_gthis.FUNNYTEXT.start(0.03,false,false);
-								new flixel_util_FlxTimer().start(3,function(tmr) {
-									_gthis.FUNNYTEXT.resetText("Maybe the taste of blood...");
-									_gthis.FUNNYTEXT.start(0.03,false,false);
-									new flixel_util_FlxTimer().start(5,function(tmr) {
-										var CUTTINGREALLOL = new flixel_FlxSprite(0,0).makeGraphic(1000,1000,-16777216);
-										_gthis.add(CUTTINGREALLOL);
-										var sound = new flixel_system_FlxSound().loadEmbedded("assets/sounds/heavybreathing.mp3",false,true);
-										sound.set_volume(0.5);
-										sound.play();
-										haxe_Log.trace("Breathe",{ fileName : "source/PlayState.hx", lineNumber : 379, className : "PlayState", methodName : "update"});
-										new flixel_util_FlxTimer().start(1,function(tmr) {
-											var sound = new flixel_system_FlxSound().loadEmbedded("assets/sounds/slit.mp3",false,true);
-											sound.set_volume(1);
-											sound.play();
-											new flixel_util_FlxTimer().start(1,function(tmr) {
-												var sound = new flixel_system_FlxSound().loadEmbedded("assets/sounds/slit.mp3",false,true);
-												sound.set_volume(1);
-												sound.play();
-												new flixel_util_FlxTimer().start(1,function(tmr) {
-													var sound = new flixel_system_FlxSound().loadEmbedded("assets/sounds/slit.mp3",false,true);
-													sound.set_volume(0.5);
-													sound.play();
-												});
-											});
-										});
-										new flixel_util_FlxTimer().start(5,function(tmr) {
-											haxe_Log.trace("scream",{ fileName : "source/PlayState.hx", lineNumber : 400, className : "PlayState", methodName : "update"});
-											new flixel_util_FlxTimer().start(5,function(tmr) {
-												_gthis.badBoiScene = true;
-												_gthis.funnyframe.set_visible(false);
-												_gthis.notsofunnyframe.set_visible(true);
-												haxe_Log.trace("Back",{ fileName : "source/PlayState.hx", lineNumber : 408, className : "PlayState", methodName : "update"});
-												flixel_FlxG.camera.set_color(-1);
-												_gthis.FUNNYTEXT.resetText("...");
-												_gthis.FUNNYTEXT.start(0.03,false,false);
-												_gthis.ship.set_frames(flixel_graphics_frames_FlxAtlasFrames.fromSparrow("assets/images/SHIPINSANE.png","assets/images/SHIPINSANE.xml"));
-												CUTTINGREALLOL.set_visible(false);
-											});
-										});
-									});
-								});
-							});
-						});
-					});
-				});
-			}
-			this.FUNNYTEXT.start(0.03,false,false);
-		}
-		var tmp;
-		if(flixel_FlxG.overlap(this.MOUSEBOXIGUESS,this.SWITCH)) {
-			var _this = flixel_FlxG.mouse._leftButton;
-			tmp = _this.current == 1 || _this.current == 2;
-		} else {
-			tmp = false;
-		}
-		if(tmp && PlayState.level < 9) {
-			this.CAFFINE.set_x(138);
-			this.CAFFINE.set_y(227);
-			if(PlayState.level < 7) {
-				this.doneTasks = true;
-				var sound = new flixel_system_FlxSound().loadEmbedded("assets/sounds/click.ogg",false,true);
-				this.SWITCHGUI1.switchState("on");
-				sound.set_volume(0.3);
-				sound.play();
-			}
-			this.SWITCH.set_x(this.SWITCH.set_y(1000));
+		if(this.SWITCHGUI1.on == true && this.SWITCHGUI2.on == true && this.SWITCHGUI3.on == true) {
+			this.doneTasks = true;
 			switch(PlayState.level) {
 			case 1:
 				this.FUNNYTEXT.resetText("Switch! Switches keep the submarine alive. I guess im done for the day, heheh.");
@@ -5973,10 +5804,10 @@ PlayState.prototype = $extend(flixel_FlxState.prototype,{
 				this.FUNNYTEXT.resetText("Done! It doesn't seem important, but I like to think this keeps the submarine alive.");
 				this.FUNNYTEXT.start(0.03,false,false);
 				new flixel_util_FlxTimer().start(5,function(tmr) {
-					_gthis.FUNNYTEXT.resetText("Sometimes, I wish I had a book, or something or someone else to observe. But It's fine!");
+					_gthis.FUNNYTEXT.resetText("You know, I wish I had a book, or something or someone else to observe. But It's fine!");
 					_gthis.FUNNYTEXT.start(0.03,false,false);
 					new flixel_util_FlxTimer().start(5,function(tmr) {
-						_gthis.FUNNYTEXT.resetText("I think I'm gonna go to bed. Gets my head off these thoughts.");
+						_gthis.FUNNYTEXT.resetText("I think I'm gonna go to bed. Maybe I'll dream about a book.");
 						_gthis.FUNNYTEXT.start(0.03,false,false);
 						new flixel_util_FlxTimer().start(5,function(tmr) {
 							flixel_FlxG.camera.fade(-16777216,2,false,function() {
@@ -6035,6 +5866,288 @@ PlayState.prototype = $extend(flixel_FlxState.prototype,{
 			default:
 				this.FUNNYTEXT.resetText("No switch presses.");
 				this.FUNNYTEXT.start(0.03,false,false);
+			}
+		}
+	}
+	,update: function(elapsed) {
+		var _gthis = this;
+		this.MOUSEBOXIGUESS.set_x(this.DESCTEXT.set_x(flixel_FlxG.mouse.x));
+		this.MOUSEBOXIGUESS.set_y(this.DESCTEXT.set_y(flixel_FlxG.mouse.y - 15));
+		if(this.inCutscene == false) {
+			if(flixel_FlxG.overlap(this.MOUSEBOXIGUESS,this.CAFFINE) && this.badBoiScene == false) {
+				this.DESCTEXT.set_text("Coffee: Click to drink");
+			} else if(flixel_FlxG.overlap(this.MOUSEBOXIGUESS,this.SWITCHGUI1) || flixel_FlxG.overlap(this.MOUSEBOXIGUESS,this.SWITCHGUI2) || flixel_FlxG.overlap(this.MOUSEBOXIGUESS,this.SWITCHGUI3)) {
+				if(PlayState.level < 9) {
+					if(this.drankCoffee == true) {
+						this.DESCTEXT.set_text("Switch: Click to flip");
+					} else {
+						this.DESCTEXT.set_text("Drink Coffee First!");
+					}
+				}
+			} else if(this.badBoiScene == true) {
+				this.DESCTEXT.set_text("Coffee: Click to drink");
+			} else {
+				this.DESCTEXT.set_text("");
+			}
+		} else {
+			this.DESCTEXT.set_text("Wait...");
+		}
+		var tmp;
+		if(this.badBoiScene == true) {
+			var _this = flixel_FlxG.mouse._leftButton;
+			tmp = _this.current == 1 || _this.current == 2;
+		} else {
+			tmp = false;
+		}
+		if(tmp) {
+			this.badBoiScene = false;
+			var CUTTINGREALLOL = new flixel_FlxSprite(0,0).makeGraphic(1000,1000,-16777216);
+			this.add(CUTTINGREALLOL);
+			var sound = new flixel_system_FlxSound().loadEmbedded("assets/sounds/TSUSIPREAL.mp3",false,true);
+			sound.set_volume(0.5);
+			sound.play();
+			new flixel_util_FlxTimer().start(5,function(tmr) {
+				var sound = new flixel_system_FlxSound().loadEmbedded("assets/sounds/hacking.mp3",false,true);
+				sound.set_volume(0.5);
+				sound.play();
+				new flixel_util_FlxTimer().start(3,function(tmr) {
+					var nextState = new CreditsState();
+					if(flixel_FlxG.game._state.switchTo(nextState)) {
+						flixel_FlxG.game._requestedState = nextState;
+					}
+				});
+			});
+		}
+		var tmp;
+		if(flixel_FlxG.overlap(this.MOUSEBOXIGUESS,this.OXY)) {
+			var _this = flixel_FlxG.mouse._leftButton;
+			tmp = _this.current == 1 || _this.current == 2;
+		} else {
+			tmp = false;
+		}
+		if(tmp && this.doneTasks == false) {
+			this.OXY.set_x(1000);
+			this.OXY.set_y(1000);
+			if(PlayState.level == 1) {
+				this.FUNNYTEXT.resetText("This shows the amount of oxygen in the ship. Should never go down, aslong as I keep flipping the switches!");
+				this.FUNNYTEXT.start(0.03,false,false);
+			}
+		}
+		var tmp;
+		if(flixel_FlxG.overlap(this.MOUSEBOXIGUESS,this.CAFFINE)) {
+			var _this = flixel_FlxG.mouse._leftButton;
+			tmp = _this.current == 1 || _this.current == 2;
+		} else {
+			tmp = false;
+		}
+		if(tmp && this.doneTasks == false && this.badBoiScene == false && this.inCutscene == false) {
+			this.drankCoffee = true;
+			this.CAFFINE.set_x(this.CAFFINE.set_y(1000));
+			if(PlayState.level < 9) {
+				var sound = new flixel_system_FlxSound().loadEmbedded("assets/sounds/TSUSIPREAL.mp3",false,true);
+				sound.set_volume(0.2);
+				sound.play();
+			}
+			this.inCutscene = true;
+			switch(PlayState.level) {
+			case 1:
+				this.FUNNYTEXT.resetText("Ah yes, a warm cup of coffee! Always good to wake up in the morning to the ocean and a good cup of coffee.");
+				this.FUNNYTEXT.start(0.03,false,false);
+				new flixel_util_FlxTimer().start(5,function(tmr) {
+					_gthis.FUNNYTEXT.resetText("Time to do my tasks! It's as simple as flipping the black switches to yellow to keep the ship alive, as I've been told.");
+					_gthis.FUNNYTEXT.start(0.03,false,false,null,function() {
+						_gthis.inCutscene = false;
+					});
+				});
+				break;
+			case 2:
+				this.FUNNYTEXT.resetText("Day 2 of coffee! Planning to make this a tradition now. It's very calming, although I wished I had something to read. Time to do my tasks.");
+				break;
+			case 3:
+				this.FUNNYTEXT.resetText("I wish my coffee was warmer.");
+				break;
+			case 4:
+				this.FUNNYTEXT.resetText("Even this is getting a little repetitive, but the energy boost is well needed. Back to pressing.");
+				break;
+			case 5:
+				this.FUNNYTEXT.resetText("I feel a little better. Now, to press those switches.");
+				break;
+			case 6:
+				this.FUNNYTEXT.resetText("That coffee always gets me in the working mood.");
+				break;
+			case 7:
+				this.FUNNYTEXT.resetText("The effects of this coffee are getting duller.");
+				this.FUNNYTEXT.start(0.03,false,false);
+				new flixel_util_FlxTimer().start(5,function(tmr) {
+					_gthis.FUNNYTEXT.resetText("Now I just, chill, I guess.");
+					_gthis.FUNNYTEXT.start(0.03,false,false);
+					new flixel_util_FlxTimer().start(9,function(tmr) {
+						_gthis.FUNNYTEXT.resetText("Wow, there really is nothing to do in here.");
+						_gthis.FUNNYTEXT.start(0.03,false,false);
+						new flixel_util_FlxTimer().start(5,function(tmr) {
+							_gthis.FUNNYTEXT.resetText("The background is so repetitive...");
+							_gthis.FUNNYTEXT.start(0.03,false,false);
+							new flixel_util_FlxTimer().start(7,function(tmr) {
+								_gthis.FUNNYTEXT.resetText("I suppose i'm done for the night. I don't feel a change right now, but I'll see what happens tomorrow, I guess.");
+								_gthis.FUNNYTEXT.start(0.03,false,false);
+								new flixel_util_FlxTimer().start(6,function(tmr) {
+									flixel_FlxG.camera.fade(-16777216,7,false,function() {
+										PlayState.level++;
+									});
+								});
+							});
+						});
+					});
+				});
+				break;
+			case 8:
+				this.FUNNYTEXT.resetText("This coffee feels dry. Must be the oxygen.");
+				this.FUNNYTEXT.start(0.03,false,false);
+				new flixel_util_FlxTimer().start(5,function(tmr) {
+					_gthis.FUNNYTEXT.resetText("Huh, for some reason I'm tired early.");
+					_gthis.FUNNYTEXT.start(0.03,false,false);
+					new flixel_util_FlxTimer().start(5,function(tmr) {
+						_gthis.FUNNYTEXT.resetText("I'm gonna go to bed... To wonderful dreams.");
+						_gthis.FUNNYTEXT.start(0.03,false,false);
+						flixel_FlxG.camera.fade(-16777216,5,false,function() {
+							PlayState.level++;
+						});
+					});
+				});
+				break;
+			default:
+				this.SWITCHGUI1.set_visible(false);
+				this.SWITCHGUI2.set_visible(false);
+				this.SWITCHGUI3.set_visible(false);
+				this.funnyframe.set_visible(true);
+				this.FUNNYTEXT.resetText("This....");
+				this.FUNNYTEXT.start(0.03,false,false);
+				new flixel_util_FlxTimer().start(3,function(tmr) {
+					_gthis.FUNNYTEXT.resetText("This coffee is the same.");
+					_gthis.FUNNYTEXT.start(0.03,false,false);
+					new flixel_util_FlxTimer().start(3,function(tmr) {
+						_gthis.FUNNYTEXT.resetText("It's the same thing. Day after day after day.");
+						_gthis.FUNNYTEXT.start(0.03,false,false);
+						new flixel_util_FlxTimer().start(3,function(tmr) {
+							_gthis.FUNNYTEXT.resetText("I have to drink something else.");
+							_gthis.FUNNYTEXT.start(0.03,false,false);
+							new flixel_util_FlxTimer().start(3,function(tmr) {
+								_gthis.FUNNYTEXT.resetText("Something, something that would wake me up... for real.");
+								_gthis.FUNNYTEXT.start(0.03,false,false);
+								new flixel_util_FlxTimer().start(3,function(tmr) {
+									_gthis.FUNNYTEXT.resetText("Maybe the taste of blood...");
+									_gthis.FUNNYTEXT.start(0.03,false,false);
+									new flixel_util_FlxTimer().start(5,function(tmr) {
+										var CUTTINGREALLOL = new flixel_FlxSprite(0,0).makeGraphic(1000,1000,-16777216);
+										_gthis.add(CUTTINGREALLOL);
+										var sound = new flixel_system_FlxSound().loadEmbedded("assets/sounds/heavybreathing.mp3",false,true);
+										sound.set_volume(0.5);
+										sound.play();
+										haxe_Log.trace("Breathe",{ fileName : "source/PlayState.hx", lineNumber : 557, className : "PlayState", methodName : "update"});
+										new flixel_util_FlxTimer().start(1,function(tmr) {
+											var sound = new flixel_system_FlxSound().loadEmbedded("assets/sounds/slit.mp3",false,true);
+											sound.set_volume(1);
+											sound.play();
+											new flixel_util_FlxTimer().start(1,function(tmr) {
+												var sound = new flixel_system_FlxSound().loadEmbedded("assets/sounds/slit.mp3",false,true);
+												sound.set_volume(1);
+												sound.play();
+												new flixel_util_FlxTimer().start(1,function(tmr) {
+													var sound = new flixel_system_FlxSound().loadEmbedded("assets/sounds/slit.mp3",false,true);
+													sound.set_volume(0.5);
+													sound.play();
+												});
+											});
+										});
+										new flixel_util_FlxTimer().start(5,function(tmr) {
+											haxe_Log.trace("scream",{ fileName : "source/PlayState.hx", lineNumber : 578, className : "PlayState", methodName : "update"});
+											new flixel_util_FlxTimer().start(5,function(tmr) {
+												_gthis.badBoiScene = true;
+												_gthis.funnyframe.set_visible(false);
+												_gthis.notsofunnyframe.set_visible(true);
+												haxe_Log.trace("Back",{ fileName : "source/PlayState.hx", lineNumber : 586, className : "PlayState", methodName : "update"});
+												flixel_FlxG.camera.set_color(-1);
+												_gthis.FUNNYTEXT.resetText("...");
+												_gthis.FUNNYTEXT.start(0.03,false,false);
+												_gthis.ship.set_frames(flixel_graphics_frames_FlxAtlasFrames.fromSparrow("assets/images/SHIPINSANE.png","assets/images/SHIPINSANE.xml"));
+												CUTTINGREALLOL.set_visible(false);
+											});
+										});
+									});
+								});
+							});
+						});
+					});
+				});
+			}
+			if(PlayState.level != 1) {
+				this.FUNNYTEXT.start(0.03,false,false,null,function() {
+					_gthis.inCutscene = false;
+				});
+			}
+		}
+		if(this.doneTasks == false && this.drankCoffee == true) {
+			this.checkSwitches();
+			if(flixel_FlxG.overlap(this.MOUSEBOXIGUESS,this.SWITCHGUI1) && flixel_FlxG.mouse._leftButton.current == 2 && this.SWITCHGUI1.on == false && this.inCutscene == false) {
+				if(PlayState.level > 6) {
+					this.FUNNYTEXT.resetText("No switch presses for today.");
+					this.FUNNYTEXT.start(0.03,false,false);
+				} else {
+					var sound = new flixel_system_FlxSound().loadEmbedded("assets/sounds/click.ogg",false,true);
+					sound.set_volume(0.2);
+					sound.play();
+					this.SWITCHGUI1.switchState(true);
+					var Chance = 30;
+					if(Chance == null) {
+						Chance = 50;
+					}
+					this.SWITCHGUI2.switchState(flixel_FlxG.random.float(0,100) < Chance);
+					var Chance = 30;
+					if(Chance == null) {
+						Chance = 50;
+					}
+					this.SWITCHGUI3.switchState(flixel_FlxG.random.float(0,100) < Chance);
+				}
+			} else if(flixel_FlxG.overlap(this.MOUSEBOXIGUESS,this.SWITCHGUI2) && flixel_FlxG.mouse._leftButton.current == 2 && this.SWITCHGUI2.on == false && this.inCutscene == false) {
+				if(PlayState.level > 6) {
+					this.FUNNYTEXT.resetText("No switch presses for today.");
+					this.FUNNYTEXT.start(0.03,false,false);
+				} else {
+					var sound = new flixel_system_FlxSound().loadEmbedded("assets/sounds/click.ogg",false,true);
+					sound.set_volume(0.2);
+					sound.play();
+					this.SWITCHGUI2.switchState(true);
+					var Chance = 30;
+					if(Chance == null) {
+						Chance = 50;
+					}
+					this.SWITCHGUI1.switchState(flixel_FlxG.random.float(0,100) < Chance);
+					var Chance = 30;
+					if(Chance == null) {
+						Chance = 50;
+					}
+					this.SWITCHGUI3.switchState(flixel_FlxG.random.float(0,100) < Chance);
+				}
+			} else if(flixel_FlxG.overlap(this.MOUSEBOXIGUESS,this.SWITCHGUI3) && flixel_FlxG.mouse._leftButton.current == 2 && this.SWITCHGUI3.on == false && this.inCutscene == false) {
+				if(PlayState.level > 6) {
+					this.FUNNYTEXT.resetText("No switch presses for today.");
+					this.FUNNYTEXT.start(0.03,false,false);
+				} else {
+					var sound = new flixel_system_FlxSound().loadEmbedded("assets/sounds/click.ogg",false,true);
+					sound.set_volume(0.2);
+					sound.play();
+					this.SWITCHGUI3.switchState(true);
+					var Chance = 30;
+					if(Chance == null) {
+						Chance = 50;
+					}
+					this.SWITCHGUI1.switchState(flixel_FlxG.random.float(0,100) < Chance);
+					var Chance = 30;
+					if(Chance == null) {
+						Chance = 50;
+					}
+					this.SWITCHGUI2.switchState(flixel_FlxG.random.float(0,100) < Chance);
+				}
 			}
 		}
 		var tmp;
@@ -8796,11 +8909,17 @@ Switch.__super__ = flixel_FlxSprite;
 Switch.prototype = $extend(flixel_FlxSprite.prototype,{
 	on: null
 	,switchState: function(type) {
-		if(type == "off") {
+		if(type == false) {
+			this.on = false;
 			this.loadGraphic("assets/images/switches/LeftOFF.png");
 		} else {
+			this.on = true;
 			this.loadGraphic("assets/images/switches/LeftON.png");
 		}
+		this.set_width(5);
+		this.set_height(5);
+		this.offset.set(0,0);
+		this.updateHitbox();
 	}
 	,update: function(elapsed) {
 		flixel_FlxSprite.prototype.update.call(this,elapsed);
@@ -71222,7 +71341,7 @@ var lime_utils_AssetCache = function() {
 	this.audio = new haxe_ds_StringMap();
 	this.font = new haxe_ds_StringMap();
 	this.image = new haxe_ds_StringMap();
-	this.version = 669462;
+	this.version = 804794;
 };
 $hxClasses["lime.utils.AssetCache"] = lime_utils_AssetCache;
 lime_utils_AssetCache.__name__ = "lime.utils.AssetCache";

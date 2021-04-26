@@ -41,7 +41,7 @@ class CreditsState extends FlxState
 		creditsText.text = "'An Eternity Under Water(DEMO)'\n\nDIRECTOR: MAGNUSSTROM\n\nSOUND EFFECTS ARTIST: EVANCLUBYT\n\nARTIST: TSUCHI\n\nCODING: MAGNUSSTROM\n\nADDITIONAL CODING: TSUCHI\n\nMUSIC: EVANCLUBYT\n\nTESTING: TSUCHI\n\nINSPIRED BY: DOKI DOKI LITERATURE CLUB";
 		add(creditsText);
 		creditsText.screenCenter();
-		creditsText.y += 900;
+		creditsText.y += 500;
 
 		replayText = new FlxText(0, 0, 500);
 		replayText.size = 30;
